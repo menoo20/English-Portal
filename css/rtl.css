@@ -1,0 +1,104 @@
+/* ============================================
+   RTL (Right-to-Left) Support for Arabic
+   ============================================ */
+
+/* Apply RTL direction */
+[dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Sidebar positioning */
+[dir="rtl"] .sidebar {
+    left: auto;
+    right: 0;
+    border-right: none;
+    border-left: 1px solid var(--color-black-lighter);
+}
+
+[dir="rtl"] .main-content {
+    margin-left: 0;
+    margin-right: var(--sidebar-width);
+}
+
+[dir="rtl"] body.sidebar-collapsed .main-content {
+    margin-left: 0;
+    margin-right: var(--sidebar-collapsed);
+}
+
+/* Navigation items */
+[dir="rtl"] .nav-item::before {
+    left: auto;
+    right: 0;
+    border-radius: 2px 0 0 2px;
+}
+
+/* Section title accent */
+[dir="rtl"] .section-title {
+    padding-left: 0;
+    padding-right: var(--space-md);
+}
+
+[dir="rtl"] .section-title::before {
+    left: auto;
+    right: 0;
+}
+
+/* Cards */
+[dir="rtl"] .card-meta {
+    flex-direction: row-reverse;
+}
+
+/* Back navigation */
+[dir="rtl"] .back-nav {
+    flex-direction: row-reverse;
+}
+
+/* Lists */
+[dir="rtl"] .article-content ul,
+[dir="rtl"] .article-content ol {
+    padding-left: 0;
+    padding-right: var(--space-xl);
+}
+
+/* Blockquote */
+[dir="rtl"] .article-content blockquote {
+    border-left: none;
+    border-right: 3px solid var(--color-gold);
+    padding-left: 0;
+    padding-right: var(--space-lg);
+}
+
+/* Mobile menu toggle */
+[dir="rtl"] .mobile-menu-toggle {
+    right: auto;
+    left: var(--space-lg);
+}
+
+/* Responsive RTL */
+@media (max-width: 1024px) {
+    [dir="rtl"] .sidebar {
+        transform: translateX(100%);
+    }
+
+    [dir="rtl"] .sidebar.open {
+        transform: translateX(0);
+    }
+
+    [dir="rtl"] .main-content {
+        margin-right: 0;
+    }
+}
+
+/* Font adjustments for Arabic */
+[dir="rtl"] body {
+    font-family: 'Cairo', 'Outfit', sans-serif;
+}
+
+[dir="rtl"] .sidebar-brand h1,
+[dir="rtl"] .section-title,
+[dir="rtl"] .card-title,
+[dir="rtl"] .article-title,
+[dir="rtl"] .page-title {
+    font-family: 'Cairo', sans-serif;
+}
