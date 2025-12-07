@@ -52,6 +52,7 @@ const translations = {
     "meeting01.title": "محضر اجتماع قسم اللغة الإنجليزية",
     "meeting01.date": "12 ديسمبر 2025",
     "meeting01.author": "قسم اللغة الإنجليزية",
+    "reports.meeting01.excerpt": "منهجية التدريس الجديدة، التقارير الأسبوعية، ومواد الفصل الدراسي...",
 
     "meeting01.section1.title": "📚 منهجية التدريس الجديدة",
     "meeting01.section1.content": "تم إبلاغ المعلمين بمنهجية التدريس الجديدة التي تشجع على اللغة الإنجليزية المحادثية والتدريس التفاعلي. يهدف هذا النهج إلى تعزيز مهارات التواصل لدى الطلاب من خلال الحوار والتفاعل المباشر في الفصل الدراسي.",
@@ -122,6 +123,7 @@ const translations = {
     "meeting01.title": "English Department Meeting Minutes",
     "meeting01.date": "December 12, 2025",
     "meeting01.author": "English Department",
+    "reports.meeting01.excerpt": "New teaching methodology, weekly reports, and classroom materials...",
 
     "meeting01.section1.title": "📚 New Teaching Methodology",
     "meeting01.section1.content": "Teachers were informed about the new teaching method which encourages conversational English and interactive teaching. This approach aims to enhance students' communication skills through dialogue and direct interaction in the classroom.",
