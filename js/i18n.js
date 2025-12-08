@@ -53,6 +53,7 @@ const translations = {
     "meeting01.date": "12 ديسمبر 2025",
     "meeting01.author": "قسم اللغة الإنجليزية",
     "reports.meeting01.excerpt": "منهجية التدريس الجديدة، التقارير الأسبوعية، ومواد الفصل الدراسي...",
+    "meeting01.excerpt": "منهجية التدريس الجديدة، التقارير الأسبوعية، ومواد الفصل الدراسي",
 
     "meeting01.section1.title": "📚 منهجية التدريس الجديدة",
     "meeting01.section1.content": "تم إبلاغ المعلمين بمنهجية التدريس الجديدة التي تشجع على اللغة الإنجليزية المحادثية والتدريس التفاعلي. يهدف هذا النهج إلى تعزيز مهارات التواصل لدى الطلاب من خلال الحوار والتفاعل المباشر في الفصل الدراسي.",
@@ -72,7 +73,28 @@ const translations = {
     "meeting01.section4.content": "تم تشجيع المعلمين على المشاركة بآرائهم حول منهجية التدريس الجديدة وتوقعاتهم لكيفية استجابة طلابهم لهذا النهج الجديد.",
 
     "meeting01.questions.title": "❓ أسئلة تحتاج إجابة",
-    "meeting01.questions.q1": "في الأشهر الثلاثة الأولى: هل يجب أن نُدرِّس نفس المنهج، أم يجب على كل منا تعليم الأطفال التحدث من خلال محادثات يجدها مناسبة لاحتياجات طلابه؟"
+    "meeting01.questions.q1": "في الأشهر الثلاثة الأولى: هل يجب أن نُدرِّس نفس المنهج، أم يجب على كل منا تعليم الأطفال التحدث من خلال محادثات يجدها مناسبة لاحتياجات طلابه؟",
+
+    // Shortages Report 01
+    "shortages01.category": "تقرير النواقص",
+    "shortages01.title": "نواقص المدربين",
+    "shortages01.date": "8 ديسمبر 2025",
+    "shortages01.author": "قسم اللغة الإنجليزية",
+    "shortages01.excerpt": "جدول يوضح النواقص في مستلزمات فصول المدربين",
+    "shortages01.intro": "يوضح هذا التقرير النواقص في المواد والمستلزمات المتوفرة في فصول المدربين. الجدول التالي يبين العناصر المطلوبة والكميات المحددة.",
+    "shortages01.table.item": "النواقص",
+    "shortages01.table.quantity": "عدد",
+    "shortages01.items.tv": "شاشة تلفاز 65-75 بوصة",
+    "shortages01.items.whiteboards": "السبورات البيضاء",
+    "shortages01.items.computers": "أجهزة الحاسوب",
+    "shortages01.items.markers": "الأقلام (ماركر)",
+    "shortages01.items.stickynotes": "ملاحظات لاصقة",
+    "shortages01.items.pinboard": "لوحات الإعلانات",
+    "shortages01.items.sheetprotector": "حافظة مستندات",
+    "shortages01.items.whitepaper": "ورق أبيض",
+    "shortages01.items.pens": "أقلام وأقلام رصاص",
+    "shortages01.note.label": "ملاحظة:",
+    "shortages01.note.text": "الرمز (~) يعني أن الكمية المطلوبة غير محددة بعد وتحتاج إلى تقييم."
   },
 
   en: {
@@ -124,6 +146,7 @@ const translations = {
     "meeting01.date": "December 12, 2025",
     "meeting01.author": "English Department",
     "reports.meeting01.excerpt": "New teaching methodology, weekly reports, and classroom materials...",
+    "meeting01.excerpt": "New teaching methodology, weekly reports, and classroom materials",
 
     "meeting01.section1.title": "📚 New Teaching Methodology",
     "meeting01.section1.content": "Teachers were informed about the new teaching method which encourages conversational English and interactive teaching. This approach aims to enhance students' communication skills through dialogue and direct interaction in the classroom.",
@@ -143,7 +166,28 @@ const translations = {
     "meeting01.section4.content": "Teachers were encouraged to participate with their opinions about the new teaching approach and how they expect their students to respond.",
 
     "meeting01.questions.title": "❓ Questions That Need Answers",
-    "meeting01.questions.q1": "In the first three months: Should we teach the same curriculum, or should each one of us teach children to talk through conversations he finds suitable for his students' needs?"
+    "meeting01.questions.q1": "In the first three months: Should we teach the same curriculum, or should each one of us teach children to talk through conversations he finds suitable for his students' needs?",
+
+    // Shortages Report 01
+    "shortages01.category": "Shortages Report",
+    "shortages01.title": "Teacher Material Shortages",
+    "shortages01.date": "December 8, 2025",
+    "shortages01.author": "English Department",
+    "shortages01.excerpt": "Table showing material shortages in teachers' classrooms",
+    "shortages01.intro": "This report outlines the material and supply shortages in teachers' classrooms. The following table shows the required items and specified quantities.",
+    "shortages01.table.item": "Item",
+    "shortages01.table.quantity": "Quantity",
+    "shortages01.items.tv": "TV 65-75 inch",
+    "shortages01.items.whiteboards": "Whiteboards",
+    "shortages01.items.computers": "Computers",
+    "shortages01.items.markers": "Markers",
+    "shortages01.items.stickynotes": "Sticky Notes",
+    "shortages01.items.pinboard": "Pinboards",
+    "shortages01.items.sheetprotector": "Sheet Protectors",
+    "shortages01.items.whitepaper": "White Paper",
+    "shortages01.items.pens": "Pens and Pencils",
+    "shortages01.note.label": "Note:",
+    "shortages01.note.text": "The symbol (~) means the required quantity is not yet specified and needs assessment."
   }
 };
 

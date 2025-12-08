@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="تقرير نواقص المدربين - Teacher Material Shortages Report">
+
+    <title>نواقص المدربين | Teacher Material Shortages</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/rtl.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../../logo/image2.png">
+
+    <!-- Print & Table Styles -->
+    <style>
+        @media print {
+
+            .sidebar,
+            .sidebar-overlay,
+            .mobile-menu-toggle,
+            .back-nav,
+            .article-actions {
+                display: none !important;
+            }
+
+            .main-content {
+                margin: 0 !important;
+            }
+
+            .article-container {
+                max-width: 100%;
+                padding: 20px;
+            }
+
+            body {
+                background: white;
+                color: black;
+            }
+
+            .article-title {
+                color: black;
+            }
+
+            .article-content {
+                color: #333;
+            }
+        }
+
+        .shortages-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .shortages-table th,
+        .shortages-table td {
+            padding: 1rem 1.5rem;
+            text-align: right;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .shortages-table th {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.2), rgba(244, 208, 63, 0.1));
+            color: #D4AF37;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .shortages-table tr:hover {
+            background: rgba(212, 175, 55, 0.05);
+        }
+
+        .shortages-table td:last-child {
+            text-align: center;
+            font-weight: 600;
+            color: #D4AF37;
+        }
+
+        .shortage-icon {
+            margin-left: 0.5rem;
+        }
+
+        .note-box {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(244, 208, 63, 0.05));
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .note-box p {
+            margin: 0;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .note-box strong {
+            color: #D4AF37;
+        }
+
+        [dir="ltr"] .shortages-table th,
+        [dir="ltr"] .shortages-table td {
+            text-align: left;
+        }
+
+        [dir="ltr"] .shortages-table td:last-child {
+            text-align: center;
+        }
+
+        [dir="ltr"] .shortage-icon {
+            margin-left: 0;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="../../logo/image2.png" alt="Blackgold Logo" class="sidebar-logo">
+                <div class="sidebar-brand">
+                    <h1 data-i18n="brand.name">قسم اللغة الإنجليزية</h1>
+                    <span data-i18n="brand.subtitle">معهد بلاك جولد العالي</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <!-- Main Navigation -->
+                <div class="nav-section">
+                    <div class="nav-section-title" data-i18n="section.main">القائمة الرئيسية</div>
+                    <a href="../../index.html" class="nav-item">
+                        <span class="nav-icon">🏠</span>
+                        <span class="nav-text" data-i18n="nav.home">الرئيسية</span>
+                    </a>
+                </div>
+
+                <!-- Content Navigation -->
+                <div class="nav-section">
+                    <div class="nav-section-title" data-i18n="section.content">المحتوى</div>
+                    <a href="../index.html" class="nav-item active">
+                        <span class="nav-icon">📝</span>
+                        <span class="nav-text" data-i18n="nav.reports">التقارير الأسبوعية</span>
+                    </a>
+                    <a href="../../blog/index.html" class="nav-item">
+                        <span class="nav-icon">📚</span>
+                        <span class="nav-text" data-i18n="nav.blog">المقالات</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">📂</span>
+                        <span class="nav-text" data-i18n="nav.resources">الموارد</span>
+                    </a>
+                </div>
+            </nav>
+
+            <!-- Language Toggle -->
+            <div class="sidebar-footer">
+                <div class="language-toggle">
+                    <button class="lang-btn active" data-lang="ar">عربي</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Sidebar Overlay (Mobile) -->
+        <div class="sidebar-overlay"></div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <article class="article-container">
+
+                <!-- Back Navigation -->
+                <a href="../index.html" class="back-nav">
+                    <span>→</span>
+                    <span data-i18n="action.back">العودة</span>
+                </a>
+
+                <!-- Article Header -->
+                <header class="article-header">
+                    <span class="article-category" data-i18n="shortages01.category">تقرير النواقص</span>
+                    <h1 class="article-title" data-i18n="shortages01.title">نواقص المدربين</h1>
+                    <div class="article-meta">
+                        <span>📅 <span data-i18n="shortages01.date">8 ديسمبر 2025</span></span>
+                        <span>👥 <span data-i18n="shortages01.author">قسم اللغة الإنجليزية</span></span>
+                    </div>
+                </header>
+
+                <!-- Action Buttons -->
+                <div class="article-actions" style="display: flex; gap: 1rem; margin-bottom: 2rem;">
+                    <button onclick="printPage()" class="btn btn-secondary">
+                        🖨️ <span data-i18n="action.print">طباعة</span>
+                    </button>
+                    <button onclick="sharePage()" class="btn btn-secondary">
+                        📤 <span data-i18n="action.share">مشاركة</span>
+                    </button>
+                </div>
+
+                <!-- Article Content -->
+                <div class="article-content">
+
+                    <p data-i18n="shortages01.intro">
+                        يوضح هذا التقرير النواقص في المواد والمستلزمات المتوفرة في فصول المدربين. الجدول التالي يبين
+                        العناصر المطلوبة والكميات المحددة.
+                    </p>
+
+                    <!-- Shortages Table -->
+                    <table class="shortages-table">
+                        <thead>
+                            <tr>
+                                <th data-i18n="shortages01.table.item">النواقص</th>
+                                <th data-i18n="shortages01.table.quantity">عدد</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="shortage-icon">📺</span> <span data-i18n="shortages01.items.tv">شاشة
+                                        تلفاز 65-75 بوصة</span></td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td><span class="shortage-icon">📋</span> <span
+                                        data-i18n="shortages01.items.whiteboards">السبورات البيضاء</span></td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td><span class="shortage-icon">💻</span> <span
+                                        data-i18n="shortages01.items.computers">أجهزة الحاسوب</span></td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td><span class="shortage-icon">🖊️</span> <span
+                                        data-i18n="shortages01.items.markers">الأقلام (ماركر)</span></td>
+                                <td>~</td>
+                            </tr>
+                            <tr>
+                                <td><span class="shortage-icon">📝</span> <span
+                                        data-i18n="shortages01.items.stickynotes">ملاحظات لاصقة</span></td>
+                                <td>~</td>
+                            </tr>
+                            <tr>
+                                <td><span class="shortage-icon">📌</span> <span
+                                        data-i18n="shortages01.items.pinboard">لوحات الإعلانات</span></td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td><span class="shortage-icon">📂</span> <span
+                                        data-i18n="shortages01.items.sheetprotector">حافظة مستندات</span></td>
+                                <td>~</td>
+                            </tr>
+                            <tr>
+                                <td><span class="shortage-icon">📄</span> <span
+                                        data-i18n="shortages01.items.whitepaper">ورق أبيض</span></td>
+                                <td>~</td>
+                            </tr>
+                            <tr>
+                                <td><span class="shortage-icon">✏️</span> <span data-i18n="shortages01.items.pens">أقلام
+                                        وأقلام رصاص</span></td>
+                                <td>~</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Note -->
+                    <div class="note-box">
+                        <p><strong data-i18n="shortages01.note.label">ملاحظة:</strong> <span
+                                data-i18n="shortages01.note.text">الرمز (~) يعني أن الكمية المطلوبة غير محددة بعد وتحتاج
+                                إلى تقييم.</span></p>
+                    </div>
+
+                </div>
+
+            </article>
+
+        </main>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+            ☰
+        </button>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="../../js/i18n.js"></script>
+    <script src="../../js/main.js"></script>
+</body>
+
+</html>
