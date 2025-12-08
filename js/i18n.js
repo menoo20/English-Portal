@@ -50,7 +50,7 @@ const translations = {
     // Meeting 01 Report
     "meeting01.category": "الاجتماع الأول",
     "meeting01.title": "محضر اجتماع قسم اللغة الإنجليزية",
-    "meeting01.date": "12 ديسمبر 2025",
+    "meeting01.date": "4 ديسمبر 2025",
     "meeting01.author": "قسم اللغة الإنجليزية",
     "reports.meeting01.excerpt": "منهجية التدريس الجديدة، التقارير الأسبوعية، ومواد الفصل الدراسي...",
     "meeting01.excerpt": "منهجية التدريس الجديدة، التقارير الأسبوعية، ومواد الفصل الدراسي",
