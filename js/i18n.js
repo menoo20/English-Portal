@@ -73,7 +73,7 @@ const translations = {
     "meeting01.section4.content": "تم تشجيع المعلمين على المشاركة بآرائهم حول منهجية التدريس الجديدة وتوقعاتهم لكيفية استجابة طلابهم لهذا النهج الجديد.",
 
     "meeting01.questions.title": "❓ أسئلة تحتاج إجابة",
-    "meeting01.questions.q1": "في الأشهر الثلاثة الأولى: هل يجب أن نُدرِّس نفس المنهج، أم يجب على كل منا تعليم الأطفال التحدث من خلال محادثات يجدها مناسبة لاحتياجات طلابه؟",
+    "meeting01.questions.q1": "في الأشهر الثلاثة الأولى: هل يجب أن نُدرِّس نفس المنهج، أم يجب على كل منا تعليم الطلاب التحدث من خلال محادثات يجدها مناسبة لاحتياجات طلابه؟",
 
     // Shortages Report 01
     "shortages01.category": "تقرير النواقص",
@@ -169,7 +169,7 @@ const translations = {
     "meeting01.section4.content": "Teachers were encouraged to participate with their opinions about the new teaching approach and how they expect their students to respond.",
 
     "meeting01.questions.title": "❓ Questions That Need Answers",
-    "meeting01.questions.q1": "In the first three months: Should we teach the same curriculum, or should each one of us teach children to talk through conversations he finds suitable for his students' needs?",
+    "meeting01.questions.q1": "In the first three months: Should we teach the same curriculum, or should each one of us teach students to talk through conversations he finds suitable for his students' needs?",
 
     // Shortages Report 01
     "shortages01.category": "Shortages Report",
