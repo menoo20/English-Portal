@@ -143,7 +143,7 @@ const translations = {
     // Meeting 01 Report
     "meeting01.category": "Meeting 1",
     "meeting01.title": "English Department Meeting Minutes",
-    "meeting01.date": "December 12, 2025",
+    "meeting01.date": "December 04, 2025",
     "meeting01.author": "English Department",
     "reports.meeting01.excerpt": "New teaching methodology, weekly reports, and classroom materials...",
     "meeting01.excerpt": "New teaching methodology, weekly reports, and classroom materials",
