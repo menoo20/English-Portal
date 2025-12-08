@@ -60,6 +60,7 @@ const translations = {
 
     "meeting01.section2.title": "📝 التقارير الأسبوعية",
     "meeting01.section2.content": "يجب على كل معلم في قسم اللغة الإنجليزية تقديم تقرير أسبوعي عن عمله وتقدم طلابه. يتم حفظ جميع التقارير في مجلد واحد يمكن الوصول إليه عبر Google Drive.",
+    "meeting01.section2.content1": "يجب على كل معلم في قسم اللغة الإنجليزية تقديم تقرير أسبوعي عن عمله وتقدم طلابه. يتم حفظ جميع التقارير في مجلد واحد يمكن الوصول إليه عبر",
 
     "meeting01.section3.title": "🎯 مواد الفصل الدراسي",
     "meeting01.section3.intro": "طُلب من المعلمين الإبلاغ عن أي نقص في مواد الفصل الدراسي مثل:",
@@ -156,6 +157,7 @@ const translations = {
 
     "meeting01.section2.title": "📝 Weekly Reports",
     "meeting01.section2.content": "Each teacher in the English department should submit a weekly report about their work and students' progress. All reports are saved in one folder that can be accessed through Google Drive.",
+    "meeting01.section2.content1": "Each teacher in the English department should submit a weekly report about their work and students' progress. All reports are saved in one folder that can be accessed through",
 
     "meeting01.section3.title": "🎯 Classroom Materials",
     "meeting01.section3.intro": "Teachers were asked to report any shortage of classroom materials such as:",
