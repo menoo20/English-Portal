@@ -101,8 +101,11 @@ const translations = {
     "shortages01.note.text": "الرمز (~) يعني أن الكمية المطلوبة غير محددة بعد وتحتاج إلى تقييم.",
 
     // Teachers Weekly Report 01
+    "teachersWeekly01.category": "تقرير المعلمين الأسبوعي",
     "teachersWeekly01.title": "📊 تقرير أداء المعلمين الأسبوعي",
     "teachersWeekly01.subtitle": "قسم اللغة الإنجليزية - معهد الذهب الأسود العالي",
+    "teachersWeekly01.excerpt": "تقييم أسبوعي شامل لـ 8 معلمين، يشمل الأهداف والأدلة وتقييم الجودة...",
+    "teachersWeekly01.date": "7-11 ديسمبر 2025",
     "teachersWeekly01.week": "📅 الأسبوع الأول: 7 - 11 ديسمبر 2025",
     "teachersWeekly01.stat.teachers": "معلمين تمت مراجعتهم",
     "teachersWeekly01.stat.complete": "تقارير مكتملة",
@@ -462,8 +465,11 @@ const translations = {
     "shortages01.note.text": "The symbol (~) means the required quantity is not yet specified and needs assessment.",
 
     // Teachers Weekly Report 01
+    "teachersWeekly01.category": "Weekly Teacher Report",
     "teachersWeekly01.title": "📊 Weekly Teachers Performance Report",
     "teachersWeekly01.subtitle": "English Department - Blackgold High Institute",
+    "teachersWeekly01.excerpt": "Comprehensive weekly assessment of 8 teachers, including objectives, evidence, and quality ratings...",
+    "teachersWeekly01.date": "Dec 7-11, 2025",
     "teachersWeekly01.week": "📅 Week 1: December 7 - 11, 2025",
     "teachersWeekly01.stat.teachers": "Teachers Reviewed",
     "teachersWeekly01.stat.complete": "Complete Submissions",
