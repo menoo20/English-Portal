@@ -360,6 +360,69 @@
             .status-badge {
                 margin-left: 0;
                 margin-top: 0.5rem;
+                width: 100%;
+                text-align: center;
+            }
+
+            .screenshot-gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .topics-list {
+                grid-template-columns: 1fr;
+            }
+
+            .metrics-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .summary-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .quality-table {
+                font-size: 0.85rem;
+            }
+
+            .quality-table th,
+            .quality-table td {
+                padding: 0.5rem;
+            }
+
+            .teacher-card {
+                padding: 1.5rem 1rem;
+            }
+
+            .report-header {
+                padding: 2rem 1rem;
+            }
+
+            .highlight-box,
+            .recommendation-box,
+            .warning-box {
+                padding: 0.75rem 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .report-header h1 {
+                font-size: 1.5rem;
+            }
+
+            .teacher-info h2 {
+                font-size: 1.2rem;
+            }
+
+            .stat-card .stat-number {
+                font-size: 2rem;
+            }
+
+            .metrics-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .summary-stats {
+                grid-template-columns: 1fr;
             }
         }
     </style>
