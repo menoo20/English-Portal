@@ -350,18 +350,48 @@
 
         @media (max-width: 768px) {
             .report-header h1 {
-                font-size: 1.8rem;
+                font-size: 1.5rem;
+            }
+
+            .report-header .subtitle {
+                font-size: 0.9rem;
             }
 
             .teacher-header {
                 flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+
+            .teacher-number {
+                width: 35px;
+                height: 35px;
+                font-size: 1rem;
+            }
+
+            .teacher-info h2 {
+                font-size: 1.1rem;
+            }
+
+            .teacher-info .course {
+                font-size: 0.8rem;
             }
 
             .status-badge {
                 margin-left: 0;
-                margin-top: 0.5rem;
+                margin-top: 0.25rem;
                 width: 100%;
                 text-align: center;
+                font-size: 0.75rem;
+                padding: 0.25rem 0.75rem;
+            }
+
+            .teacher-content {
+                font-size: 0.9rem;
+                line-height: 1.6;
+            }
+
+            .teacher-content h3 {
+                font-size: 1rem;
             }
 
             .screenshot-gallery {
@@ -374,55 +404,56 @@
 
             .metrics-grid {
                 grid-template-columns: repeat(2, 1fr);
+                gap: 0.5rem;
+            }
+
+            .metric-item {
+                padding: 0.75rem;
+            }
+
+            .metric-item .metric-value {
+                font-size: 1.25rem;
             }
 
             .summary-stats {
                 grid-template-columns: repeat(2, 1fr);
+                gap: 0.5rem;
+            }
+
+            .stat-card {
+                padding: 1rem;
+            }
+
+            .stat-card .stat-number {
+                font-size: 1.75rem;
             }
 
             .quality-table {
-                font-size: 0.85rem;
+                font-size: 0.8rem;
             }
 
             .quality-table th,
             .quality-table td {
-                padding: 0.5rem;
+                padding: 0.4rem;
             }
 
             .teacher-card {
-                padding: 1.5rem 1rem;
+                padding: 1.25rem 0.75rem;
             }
 
             .report-header {
-                padding: 2rem 1rem;
+                padding: 1.5rem 0.75rem;
             }
 
             .highlight-box,
             .recommendation-box,
             .warning-box {
-                padding: 0.75rem 1rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .report-header h1 {
-                font-size: 1.5rem;
+                padding: 0.75rem;
+                font-size: 0.85rem;
             }
 
-            .teacher-info h2 {
-                font-size: 1.2rem;
-            }
-
-            .stat-card .stat-number {
-                font-size: 2rem;
-            }
-
-            .metrics-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .summary-stats {
-                grid-template-columns: 1fr;
+            .screenshot-caption {
+                font-size: 0.75rem;
             }
         }
     </style>

@@ -646,6 +646,16 @@ body.sidebar-collapsed .main-content {
 }
 
 @media (max-width: 768px) {
+  :root {
+    --font-size-base: 0.9rem;
+    --font-size-lg: 1rem;
+    --font-size-xl: 1.15rem;
+    --font-size-2xl: 1.35rem;
+    --font-size-3xl: 1.75rem;
+    --font-size-4xl: 2rem;
+    --font-size-hero: 2.5rem;
+  }
+
   .hero-banner {
     height: 200px;
   }
