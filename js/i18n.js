@@ -365,7 +365,20 @@ const translations = {
     "tw01.t8.evidenceNote": "⭐ مكتمل - لقطات شاشة موقتة",
     "tw01.t8.caption1": "التقرير الأسبوعي (الأسبوع 1)",
     "tw01.t8.caption2": "الجلسة المباشرة - شريحة التقديم الرسمي",
-    "tw01.t8.caption3": "إطار اللغة المواقفية (50 موضوع)"
+    "tw01.t8.caption3": "إطار اللغة المواقفية (50 موضوع)",
+
+    // 3 Months Conversational Program
+    "conversational.program.title": "برنامج المحادثة (3 أشهر)",
+    "conversational.program.subtitle": "الخطة الأسبوعية الموحدة لقسم اللغة الإنجليزية",
+    "conversational.notes.title": "ملاحظات هامة للمعلمين",
+    "conversational.note1.title": "المرونة في الأهداف",
+    "conversational.note1.text": "يمكن للمعلمين إضافة أو استبدال بعض الأهداف الرئيسية طالما أنهم على المسار الصحيح للموضوع الرئيسي.",
+    "conversational.note2.title": "التزام موحد",
+    "conversational.note2.text": "يجب على جميع أعضاء قسم اللغة الإنجليزية العمل على نفس الخطة الأسبوعية كما هو مطلوب من الإدارة.",
+    "conversational.action.download": "تحميل الخطة (PDF)",
+    "conversational.action.open": "فتح في نافذة جديدة",
+    "conversational.pdf.fallback": "هذا المتصفح لا يدعم عرض ملفات PDF. يرجى تحميل الملف لعرضه:",
+    "conversational.pdf.downloadLink": "تحميل PDF"
   },
 
   en: {
@@ -729,7 +742,20 @@ const translations = {
     "tw01.t8.evidenceNote": "⭐ Complete - Timestamped screenshots",
     "tw01.t8.caption1": "Weekly Report (Week 1)",
     "tw01.t8.caption2": "Live Session - Formal Self-Intro Slide",
-    "tw01.t8.caption3": "Situational English Framework (50 Topics)"
+    "tw01.t8.caption3": "Situational English Framework (50 Topics)",
+
+    // 3 Months Conversational Program
+    "conversational.program.title": "3 Months Conversational Program",
+    "conversational.program.subtitle": "Unified Weekly Plan for English Department",
+    "conversational.notes.title": "Important Notes for Teachers",
+    "conversational.note1.title": "Flexibility",
+    "conversational.note1.text": "Teachers can add to or replace some key objectives as long as they are on the same track of the main topic.",
+    "conversational.note2.title": "Unified Commitment",
+    "conversational.note2.text": "All English Department members must work on the same weekly plan as required by the administration.",
+    "conversational.action.download": "Download Plan (PDF)",
+    "conversational.action.open": "Open in New Window",
+    "conversational.pdf.fallback": "This browser does not support PDFs. Please download the PDF to view it:",
+    "conversational.pdf.downloadLink": "Download PDF"
   }
 };
 
