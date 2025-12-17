@@ -158,7 +158,7 @@ const translations = {
     "teachersWeekly01.section.curriculum": "📋 التقديم: إطار المنهج",
     "teachersWeekly01.section.overview": "📊 نظرة عامة على المنهج: 50 سيناريو في 3 فئات",
     "teachersWeekly01.section.localization": "🇸🇦 نقاط القوة في التوطين (السياق السعودي)",
-    "teachersWeekly01.section.scenarios": "📋 18 سيناريو محادثة مغطى",
+    "teachersWeekly01.section.scenarios": "📋 18 سيناريو محادثة مقترح",
     "teachersWeekly01.section.reflective": "💡 الممارسة التأملية",
     "teachersWeekly01.section.instructional": "📋 التركيز التعليمي",
     "teachersWeekly01.section.assessment": "📊 نتائج التقييم",
@@ -378,7 +378,11 @@ const translations = {
     "conversational.action.download": "تحميل الخطة (PDF)",
     "conversational.action.open": "فتح في نافذة جديدة",
     "conversational.pdf.fallback": "هذا المتصفح لا يدعم عرض ملفات PDF. يرجى تحميل الملف لعرضه:",
-    "conversational.pdf.downloadLink": "تحميل PDF"
+    "conversational.pdf.downloadLink": "تحميل PDF",
+    "conversational.card.category": "خطة دراسية",
+    "conversational.card.title": "برنامج المحادثة (3 أشهر)",
+    "conversational.card.excerpt": "الخطة الأسبوعية الموحدة لقسم اللغة الإنجليزية، تشمل الأهداف والملاحظات الهامة.",
+    "conversational.card.date": "ديسمبر 2025 - مارس 2026"
   },
 
   en: {
@@ -535,7 +539,7 @@ const translations = {
     "teachersWeekly01.section.curriculum": "📋 Submission: Curriculum Framework",
     "teachersWeekly01.section.overview": "📊 Curriculum Overview: 50 Scenarios in 3 Categories",
     "teachersWeekly01.section.localization": "🇸🇦 Localization Strengths (Saudi Context)",
-    "teachersWeekly01.section.scenarios": "📋 18 Conversation Scenarios Covered",
+    "teachersWeekly01.section.scenarios": "📋 18 Conversation Scenarios Suggested",
     "teachersWeekly01.section.reflective": "💡 Reflective Practice",
     "teachersWeekly01.section.instructional": "📋 Instructional Focus",
     "teachersWeekly01.section.assessment": "📊 Assessment Results",
@@ -755,7 +759,11 @@ const translations = {
     "conversational.action.download": "Download Plan (PDF)",
     "conversational.action.open": "Open in New Window",
     "conversational.pdf.fallback": "This browser does not support PDFs. Please download the PDF to view it:",
-    "conversational.pdf.downloadLink": "Download PDF"
+    "conversational.pdf.downloadLink": "Download PDF",
+    "conversational.card.category": "Study Plan",
+    "conversational.card.title": "3 Months Conversational Program",
+    "conversational.card.excerpt": "Unified weekly plan for the English Department, including objectives and important notes.",
+    "conversational.card.date": "December 2025 - March 2026"
   }
 };
 
