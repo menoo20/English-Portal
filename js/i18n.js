@@ -5,12 +5,18 @@
 
 const translations = {
   ar: {
+    // Sidebar
+    "sidebar.title": "قسم اللغة الإنجليزية",
+    "sidebar.subtitle": "معهد بلاك جولد العالي",
+
     // Navigation
     "nav.home": "الرئيسية",
     "nav.reports": "التقارير الأسبوعية",
     "nav.blog": "المقالات",
     "nav.resources": "الموارد",
     "nav.about": "حول",
+    "nav.mainMenu": "القائمة الرئيسية",
+    "nav.content": "المحتوى",
 
     // Section titles
     "section.main": "القائمة الرئيسية",
@@ -369,29 +375,80 @@ const translations = {
 
     // 3 Months Conversational Program
     "conversational.program.title": "برنامج المحادثة (3 أشهر)",
-    "conversational.program.subtitle": "الخطة الأسبوعية الموحدة لقسم اللغة الإنجليزية",
-    "conversational.notes.title": "ملاحظات هامة للمعلمين",
-    "conversational.note1.title": "المرونة في الأهداف",
+    "conversational.program.subtitle": "خطة فصلية تشاركية مبنية على تصويت المعلمين",
+    "conversational.stat.topics": "موضوع مقترح",
+    "conversational.stat.teachers": "معلمين صوتوا",
+    "conversational.stat.votes": "إجمالي الأصوات",
+    "conversational.stat.selected": "موضوع تم اختياره",
+    "conversational.process.title": "📋 منهجية الاختيار التشاركي",
+    "conversational.step1.title": "جمع المقترحات",
+    "conversational.step1.desc": "21 موضوع محادثة تم اقتراحها",
+    "conversational.step2.title": "تصويت المعلمين",
+    "conversational.step2.desc": "9 معلمين شاركوا في التصويت",
+    "conversational.step3.title": "تحليل النتائج",
+    "conversational.step3.desc": "ترتيب حسب عدد الأصوات",
+    "conversational.step4.title": "اختيار الأفضل",
+    "conversational.step4.desc": "أعلى 12 موضوع للخطة الفصلية",
+    "conversational.votes.title": "📊 نتائج التصويت (21 موضوع)",
+    "conversational.votes.legend": "الموضوعات الذهبية = تم اختيارها للخطة الفصلية | الموضوعات الرمادية = احتياطي للفصول القادمة",
+    "conversational.schedule.title": "📅 الخطة الفصلية (3 أشهر)",
+    "conversational.month1.name": "🗓️ الشهر الأول",
+    "conversational.month1.weeks": "الأسابيع 1-4",
+    "conversational.month2.name": "🗓️ الشهر الثاني",
+    "conversational.month2.weeks": "الأسابيع 5-8",
+    "conversational.month3.name": "🗓️ الشهر الثالث",
+    "conversational.month3.weeks": "الأسابيع 9-12",
+    "conversational.notes.title": "📢 ملاحظات هامة للمعلمين",
+    "conversational.note1.title": "ℹ️ المرونة في الأهداف",
     "conversational.note1.text": "يمكن للمعلمين إضافة أو استبدال بعض الأهداف الرئيسية طالما أنهم على المسار الصحيح للموضوع الرئيسي.",
-    "conversational.note2.title": "التزام موحد",
+    "conversational.note2.title": "⚠️ التزام موحد",
     "conversational.note2.text": "يجب على جميع أعضاء قسم اللغة الإنجليزية العمل على نفس الخطة الأسبوعية كما هو مطلوب من الإدارة.",
-    "conversational.action.download": "تحميل الخطة (PDF)",
-    "conversational.action.open": "فتح في نافذة جديدة",
-    "conversational.pdf.fallback": "هذا المتصفح لا يدعم عرض ملفات PDF. يرجى تحميل الملف لعرضه:",
-    "conversational.pdf.downloadLink": "تحميل PDF",
-    "conversational.card.category": "خطة دراسية",
+    "conversational.download.desc": "للاطلاع على التفاصيل الكاملة للخطة الفصلية:",
+    "conversational.download.btn": "⬇️ تحميل الخطة التفصيلية (PDF)",
+    "conversational.card.category": "خطة تشاركية",
     "conversational.card.title": "برنامج المحادثة (3 أشهر)",
-    "conversational.card.excerpt": "الخطة الأسبوعية الموحدة لقسم اللغة الإنجليزية، تشمل الأهداف والملاحظات الهامة.",
-    "conversational.card.date": "ديسمبر 2025 - مارس 2026"
+    "conversational.card.excerpt": "خطة فصلية مبنية على تصويت المعلمين - 15 موضوع محادثة لـ 3 أشهر.",
+    "conversational.card.date": "ديسمبر 2025 - مارس 2026",
+
+    // Full Schedule Page
+    "schedule.title": "📅 برنامج المحادثة - 3 أشهر",
+    "schedule.subtitle": "الجدول التفصيلي - معهد بلاك جولد العالي",
+    "schedule.weeks": "أسبوع",
+    "schedule.topics": "موضوع",
+    "schedule.days": "يوم",
+    "schedule.sunThu": "أحد-خميس",
+    "schedule.scheduleLabel": "الجدول",
+    "schedule.printBtn": "🖨️ طباعة / حفظ PDF",
+    "schedule.backBtn": "← العودة للتقرير",
+    "schedule.notesTitle": "💡 نصائح للمعلمين",
+    "schedule.note1": "اجعل الجمل قصيرة وبسيطة",
+    "schedule.note2": "استخدم الصور والإيماءات للمفردات الجديدة",
+    "schedule.note3": "مارس التكرار - الطلاب يحتاجون لسماع الكلمات مرات عديدة",
+    "schedule.note4": "اسمح بالأخطاء - ركز على التواصل وليس الكمال",
+    "schedule.note5": "استخدم أشياء حقيقية عند الإمكان (قائمة حقيقية، ملابس حقيقية، إلخ)",
+    "schedule.footer1": "📚 قسم اللغة الإنجليزية | معهد بلاك جولد العالي",
+    "schedule.footer2": "برنامج المحادثة لـ 3 أشهر | ديسمبر 2024 - مارس 2025",
+
+    // Time Summary
+    "summary.m1": "📊 <strong style='color: #D4AF37;'>الشهر الأول:</strong> 20 يوم",
+    "summary.m2": "📊 <strong style='color: #D4AF37;'>الشهر الثاني:</strong> 22 يوم",
+    "summary.m3": "📊 <strong style='color: #D4AF37;'>الشهر الثالث:</strong> 20 يوم",
+    "summary.total": "📊 <strong style='color: #D4AF37;'>المجموع:</strong> 62 يوم (12.4 أسبوع)"
   },
 
   en: {
+    // Sidebar
+    "sidebar.title": "English Department",
+    "sidebar.subtitle": "Blackgold High Institute",
+
     // Navigation
     "nav.home": "Home",
     "nav.reports": "Weekly Reports",
     "nav.blog": "Articles",
     "nav.resources": "Resources",
     "nav.about": "About",
+    "nav.mainMenu": "Main Menu",
+    "nav.content": "Content",
 
     // Section titles
     "section.main": "Main Menu",
@@ -750,20 +807,65 @@ const translations = {
 
     // 3 Months Conversational Program
     "conversational.program.title": "3 Months Conversational Program",
-    "conversational.program.subtitle": "Unified Weekly Plan for English Department",
-    "conversational.notes.title": "Important Notes for Teachers",
-    "conversational.note1.title": "Flexibility",
+    "conversational.program.subtitle": "Collaborative Semester Plan Based on Teacher Voting",
+    "conversational.stat.topics": "Topics Proposed",
+    "conversational.stat.teachers": "Teachers Voted",
+    "conversational.stat.votes": "Total Votes",
+    "conversational.stat.selected": "Topics Selected",
+    "conversational.process.title": "📋 Collaborative Selection Process",
+    "conversational.step1.title": "Gather Topics",
+    "conversational.step1.desc": "21 conversation topics proposed",
+    "conversational.step2.title": "Teacher Voting",
+    "conversational.step2.desc": "9 teachers participated in voting",
+    "conversational.step3.title": "Analyze Results",
+    "conversational.step3.desc": "Ranked by number of votes",
+    "conversational.step4.title": "Select Best",
+    "conversational.step4.desc": "Top 12 topics for semester plan",
+    "conversational.votes.title": "📊 Voting Results (21 Topics)",
+    "conversational.votes.legend": "Gold topics = Selected for semester plan | Gray topics = Reserve for future semesters",
+    "conversational.schedule.title": "📅 Semester Plan (3 Months)",
+    "conversational.month1.name": "🗓️ Month 1",
+    "conversational.month1.weeks": "Weeks 1-4",
+    "conversational.month2.name": "🗓️ Month 2",
+    "conversational.month2.weeks": "Weeks 5-8",
+    "conversational.month3.name": "🗓️ Month 3",
+    "conversational.month3.weeks": "Weeks 9-12",
+    "conversational.notes.title": "📢 Important Notes for Teachers",
+    "conversational.note1.title": "ℹ️ Flexibility",
     "conversational.note1.text": "Teachers can add to or replace some key objectives as long as they are on the same track of the main topic.",
-    "conversational.note2.title": "Unified Commitment",
+    "conversational.note2.title": "⚠️ Unified Commitment",
     "conversational.note2.text": "All English Department members must work on the same weekly plan as required by the administration.",
-    "conversational.action.download": "Download Plan (PDF)",
-    "conversational.action.open": "Open in New Window",
-    "conversational.pdf.fallback": "This browser does not support PDFs. Please download the PDF to view it:",
-    "conversational.pdf.downloadLink": "Download PDF",
-    "conversational.card.category": "Study Plan",
+    "conversational.download.desc": "For complete details of the semester plan:",
+    "conversational.download.btn": "⬇️ Download Detailed Plan (PDF)",
+    "conversational.card.category": "Collaborative Plan",
     "conversational.card.title": "3 Months Conversational Program",
-    "conversational.card.excerpt": "Unified weekly plan for the English Department, including objectives and important notes.",
-    "conversational.card.date": "December 2025 - March 2026"
+    "conversational.card.excerpt": "Semester plan based on teacher voting - 15 conversation topics for 3 months.",
+    "conversational.card.date": "December 2025 - March 2026",
+
+    // Full Schedule Page
+    "schedule.title": "📅 3-Month Conversational Program",
+    "schedule.subtitle": "Full Schedule - Blackgold High Institute",
+    "schedule.weeks": "Weeks",
+    "schedule.topics": "Topics",
+    "schedule.days": "Days",
+    "schedule.sunThu": "Sun-Thu",
+    "schedule.scheduleLabel": "Schedule",
+    "schedule.printBtn": "🖨️ Print / Save as PDF",
+    "schedule.backBtn": "← Back to Report",
+    "schedule.notesTitle": "💡 Tips for Teachers",
+    "schedule.note1": "Keep sentences SHORT and SIMPLE",
+    "schedule.note2": "Use PICTURES and GESTURES for new vocabulary",
+    "schedule.note3": "Practice REPETITION - students need to hear words many times",
+    "schedule.note4": "Allow MISTAKES - focus on communication, not perfection",
+    "schedule.note5": "Use REAL objects when possible (real menu, real clothes, etc.)",
+    "schedule.footer1": "📚 English Department | Blackgold High Institute",
+    "schedule.footer2": "3-Month Conversational Program | December 2024 - March 2025",
+
+    // Time Summary
+    "summary.m1": "📊 <strong style='color: #D4AF37;'>Month 1:</strong> 20 days",
+    "summary.m2": "📊 <strong style='color: #D4AF37;'>Month 2:</strong> 22 days",
+    "summary.m3": "📊 <strong style='color: #D4AF37;'>Month 3:</strong> 20 days",
+    "summary.total": "📊 <strong style='color: #D4AF37;'>Total:</strong> 62 days (12.4 weeks)"
   }
 };
 
@@ -804,7 +906,13 @@ function setLanguage(lang) {
 function updateTranslations() {
   document.querySelectorAll('[data-i18n]').forEach(element => {
     const key = element.getAttribute('data-i18n');
-    element.textContent = t(key);
+    const translation = t(key);
+    // Check if translation contains HTML tags
+    if (translation.includes('<') && translation.includes('>')) {
+      element.innerHTML = translation;
+    } else {
+      element.textContent = translation;
+    }
   });
 
   // Update placeholders
