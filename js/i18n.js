@@ -111,6 +111,8 @@ const translations = {
     "teachersWeekly01.title": "📊 تقرير أداء المعلمين الأسبوعي",
     "teachersWeekly01.subtitle": "قسم اللغة الإنجليزية - معهد الذهب الأسود العالي",
     "teachersWeekly01.excerpt": "تقييم أسبوعي شامل لـ 8 معلمين، يشمل الأهداف والأدلة وتقييم الجودة...",
+    "teachersWeekly02.date": "21 - 25 ديسمبر 2025",
+    "teachersWeekly02.week": "📅 الأسبوع الثالث: 21 - 25 ديسمبر 2025",
     "teachersWeekly01.date": "7-11 ديسمبر 2025",
     "teachersWeekly01.week": "📅 الأسبوع الأول: 7 - 11 ديسمبر 2025",
     "teachersWeekly01.stat.teachers": "معلمين تمت مراجعتهم",
@@ -120,6 +122,8 @@ const translations = {
     "teachersWeekly01.drive.title": "عرض التقارير الأصلية",
     "teachersWeekly01.drive.desc": "الوصول إلى جميع ملفات عمل المعلمين على Google Drive",
     "teachersWeekly01.drive.btn": "📁 فتح Google Drive",
+    "teachersWeekly02.status.gap": "⚠️ نقص في الأدلة",
+
     "teachersWeekly01.status.complete": "✓ مكتمل",
     "teachersWeekly01.status.partial": "⚠️ جزئي",
     "teachersWeekly01.status.inprogress": "🔄 قيد التنفيذ",
@@ -186,7 +190,23 @@ const translations = {
     "teachersWeekly01.label.workplace": "مكان العمل",
     "teachersWeekly01.label.emergency": "الطوارئ",
 
-    // Teacher 1: Dr. Sharaf Content
+
+    // Teacher 1: Dr. Sharaf Content (Week 2)
+    "tw02.t1.obj1": "مهارات الحياة اليومية: الوقت، الهوايات، والطعام",
+    "tw02.t1.obj2": "استخدام عبارات مهذبة للطلب (\"أود الحصول على...\"، \"هل يمكنني الحصول على...؟\")",
+    "tw02.t1.obj3": "ممارسة وصف الروتين اليومي (صباح/مساء)",
+    "tw02.t1.topic1": "الوقت والروتين: الوقت، نصف، الروتين الصباحي/الليلي",
+    "tw02.t1.topic2": "الهوايات: أفعال \"يحب\" و \"يستمتع\" مع الرياضة والفنون",
+    "tw02.t1.topic3": "طلب الطعام: عبارات مهذبة وسيناريو الزبون/النادل",
+    "tw02.t1.materials": "عرض تقديمي (الوقت والهوايات)، أوراق عمل (مطابقة، استمارة شخصية)، فيديو يوتيوب للنطق",
+    "tw02.t1.qualityTitle": "تحليل الجودة",
+    "tw02.t1.qualityDesc": "الخطة الدراسية تتبع تسلسلاً منطقياً جداً (الوقت ← الروتين ← الطعام). أوراق العمل ممتازة وتدعم الهدف التعليمي.",
+    "tw02.t1.challengeTitle": "نقص الأدلة",
+    "tw02.t1.challengeDesc": "لم يتم تقديم أي فيديو أو صور للفصل الفعلي أو أداء الطلاب (خاصة للعب الأدوار).",
+    "tw02.t1.actionTitle": "الإجراء المطلوب",
+    "tw02.t1.actionDesc": "يجب تشجيع المعلم على تسجيل لعب الأدوار (مثل حوار المطعم) لإثبات تقدم الطلاب.",
+
+    // Teacher 1: Dr. Sharaf Content (Week 1)
     "tw01.t1.obj1": "تقديم التحيات الأساسية والوداع (\"مرحباً\"، \"صباح الخير\"، \"وداعاً\")",
     "tw01.t1.obj2": "تعليم الأبجدية الإنجليزية والصوتيات الأساسية",
     "tw01.t1.obj3": "ممارسة أسئلة وأجوبة المعلومات الشخصية (\"ما اسمك؟\"، \"أنا...\")",
@@ -201,7 +221,36 @@ const translations = {
     "tw01.t1.quote": "\"كان الأسبوع الأول ناجحاً جداً في تأسيس جو صفي إيجابي. المتدربون متحمسون ومستعدون لتعلم المزيد.\"",
     "tw01.t1.caption1": "تقرير أسبوعي",
 
-    // Teacher 2: Mr. Ahmed Content  
+
+    // Teacher 2: Mr. Ahmed Content (Week 2)
+    "tw02.t2.obj1": "أفعال الحركة: استخدام أفعال مثل (يجري، يقفز، يأكل، يلعب)",
+    "tw02.t2.obj2": "الأفعال المساعدة: استخدام (am/is/are) مع الضمائر",
+    "tw02.t2.obj3": "تركيب الجمل: ربط الفاعل بالفعل المساعد + الفعل (I am running)",
+    "tw02.t2.obj4": "التعلم باللعب: ألعاب المحاكاة والبنغو لتعزيز المفردات",
+    "tw02.t2.topic1": "أفعال الحركة (لعبة المحاكاة والتمثيل الصامت)",
+    "tw02.t2.topic2": "الأفعال المساعدة (am/is/are) وعلاقتها بالفاعل",
+    "tw02.t2.topic3": "تكوين الجمل البسيطة (فاعل + فعل مساعد + فعل)",
+    "tw02.t2.materials": "عرض تقديمي (أفعال الحركة)، أوراق عمل (بنغو، ترتيب الكلمات، مطابقة الصور)",
+    "tw02.t2.qualityTitle": "تحليل الجودة",
+    "tw02.t2.qualityDesc": "استخدام ممتاز للتلعيب (Bingo, Charades) لترسيخ القواعد. التدرج من الأفعال البسيطة إلى الجمل الكاملة نهج تعليمي قوي.",
+    "tw02.t2.challengeTitle": "نقص التوثيق",
+    "tw02.t2.challengeDesc": "الخطة تتضمن ألعاباً تفاعلية (Charades, Bingo) مثالية للتصوير، لكن لم يتم تقديم أي فيديو.",
+    "tw02.t2.actionTitle": "تذكير",
+    "tw02.t2.actionDesc": "هذه لحظات مثالية لتصوير تفاعل الطلاب. يجب تذكير المعلم بتوثيق هذه الأنشطة.",
+
+    // Teacher 5: Mr. Mostafa Content (Week 3)
+    "tw02.t5.obj1": "تعلم عبارات التقديم الأساسية",
+    "tw02.t5.obj2": "مشاهدة نماذج يوتيوب (رابط خارجي)",
+    "tw02.t5.obj3": "التركيز على \"التغلب على الخوف من التحدث\"",
+    "tw02.t5.topic1": "التقديم الذاتي",
+    "tw02.t5.topic2": "بناء الثقة (نظرياً)",
+    "tw02.t5.materials": "فيديوهات يوتيوب (غير مرفقة كملفات)",
+    "tw02.t5.qualityTitle": "نقص الأدلة الحرج",
+    "tw02.t5.qualityDesc": "الهدف جيد (التغلب على الخوف)، لكن لا يوجد أي دليل (لا فيديو ولا صور) يثبت حدوث ذلك فعلياً.",
+    "tw02.t5.actionTitle": "إجراء مطلوب: تواريخ وأدلة",
+    "tw02.t5.actionDesc": "يجب تأريخ التقارير (التقرير الحالي غير مؤرخ). تقرير يدعي \"التغلب على الخوف\" غير كافٍ؛ نحتاج لرؤية فيديو للطلاب يتحدثون.",
+
+    // Teacher 2: Mr. Ahmed Content (Week 1)
     "tw01.t2.obj1": "تقديم التحيات الأساسية (مرحباً، صباح الخير، مساء الخير، مساء الخير، تصبح على خير، وداعاً)",
     "tw01.t2.obj2": "تعليم وتعزيز الأبجدية الإنجليزية والصوتيات الأساسية",
     "tw01.t2.obj3": "ممارسة أسئلة وأجوبة المعلومات الشخصية (كيف حالك؟ من أين أنت؟ إلخ)",
@@ -215,7 +264,22 @@ const translations = {
     "tw01.t2.adjustmentDesc": "الأسبوع القادم سيتضمن المزيد من التكرار على تراكيب الجمل البسيطة.",
     "tw01.t2.caption1": "تقرير التقدم الأسبوعي",
 
-    // Teacher 3: Mr. Ali Content
+    // Teacher 3: Mr. Ali Content (Week 2)
+    "tw02.t3.obj1": "الأرقام: تعلم الأرقام وكتابتها (الإملاء) والتمييز بينها",
+    "tw02.t3.obj2": "القواعد: فعل الكينونة (To Be) في المضارع البسيط (الإثبات والنفي)",
+    "tw02.t3.obj3": "الإنجليزية المواقفية: سيناريو عملي \"في متجر الملابس\"",
+    "tw02.t3.topic1": "التمييز بين الأرقام (13-19) و (20-90) ونطقها الصحيح",
+    "tw02.t3.topic2": "إملاء الأرقام (1-13) وربط الرقم بالكلمة",
+    "tw02.t3.topic3": "استخدام (am, is, are) و (am not, isn't, aren't)",
+    "tw02.t3.materials": "السبورة الذكية (شرح ملون)، فيديوهات تدريبية للنطق",
+    "tw02.t3.qualityTitle": "تحليل الجودة",
+    "tw02.t3.qualityDesc": "الفيديوهات تظهر فصلاً نشطاً يركز على التكرار وتصحيح النطق (خاصة صوت th). ملاحظات السبورة ممتازة وتوضح الفرق بين (-teen) و (-ty) بشكل بصري رائع.",
+    "tw02.t3.strengthTitle": "نقاط القوة",
+    "tw02.t3.strengthDesc": "الجمع بين محو الأمية الأساسية (الأرقام) والقواعد العملية. التوقع لخطأ الطلاب الشائع في الأرقام ومعالجته بالسبورة.",
+    "tw02.t3.actionTitle": "توجيه",
+    "tw02.t3.actionDesc": "يجب التأكد من تصوير سيناريو \"متجر الملابس\" في المرات القادمة كدليل على ممارسة الطلاقة.",
+
+    // Teacher 3: Mr. Ali Content (Week 1)
     "tw01.t3.modelTitle": "⭐ تقديم نموذجي - نهج \"الخطة + الدليل\"",
     "tw01.t3.modelDesc": "قدم أ. علي كلاً من التخطيط التعليمي والأدلة المرئية لتنفيذ الفصل. يجب تسليط الضوء على هذا كنموذج للمعلمين الآخرين.",
     "tw01.t3.scenario1": "تسجيل الوصول في المطار",
@@ -433,6 +497,64 @@ const translations = {
     "summary.m1": "📊 <strong style='color: #D4AF37;'>الشهر الأول:</strong> 20 يوم",
     "summary.m2": "📊 <strong style='color: #D4AF37;'>الشهر الثاني:</strong> 22 يوم",
     "summary.m3": "📊 <strong style='color: #D4AF37;'>الشهر الثالث:</strong> 20 يوم",
+    // Teacher 4: Mr. Mohammed (Week 2 - No Submission)
+    "tw02.t4.errorTitle": "خطأ في التقديم",
+    "tw02.t4.errorDesc": "يبدو أن المعلم حاول إنشاء هيكل للأسبوع ولكن لم يتم رفع المحتوى الفعلي.",
+    "tw02.t4.actionTitle": "إجراء فوري مطلوب",
+    "tw02.t4.actionDesc": "متابعة فورية للتأكد من رفع خطط الدروس والأدلة.",
+
+    // Teacher 6: Mr. Tawfeek Content (Week 2)
+    "tw02.t6.obj1": "المقارنات: Likes / Dislikes",
+    "tw02.t6.obj2": "استخدام (don't mind / can't stand)",
+    "tw02.t6.obj3": "مسابقة تفاعلية Friendly Quiz",
+    "tw02.t6.topic1": "التعبير عن التفضيلات",
+    "tw02.t6.topic2": "منافسة الفرق (Team Competition)",
+    "tw02.t6.materials": "عرض تقديمي (PPT)، أوراق عمل للاختبار",
+    "tw02.t6.qualityTitle": "تحليل الجودة",
+    "tw02.t6.qualityDesc": "التلعيب (Gamification) كان ممتازاً لكسر الجمود. تقسيم الفصل لفرق يزيد الحماس.",
+    "tw02.t6.challengeTitle": "نقص التوثيق",
+    "tw02.t6.challengeDesc": "المسابقة كانت رائعة ولكن لم يتم تصوير التفاعل الحماسي.",
+    "tw02.t6.actionTitle": "إجراء مطلوب",
+    "tw02.t6.actionDesc": "يجب تصوير جولة واحدة من المسابقة لإظهار تفاعل الطلاب.",
+
+    // Teacher 7: Mr. Youssef Content (Week 2)
+    "tw02.t7.name": "أ. يوسف الفاهم",
+    "tw02.t7.course": "قواعد متوسطة",
+    "tw02.t7.obj1": "قواعد متوسطة: حروف الجر (Prepositions)",
+    "tw02.t7.obj2": "أدوات التعريف والتنكير (Articles)",
+    "tw02.t7.obj3": "المقارنة والتفضيل (Comparatives/Superlatives)",
+    "tw02.t7.topic1": "شرح حروف الجر (in, on, at)",
+    "tw02.t7.topic2": "مقارنة الصفات (Big, Bigger, Biggest)",
+    "tw02.t7.materials": "سبورة ذكية (شرح قواعد)، تسجيلات صوتية للطلاب",
+    "tw02.t7.qualityTitle": "تحليل الجودة",
+    "tw02.t7.qualityDesc": "المعلم تكيف بذكاء مع خجل الطلاب من الكاميرا باستخدام التسجيل الصوتي وتصوير الشاشة.",
+    "tw02.t7.strengthTitle": "نقاط القوة",
+    "tw02.t7.strengthDesc": "مرونة في التوثيق (Screen recording) واحترام خصوصية الطلاب.",
+
+    // Teacher 8 Content (Week 2)
+    "tw02.t8.obj1": "الطبية: أجزاء الجسم، الأمراض",
+    "tw02.t8.obj2": "لعب الأدوار: موظف استقبال ومريض",
+    "tw02.t8.obj3": "حجز المواعيد",
+    "tw02.t8.topic1": "مصطلحات طبية (حمى، رأس)",
+    "tw02.t8.topic2": "سيناريوهات عملية (قياس الحرارة)",
+    "tw02.t8.materials": "شرائح طبية احترافية، نصوص حوارية",
+    "tw02.t8.qualityTitle": "أسبوع نموذجي",
+    "tw02.t8.qualityDesc": "وحدة طبية قوية جداً. الفيديوهات تثبت أن الطلاب يمثلون الأدوار.",
+    "tw02.t8.strengthTitle": "التركيز الظرفي",
+    "tw02.t8.strengthDesc": "شرائح 'نصائح الطلاب' ممتازة للدراسة الذاتية.",
+    // Teacher 8 Captions (Week 2)
+    "tw02.t8.caption1": "لعب أدوار: ممرضة ومريض",
+    "tw02.t8.caption2": "شرائح المفردات الطبية",
+
+    // Teacher 9: Ms. Balsam (Week 2 - No Submission)
+    "teachersWeekly01.t9.name": "أ. بلسم",
+    "teachersWeekly01.t9.course": "اللغة الإنجليزية العامة",
+    "teachersWeekly02.status.missing": "❌ لم يتم التقديم",
+    "tw02.t9.errorTitle": "لم يتم التقديم",
+    "tw02.t9.errorDesc": "لم تقم المعلمة برفع التقرير الأسبوعي لهذا الأسبوع.",
+    "tw02.t9.actionTitle": "إجراء مطلوب",
+    "tw02.t9.actionDesc": "يرجى التواصل مع المعلمة لمعرفة سبب التأخير وطلب رفع التقرير في أقرب وقت.",
+
     "summary.total": "📊 <strong style='color: #D4AF37;'>المجموع:</strong> 62 يوم (12.4 أسبوع)"
   },
 
@@ -498,7 +620,7 @@ const translations = {
 
     "meeting01.section2.title": "📝 Weekly Reports",
     "meeting01.section2.content": "Each teacher in the English department should submit a weekly report about their work and students' progress. All reports are saved in one folder that can be accessed through Google Drive.",
-    "meeting01.section2.content1": "Each teacher in the English department should submit a weekly report about their work and students' progress. All reports are saved in one folder that can be accessed through",
+    "meeting001.section2.content1": "Each teacher in the English department should submit a weekly report about their work and students' progress. All reports are saved in one folder that can be accessed through",
 
     "meeting01.section3.title": "🎯 Classroom Materials",
     "meeting01.section3.intro": "Teachers were asked to report any shortage of classroom materials such as:",
@@ -543,6 +665,8 @@ const translations = {
     "teachersWeekly01.title": "📊 Weekly Teachers Performance Report",
     "teachersWeekly01.subtitle": "English Department - Blackgold High Institute",
     "teachersWeekly01.excerpt": "Comprehensive weekly assessment of 8 teachers, including objectives, evidence, and quality ratings...",
+    "teachersWeekly02.date": "Dec 21 - 25, 2025",
+    "teachersWeekly02.week": "📅 Week 3: December 21 - 25, 2025",
     "teachersWeekly01.date": "Dec 7-11, 2025",
     "teachersWeekly01.week": "📅 Week 1: December 7 - 11, 2025",
     "teachersWeekly01.stat.teachers": "Teachers Reviewed",
@@ -552,6 +676,7 @@ const translations = {
     "teachersWeekly01.drive.title": "View Original Submissions",
     "teachersWeekly01.drive.desc": "Access all teachers' work files on Google Drive",
     "teachersWeekly01.drive.btn": "📁 Open Google Drive",
+    "teachersWeekly02.status.gap": "⚠️ Missing Evidence",
     "teachersWeekly01.status.complete": "✓ Complete",
     "teachersWeekly01.status.partial": "⚠️ Partial",
     "teachersWeekly01.status.inprogress": "🔄 In Progress",
@@ -618,7 +743,23 @@ const translations = {
     "teachersWeekly01.label.workplace": "Workplace",
     "teachersWeekly01.label.emergency": "Emergency",
 
-    // Teacher 1: Dr. Sharaf Content
+
+    // Teacher 1: Dr. Sharaf Content (Week 2)
+    "tw02.t1.obj1": "Daily Life Skills: Time, Hobbies, and Food",
+    "tw02.t1.obj2": "Use polite phrases for ordering (\"I'd like...\", \"Can I have...?\")",
+    "tw02.t1.obj3": "Practice describing daily routines (morning/night)",
+    "tw02.t1.topic1": "Time & Routine: o'clock, half past, morning/night routines",
+    "tw02.t1.topic2": "Hobbies: verbs 'like' & 'enjoy' with sports/arts",
+    "tw02.t1.topic3": "Ordering Food: Polite phrases & Customer/Waiter scenario",
+    "tw02.t1.materials": "PPT (Time & Hobbies), Worksheets (Matching, Personal Form), YouTube links for pronunciation",
+    "tw02.t1.qualityTitle": "Quality Analysis",
+    "tw02.t1.qualityDesc": "The lesson plan follows a very logical progression (Time → Routine → Food). The worksheets are excellent and directly support the learning goal.",
+    "tw02.t1.challengeTitle": "Missing Evidence",
+    "tw02.t1.challengeDesc": "No video or photo evidence of the actual class or student performance (especially role-plays) was submitted.",
+    "tw02.t1.actionTitle": "Action Required",
+    "tw02.t1.actionDesc": "Teacher should be encouraged to record role-plays (e.g., restaurant dialogue) to demonstrate student progress.",
+
+    // Teacher 1: Dr. Sharaf Content (Week 1)
     "tw01.t1.obj1": "Introduce basic greetings and farewells (\"Hello,\" \"Good morning,\" \"Goodbye\")",
     "tw01.t1.obj2": "Teach the English alphabet and basic phonics",
     "tw01.t1.obj3": "Practice personal information Q&A (\"What is your name?\", \"I am...\")",
@@ -633,7 +774,36 @@ const translations = {
     "tw01.t1.quote": "\"The first week was very successful in establishing a positive classroom atmosphere. Trainees are enthusiastic and ready to learn more.\"",
     "tw01.t1.caption1": "Weekly Report",
 
-    // Teacher 2: Mr. Ahmed Content  
+
+    // Teacher 2: Mr. Ahmed Content (Week 2)
+    "tw02.t2.obj1": "Action Verbs: Identify and use verbs (run, jump, eat, play)",
+    "tw02.t2.obj2": "Helping Verbs: Focus on am/is/are regarding subjects",
+    "tw02.t2.obj3": "Sentence Structure: Subject + Helping Verb + Action Verb (I am running)",
+    "tw02.t2.obj4": "Gamification: 'Say & act game' and 'Verb charades' for vocabulary",
+    "tw02.t2.topic1": "Action Verbs (Charades & Acting Game)",
+    "tw02.t2.topic2": "Helping Verbs (am/is/are) usage",
+    "tw02.t2.topic3": "Simple Sentences construction",
+    "tw02.t2.materials": "PPT (Action Verbs), Worksheets (Bingo, Unscramble, Matching)",
+    "tw02.t2.qualityTitle": "Quality Analysis",
+    "tw02.t2.qualityDesc": "Excellent use of gamification (Bingo, Charades) to stick grammar concepts. The progression from simple verbs to sentences is a strong approach.",
+    "tw02.t2.challengeTitle": "Missing Evidence",
+    "tw02.t2.challengeDesc": "The plan includes highly visual games (Charades, Bingo), but no video evidence was submitted.",
+    "tw02.t2.actionTitle": "Reminder",
+    "tw02.t2.actionDesc": "These are perfect moments to capture on video. Teacher should be reminded to record these interactive segments.",
+
+    // Teacher 5: Mr. Mostafa Content (Week 3)
+    "tw02.t5.obj1": "Learn basic introductory phrases",
+    "tw02.t5.obj2": "Watch YouTube examples (External links)",
+    "tw02.t5.obj3": "Focus on \"overcoming the fear of speaking\"",
+    "tw02.t5.topic1": "Self-Introduction",
+    "tw02.t5.topic2": "Building confidence (Theoretical)",
+    "tw02.t5.materials": "YouTube videos (Not uploaded)",
+    "tw02.t5.qualityTitle": "Critical Missing Evidence",
+    "tw02.t5.qualityDesc": "Objective is good (overcoming fear), but there is ZERO evidence (no video, no photos) that this actually happened.",
+    "tw02.t5.actionTitle": "Action Required: Dates & Evidence",
+    "tw02.t5.actionDesc": "Reports must be dated. A report claiming students overcame fear is not enough; we need to see the video of them speaking.",
+
+    // Teacher 2: Mr. Ahmed Content (Week 1)
     "tw01.t2.obj1": "Introduce basic greetings (Hello, Good morning, Good afternoon, Good evening, Good night, Goodbye)",
     "tw01.t2.obj2": "Teach and reinforce the English alphabet and basic phonics",
     "tw01.t2.obj3": "Practice personal information Q&A (How are you? Where are you from? etc.)",
@@ -647,7 +817,22 @@ const translations = {
     "tw01.t2.adjustmentDesc": "Next week will include more repetition on simple sentence structures.",
     "tw01.t2.caption1": "Weekly Progress Report",
 
-    // Teacher 3: Mr. Ali Content
+    // Teacher 3: Mr. Ali Content (Week 2)
+    "tw02.t3.obj1": "Numbers: Learning figures, spelling, and differentiation",
+    "tw02.t3.obj2": "Grammar: Verb 'To Be' in Present Simple (Affirmative & Negative)",
+    "tw02.t3.obj3": "Situational English: Practical scenario 'At a clothes shop'",
+    "tw02.t3.topic1": "Differentiating numbers (13-19) vs (20-90) & pronunciation",
+    "tw02.t3.topic2": "Spelling numbers (1-13) and connecting digits to words",
+    "tw02.t3.topic3": "Using (am, is, are) and (am not, isn't, aren't)",
+    "tw02.t3.materials": "Smartboard (Color-coded notes), Pronunciation drilling videos",
+    "tw02.t3.qualityTitle": "Quality Analysis",
+    "tw02.t3.qualityDesc": "Videos show an active class focused on repetition & pronunciation (th- sound). Board notes are excellent, visually separating (-teen) vs (-ty).",
+    "tw02.t3.strengthTitle": "Strengths",
+    "tw02.t3.strengthDesc": "Combining basic literacy (numbers) with practical grammar. Anticipating common student errors (-teen vs -ty) and addressing them visually.",
+    "tw02.t3.actionTitle": "Action Required",
+    "tw02.t3.actionDesc": "Ensure the 'Clothes Shop' role-play is captured in future videos to demonstrate fluency practice.",
+
+    // Teacher 3: Mr. Ali Content (Week 1)
     "tw01.t3.modelTitle": "⭐ Model Submission - \"Plan + Proof\" Approach",
     "tw01.t3.modelDesc": "Mr. Ali provided both instructional planning and visual evidence of classroom execution. This should be highlighted as a model for other teachers.",
     "tw01.t3.scenario1": "Checking in at the airport",
@@ -865,6 +1050,63 @@ const translations = {
     "summary.m1": "📊 <strong style='color: #D4AF37;'>Month 1:</strong> 20 days",
     "summary.m2": "📊 <strong style='color: #D4AF37;'>Month 2:</strong> 22 days",
     "summary.m3": "📊 <strong style='color: #D4AF37;'>Month 3:</strong> 20 days",
+    // Teacher 4: Mr. Mohammed (Week 2 - No Submission)
+    "tw02.t4.errorTitle": "Submission Error",
+    "tw02.t4.errorDesc": "Teacher attempted to create the structure but no actual content was uploaded.",
+    "tw02.t4.actionTitle": "Immediate Action Required",
+    "tw02.t4.actionDesc": "Immediate follow-up to ensure lesson plans are uploaded.",
+
+    // Teacher 6: Mr. Tawfeek Content (Week 2)
+    "tw02.t6.obj1": "Comparisons: Likes / Dislikes",
+    "tw02.t6.obj2": "Phrases (don't mind / can't stand)",
+    "tw02.t6.obj3": "Friendly Quiz Competition",
+    "tw02.t6.topic1": "Expressing Preferences",
+    "tw02.t6.topic2": "Team Competition",
+    "tw02.t6.materials": "PPT Presentation, Quiz Worksheets",
+    "tw02.t6.qualityTitle": "Quality Analysis",
+    "tw02.t6.qualityDesc": "Gamification was excellent for ice-breaking. Dividing class into teams boosted energy.",
+    "tw02.t6.challengeTitle": "Missing Evidence",
+    "tw02.t6.challengeDesc": "The competition was great but the enthusiastic interaction was not captured on video.",
+    "tw02.t6.actionTitle": "Action Required",
+    "tw02.t6.actionDesc": "Record one round of the quiz to show student engagement.",
+
+    // Teacher 7: Mr. Youssef Content (Week 2)
+    "tw02.t7.name": "Mr. Youssef El-Fahem",
+    "tw02.t7.course": "Intermediate Grammar",
+    "tw02.t7.obj1": "Intermediate Grammar: Prepositions",
+    "tw02.t7.obj2": "Articles (a/an/the)",
+    "tw02.t7.obj3": "Comparatives & Superlatives",
+    "tw02.t7.topic1": "Prepositions logic (in, on, at)",
+    "tw02.t7.topic2": "Adjective Comparison (Big, Bigger, Biggest)",
+    "tw02.t7.materials": "Smartboard (Grammar), Student Voice Recordings",
+    "tw02.t7.qualityTitle": "Quality Analysis",
+    "tw02.t7.qualityDesc": "Teacher adapted smartly to camera-shy students by using voice recordings and screen capture.",
+    "tw02.t7.strengthTitle": "Strengths",
+    "tw02.t7.strengthDesc": "Flexibility in documentation (Screen recording) respecting student privacy.",
+
+    // Teacher 8 Content (Week 2)
+    "tw02.t8.obj1": "Medical: Body Parts, Diseases",
+    "tw02.t8.obj2": "Role Play: Receptionist & Patient",
+    "tw02.t8.obj3": "Booking Appointments",
+    "tw02.t8.topic1": "Medical Terminology (Fever, Head)",
+    "tw02.t8.topic2": "Practical Scenarios (Taking Temp)",
+    "tw02.t8.materials": "Professional Medical Slides, Dialogues",
+    "tw02.t8.qualityTitle": "Exemplary Week",
+    "tw02.t8.qualityDesc": "Very strong medical unit. Videos prove students are role-playing.",
+    "tw02.t8.strengthTitle": "Situational Focus",
+    "tw02.t8.strengthDesc": "'Student Tips' slides are excellent for self-study.",
+    "tw02.t8.caption1": "Role Play: Nurse & Patient",
+    "tw02.t8.caption2": "Medical Vocabulary Slides",
+
+    // Teacher 9: Ms. Balsam (Week 2 - No Submission)
+    "teachersWeekly01.t9.name": "Ms. Balsam",
+    "teachersWeekly01.t9.course": "General English",
+    "teachersWeekly02.status.missing": "❌ No Submission",
+    "tw02.t9.errorTitle": "No Submission",
+    "tw02.t9.errorDesc": "The teacher did not upload the weekly report for this week.",
+    "tw02.t9.actionTitle": "Action Required",
+    "tw02.t9.actionDesc": "Please contact the teacher to follow up on the missing submission.",
+
     "summary.total": "📊 <strong style='color: #D4AF37;'>Total:</strong> 62 days (12.4 weeks)"
   }
 };
