@@ -480,6 +480,12 @@ const translations = {
     "conversational.card.excerpt": "خطة فصلية مبنية على تصويت المعلمين - 15 موضوع محادثة لـ 3 أشهر.",
     "conversational.card.date": "ديسمبر 2025 - مارس 2026",
 
+    // Full Schedule Card
+    "fullSchedule.card.category": "🧪 الخطة التجريبية",
+    "fullSchedule.card.title": "📅 الخطة التجريبية التفصيلية",
+    "fullSchedule.card.excerpt": "جدول تفصيلي يومي لبرنامج المحادثة التجريبي يشمل جميع المواضيع والأهداف والأنشطة.",
+    "fullSchedule.card.date": "4 يناير - 2 أبريل 2026",
+
     // Full Schedule Page
     "schedule.title": "📅 برنامج المحادثة - 3 أشهر",
     "schedule.subtitle": "الجدول التفصيلي - معهد بلاك جولد العالي",
@@ -1047,6 +1053,12 @@ const translations = {
     "conversational.card.title": "3 Months Conversational Program",
     "conversational.card.excerpt": "Semester plan based on teacher voting - 15 conversation topics for 3 months.",
     "conversational.card.date": "December 2025 - March 2026",
+
+    // Full Schedule Card
+    "fullSchedule.card.category": "🧪 Experimental Plan",
+    "fullSchedule.card.title": "📅 Experimental Full Schedule",
+    "fullSchedule.card.excerpt": "Detailed daily schedule for the experimental conversational program with real dates.",
+    "fullSchedule.card.date": "January 4 - April 2, 2026",
 
     // Full Schedule Page
     "schedule.title": "📅 3-Month Conversational Program",

@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="3 Months Conversational Program - Full Schedule">
+    <meta name="description" content="3 Months Experimental Conversational Program - Full Schedule">
 
-    <title>الخطة التفصيلية | Full Program Schedule</title>
+    <title>الخطة التجريبية | Experimental Program Schedule</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -174,6 +174,9 @@
             .quick-ref {
                 background: #f8f9fa !important;
                 border: 2px solid #D4AF37 !important;
+                break-inside: avoid !important;
+                page-break-inside: avoid !important;
+                break-before: page !important;
             }
 
             .quick-ref h3 {
@@ -196,15 +199,6 @@
 
             .phrase-text {
                 color: #8B4513 !important;
-            }
-
-            /* Quick reference - keep together */
-            .quick-ref {
-                background: #f8f9fa !important;
-                border: 2px solid #D4AF37 !important;
-                break-inside: avoid !important;
-                page-break-inside: avoid !important;
-                break-before: page !important;
             }
 
             /* Teacher notes - keep together */
@@ -253,6 +247,26 @@
         .schedule-header .subtitle {
             color: #a0a0a0;
             font-size: 1rem;
+        }
+
+        .experimental-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .date-range {
+            color: #D4AF37;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 0.5rem;
         }
 
         .meta-grid {
@@ -415,10 +429,14 @@
         }
 
         .schedule-table th:first-child {
-            width: 70px;
+            width: 100px;
         }
 
         .schedule-table th:nth-child(2) {
+            width: 70px;
+        }
+
+        .schedule-table th:nth-child(3) {
             width: 120px;
         }
 
@@ -426,9 +444,16 @@
             background: rgba(212, 175, 55, 0.05);
         }
 
-        .day-name {
+        .day-date {
             font-weight: 600;
             color: #D4AF37;
+            font-size: 0.9rem;
+        }
+
+        .day-name {
+            font-weight: 500;
+            color: #a0a0a0;
+            font-size: 0.85rem;
         }
 
         .focus-badge {
@@ -630,26 +655,28 @@
                 </a>
 
                 <!-- Header -->
-                <header class="schedule-header">
-                    <h1 data-i18n="schedule.title">📅 3-Month Conversational Program</h1>
-                    <p class="subtitle" data-i18n="schedule.subtitle">Full Schedule - Blackgold High Institute</p>
+                <header class="schedule-header" dir="ltr">
+                    <div class="experimental-badge">🧪 Experimental Program</div>
+                    <h1>📅 3-Month Conversational Program</h1>
+                    <p class="subtitle">Full Schedule - Blackgold High Institute</p>
+                    <p class="date-range">📆 January 4, 2026 — April 2, 2026</p>
 
                     <div class="meta-grid">
                         <div class="meta-item">
                             <div class="number">12</div>
-                            <div class="label" data-i18n="schedule.weeks">Weeks</div>
+                            <div class="label">Weeks</div>
                         </div>
                         <div class="meta-item">
                             <div class="number">13</div>
-                            <div class="label" data-i18n="schedule.topics">Topics</div>
+                            <div class="label">Topics</div>
                         </div>
                         <div class="meta-item">
                             <div class="number">62</div>
-                            <div class="label" data-i18n="schedule.days">Days</div>
+                            <div class="label">Days</div>
                         </div>
                         <div class="meta-item">
-                            <div class="number" data-i18n="schedule.sunThu">Sun-Thu</div>
-                            <div class="label" data-i18n="schedule.scheduleLabel">Schedule</div>
+                            <div class="number">Sun-Thu</div>
+                            <div class="label">Schedule</div>
                         </div>
                     </div>
                 </header>
@@ -657,32 +684,36 @@
                 <!-- Action Buttons -->
                 <div class="action-buttons no-print">
                     <button onclick="window.print()" class="btn btn-primary">
-                        <span data-i18n="schedule.printBtn">🖨️ Print / Save as PDF</span>
+                        <span>🖨️ Print / Save as PDF</span>
                     </button>
                     <a href="index.html" class="btn btn-secondary">
-                        <span data-i18n="schedule.backBtn">← Back to Report</span>
+                        <span>← Back to Report</span>
+                    </a>
+                    <a href="full-schedule-ar.html" class="btn btn-secondary">
+                        <span>🇸🇦 النسخة العربية</span>
                     </a>
                 </div>
 
-                <!-- MONTH 1 -->
+                <!-- MONTH 1: JANUARY 2026 -->
                 <section class="month-section">
                     <div class="month-header">
-                        <h2>🗓️ Month 1: Foundation Topics</h2>
-                        <span class="duration">Weeks 1-4 | 20 Days</span>
+                        <h2>🗓️ Month 1: Foundation Topics (January 2026)</h2>
+                        <span class="duration">Weeks 1-4 | 20 Days | Jan 4 - Feb 5</span>
                     </div>
 
-                    <!-- Week 1 -->
+                    <!-- Week 1: Jan 4-8 -->
                     <div class="week-card">
                         <div class="week-header">
                             <div>
                                 <span class="week-title">Week 1</span>
                                 <span class="week-topic">🍔 How to Order Food at a Restaurant</span>
                             </div>
-                            <span class="week-dates">5 Days</span>
+                            <span class="week-dates">Jan 4-8 | 5 Days</span>
                         </div>
                         <table class="schedule-table">
                             <thead>
                                 <tr>
+                                    <th>Date</th>
                                     <th>Day</th>
                                     <th>Focus</th>
                                     <th>Key Objectives</th>
@@ -690,26 +721,31 @@
                             </thead>
                             <tbody>
                                 <tr>
+                                    <td class="day-date">Jan 4</td>
                                     <td class="day-name">Sun</td>
                                     <td><span class="focus-badge">Vocabulary</span></td>
                                     <td class="objectives">Learn: menu, order, waiter, table, check</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Jan 5</td>
                                     <td class="day-name">Mon</td>
                                     <td><span class="focus-badge">Phrases</span></td>
                                     <td class="objectives">Say: "Can I have...?" / "I want..."</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Jan 6</td>
                                     <td class="day-name">Tue</td>
                                     <td><span class="focus-badge">Numbers</span></td>
                                     <td class="objectives">Count 1-20, understand prices</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Jan 7</td>
                                     <td class="day-name">Wed</td>
                                     <td><span class="focus-badge">Role Play</span></td>
                                     <td class="objectives">Practice ordering with a partner</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Jan 8</td>
                                     <td class="day-name">Thu</td>
                                     <td><span class="focus-badge">Review</span></td>
                                     <td class="objectives">Review all vocabulary and phrases</td>
@@ -718,18 +754,19 @@
                         </table>
                     </div>
 
-                    <!-- Week 2 -->
+                    <!-- Week 2: Jan 11-14 -->
                     <div class="week-card">
                         <div class="week-header">
                             <div>
                                 <span class="week-title">Week 2</span>
                                 <span class="week-topic">📅 Talk About Daily Routine</span>
                             </div>
-                            <span class="week-dates">4 Days</span>
+                            <span class="week-dates">Jan 11-14 | 4 Days</span>
                         </div>
                         <table class="schedule-table">
                             <thead>
                                 <tr>
+                                    <th>Date</th>
                                     <th>Day</th>
                                     <th>Focus</th>
                                     <th>Key Objectives</th>
@@ -737,21 +774,25 @@
                             </thead>
                             <tbody>
                                 <tr>
+                                    <td class="day-date">Jan 11</td>
                                     <td class="day-name">Sun</td>
                                     <td><span class="focus-badge">Time Words</span></td>
                                     <td class="objectives">Learn: morning, afternoon, evening, night</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Jan 12</td>
                                     <td class="day-name">Mon</td>
                                     <td><span class="focus-badge">Verbs</span></td>
                                     <td class="objectives">Learn: wake up, eat, go, sleep, work</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Jan 13</td>
                                     <td class="day-name">Tue</td>
                                     <td><span class="focus-badge">Sentences</span></td>
                                     <td class="objectives">Say: "I wake up at 7" / "I eat breakfast"</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Jan 14</td>
                                     <td class="day-name">Wed</td>
                                     <td><span class="focus-badge">Practice</span></td>
                                     <td class="objectives">Describe your daily routine</td>
@@ -760,18 +801,19 @@
                         </table>
                     </div>
 
-                    <!-- Week 3 -->
+                    <!-- Week 3: Jan 15-20 -->
                     <div class="week-card">
                         <div class="week-header">
                             <div>
                                 <span class="week-title">Week 3</span>
                                 <span class="week-topic">🏙️ Talk About Your Country and City</span>
                             </div>
-                            <span class="week-dates">4 Days</span>
+                            <span class="week-dates">Jan 15-20 | 4 Days</span>
                         </div>
                         <table class="schedule-table">
                             <thead>
                                 <tr>
+                                    <th>Date</th>
                                     <th>Day</th>
                                     <th>Focus</th>
                                     <th>Key Objectives</th>
@@ -779,21 +821,25 @@
                             </thead>
                             <tbody>
                                 <tr>
+                                    <td class="day-date">Jan 15</td>
                                     <td class="day-name">Thu</td>
                                     <td><span class="focus-badge">Places</span></td>
                                     <td class="objectives">Learn: country, city, capital, flag</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Jan 18</td>
                                     <td class="day-name">Sun</td>
                                     <td><span class="focus-badge">Describing</span></td>
                                     <td class="objectives">Learn: big, small, beautiful, hot, cold</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Jan 19</td>
                                     <td class="day-name">Mon</td>
                                     <td><span class="focus-badge">Phrases</span></td>
                                     <td class="objectives">Say: "I am from..." / "My city is..."</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Jan 20</td>
                                     <td class="day-name">Tue</td>
                                     <td><span class="focus-badge">Practice</span></td>
                                     <td class="objectives">Describe your country to a partner</td>
@@ -802,18 +848,19 @@
                         </table>
                     </div>
 
-                    <!-- Week 4 -->
+                    <!-- Week 4: Jan 21 - Feb 5 -->
                     <div class="week-card">
                         <div class="week-header">
                             <div>
                                 <span class="week-title">Week 4</span>
                                 <span class="week-topic">🛠️ Technical Tools (Specialization English)</span>
                             </div>
-                            <span class="week-dates">7 Days</span>
+                            <span class="week-dates">Jan 21 - Feb 5 | 7 Days</span>
                         </div>
                         <table class="schedule-table">
                             <thead>
                                 <tr>
+                                    <th>Date</th>
                                     <th>Day</th>
                                     <th>Focus</th>
                                     <th>Key Objectives</th>
@@ -821,36 +868,43 @@
                             </thead>
                             <tbody>
                                 <tr>
+                                    <td class="day-date">Jan 21</td>
                                     <td class="day-name">Wed</td>
                                     <td><span class="focus-badge">Basic Tools</span></td>
                                     <td class="objectives">Learn: computer, phone, mouse, keyboard</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Jan 22</td>
                                     <td class="day-name">Thu</td>
                                     <td><span class="focus-badge">More Tools</span></td>
                                     <td class="objectives">Learn: screen, cable, button, charger</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Jan 25</td>
                                     <td class="day-name">Sun</td>
                                     <td><span class="focus-badge">Actions</span></td>
                                     <td class="objectives">Learn: click, type, press, connect</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Jan 26</td>
                                     <td class="day-name">Mon</td>
                                     <td><span class="focus-badge">Commands</span></td>
                                     <td class="objectives">Say: "Click here" / "Press this button"</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Jan 27</td>
                                     <td class="day-name">Tue</td>
                                     <td><span class="focus-badge">Phrases</span></td>
                                     <td class="objectives">Say: "The screen is broken" / "I need help"</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Jan 28</td>
                                     <td class="day-name">Wed</td>
                                     <td><span class="focus-badge">Review 1</span></td>
                                     <td class="objectives">Review all vocabulary</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Jan 29</td>
                                     <td class="day-name">Thu</td>
                                     <td><span class="focus-badge">Review 2</span></td>
                                     <td class="objectives">Practice all conversations</td>
@@ -860,25 +914,26 @@
                     </div>
                 </section>
 
-                <!-- MONTH 2 -->
+                <!-- MONTH 2: FEBRUARY 2026 -->
                 <section class="month-section">
                     <div class="month-header">
-                        <h2>🗓️ Month 2: Practical Skills</h2>
-                        <span class="duration">Weeks 5-8 | 22 Days</span>
+                        <h2>🗓️ Month 2: Practical Skills (February 2026)</h2>
+                        <span class="duration">Weeks 5-8 | 22 Days | Feb 1 - Mar 2</span>
                     </div>
 
-                    <!-- Week 5 -->
+                    <!-- Week 5: Feb 1-3 -->
                     <div class="week-card">
                         <div class="week-header">
                             <div>
                                 <span class="week-title">Week 5</span>
                                 <span class="week-topic">🍕 What's Your Favorite Food?</span>
                             </div>
-                            <span class="week-dates">3 Days</span>
+                            <span class="week-dates">Feb 1-3 | 3 Days</span>
                         </div>
                         <table class="schedule-table">
                             <thead>
                                 <tr>
+                                    <th>Date</th>
                                     <th>Day</th>
                                     <th>Focus</th>
                                     <th>Key Objectives</th>
@@ -886,16 +941,19 @@
                             </thead>
                             <tbody>
                                 <tr>
+                                    <td class="day-date">Feb 1</td>
                                     <td class="day-name">Sun</td>
                                     <td><span class="focus-badge">Food Words</span></td>
                                     <td class="objectives">Learn: rice, chicken, pizza, coffee, juice</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Feb 2</td>
                                     <td class="day-name">Mon</td>
                                     <td><span class="focus-badge">Taste</span></td>
                                     <td class="objectives">Learn: delicious, sweet, spicy, salty</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Feb 3</td>
                                     <td class="day-name">Tue</td>
                                     <td><span class="focus-badge">Phrases</span></td>
                                     <td class="objectives">Say: "My favorite food is..." / "I like..."</td>
@@ -904,18 +962,19 @@
                         </table>
                     </div>
 
-                    <!-- Week 6 -->
+                    <!-- Week 6: Feb 4-11 -->
                     <div class="week-card">
                         <div class="week-header">
                             <div>
                                 <span class="week-title">Week 6</span>
                                 <span class="week-topic">🚑 Emergency Phrases (Medical)</span>
                             </div>
-                            <span class="week-dates">6 Days</span>
+                            <span class="week-dates">Feb 4-11 | 6 Days</span>
                         </div>
                         <table class="schedule-table">
                             <thead>
                                 <tr>
+                                    <th>Date</th>
                                     <th>Day</th>
                                     <th>Focus</th>
                                     <th>Key Objectives</th>
@@ -923,31 +982,37 @@
                             </thead>
                             <tbody>
                                 <tr>
+                                    <td class="day-date">Feb 4</td>
                                     <td class="day-name">Wed</td>
                                     <td><span class="focus-badge">Body Parts</span></td>
                                     <td class="objectives">Learn: head, stomach, hand, leg, eye</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Feb 5</td>
                                     <td class="day-name">Thu</td>
                                     <td><span class="focus-badge">Pain Words</span></td>
                                     <td class="objectives">Learn: pain, sick, hurt, fever, cold</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Feb 8</td>
                                     <td class="day-name">Sun</td>
                                     <td><span class="focus-badge">Emergency</span></td>
                                     <td class="objectives">Say: "I am sick" / "It hurts here"</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Feb 9</td>
                                     <td class="day-name">Mon</td>
                                     <td><span class="focus-badge">Help</span></td>
                                     <td class="objectives">Say: "Help me please" / "Call a doctor"</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Feb 10</td>
                                     <td class="day-name">Tue</td>
                                     <td><span class="focus-badge">Numbers</span></td>
                                     <td class="objectives">Phone numbers: 911, hospital, emergency</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Feb 11</td>
                                     <td class="day-name">Wed</td>
                                     <td><span class="focus-badge">Role Play</span></td>
                                     <td class="objectives">Practice emergency scenarios</td>
@@ -956,18 +1021,19 @@
                         </table>
                     </div>
 
-                    <!-- Week 7 -->
+                    <!-- Week 7: Feb 12-19 -->
                     <div class="week-card">
                         <div class="week-header">
                             <div>
                                 <span class="week-title">Week 7</span>
                                 <span class="week-topic">✈️ How to Book a Room/Ticket (Travel)</span>
                             </div>
-                            <span class="week-dates">6 Days</span>
+                            <span class="week-dates">Feb 12-19 | 6 Days</span>
                         </div>
                         <table class="schedule-table">
                             <thead>
                                 <tr>
+                                    <th>Date</th>
                                     <th>Day</th>
                                     <th>Focus</th>
                                     <th>Key Objectives</th>
@@ -975,31 +1041,37 @@
                             </thead>
                             <tbody>
                                 <tr>
+                                    <td class="day-date">Feb 12</td>
                                     <td class="day-name">Thu</td>
                                     <td><span class="focus-badge">Travel</span></td>
                                     <td class="objectives">Learn: ticket, hotel, room, passport, visa</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Feb 15</td>
                                     <td class="day-name">Sun</td>
                                     <td><span class="focus-badge">Booking</span></td>
                                     <td class="objectives">Learn: reserve, book, cancel, confirm</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Feb 16</td>
                                     <td class="day-name">Mon</td>
                                     <td><span class="focus-badge">Phrases</span></td>
                                     <td class="objectives">Say: "I want a room" / "How much is it?"</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Feb 17</td>
                                     <td class="day-name">Tue</td>
                                     <td><span class="focus-badge">Dates</span></td>
                                     <td class="objectives">Learn: days of the week, months</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Feb 18</td>
                                     <td class="day-name">Wed</td>
                                     <td><span class="focus-badge">Numbers</span></td>
                                     <td class="objectives">Understand prices and room numbers</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Feb 19</td>
                                     <td class="day-name">Thu</td>
                                     <td><span class="focus-badge">Role Play</span></td>
                                     <td class="objectives">Book a hotel room with a partner</td>
@@ -1008,18 +1080,19 @@
                         </table>
                     </div>
 
-                    <!-- Week 8 -->
+                    <!-- Week 8: Feb 22 - Mar 2 -->
                     <div class="week-card">
                         <div class="week-header">
                             <div>
                                 <span class="week-title">Week 8</span>
                                 <span class="week-topic">💼 Prepare for an Interview</span>
                             </div>
-                            <span class="week-dates">7 Days</span>
+                            <span class="week-dates">Feb 22 - Mar 2 | 7 Days</span>
                         </div>
                         <table class="schedule-table">
                             <thead>
                                 <tr>
+                                    <th>Date</th>
                                     <th>Day</th>
                                     <th>Focus</th>
                                     <th>Key Objectives</th>
@@ -1027,36 +1100,43 @@
                             </thead>
                             <tbody>
                                 <tr>
+                                    <td class="day-date">Feb 22</td>
                                     <td class="day-name">Sun</td>
                                     <td><span class="focus-badge">Intro</span></td>
                                     <td class="objectives">Say: "My name is..." / "I am from..."</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Feb 23</td>
                                     <td class="day-name">Mon</td>
                                     <td><span class="focus-badge">Education</span></td>
                                     <td class="objectives">Say: "I studied..." / "I am a student"</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Feb 24</td>
                                     <td class="day-name">Tue</td>
                                     <td><span class="focus-badge">Skills</span></td>
                                     <td class="objectives">Say: "I can..." / "I am good at..."</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Feb 25</td>
                                     <td class="day-name">Wed</td>
                                     <td><span class="focus-badge">Questions</span></td>
                                     <td class="objectives">Answer: "Tell me about yourself"</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Feb 26</td>
                                     <td class="day-name">Thu</td>
                                     <td><span class="focus-badge">Polite</span></td>
                                     <td class="objectives">Learn: please, thank you, excuse me</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Mar 1</td>
                                     <td class="day-name">Sun</td>
                                     <td><span class="focus-badge">Review</span></td>
                                     <td class="objectives">Practice full mock interview</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Mar 2</td>
                                     <td class="day-name">Mon</td>
                                     <td><span class="focus-badge">Final</span></td>
                                     <td class="objectives">Complete interview role play</td>
@@ -1066,25 +1146,26 @@
                     </div>
                 </section>
 
-                <!-- MONTH 3 -->
+                <!-- MONTH 3: MARCH 2026 -->
                 <section class="month-section">
                     <div class="month-header">
-                        <h2>🗓️ Month 3: Daily Life & Review</h2>
-                        <span class="duration">Weeks 9-12 | 20 Days</span>
+                        <h2>🗓️ Month 3: Daily Life & Review (March 2026)</h2>
+                        <span class="duration">Weeks 9-12 | 20 Days | Mar 3 - Apr 2</span>
                     </div>
 
-                    <!-- Week 9 -->
+                    <!-- Week 9: Mar 3-9 -->
                     <div class="week-card">
                         <div class="week-header">
                             <div>
                                 <span class="week-title">Week 9</span>
                                 <span class="week-topic">👕 How to Buy Clothes in a Shop</span>
                             </div>
-                            <span class="week-dates">5 Days</span>
+                            <span class="week-dates">Mar 3-9 | 5 Days</span>
                         </div>
                         <table class="schedule-table">
                             <thead>
                                 <tr>
+                                    <th>Date</th>
                                     <th>Day</th>
                                     <th>Focus</th>
                                     <th>Key Objectives</th>
@@ -1092,26 +1173,31 @@
                             </thead>
                             <tbody>
                                 <tr>
+                                    <td class="day-date">Mar 3</td>
                                     <td class="day-name">Tue</td>
                                     <td><span class="focus-badge">Clothes</span></td>
                                     <td class="objectives">Learn: shirt, pants, shoes, dress, jacket</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Mar 4</td>
                                     <td class="day-name">Wed</td>
                                     <td><span class="focus-badge">Colors</span></td>
                                     <td class="objectives">Learn: red, blue, black, white, green</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Mar 5</td>
                                     <td class="day-name">Thu</td>
                                     <td><span class="focus-badge">Sizes</span></td>
                                     <td class="objectives">Learn: small, medium, large, too big</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Mar 8</td>
                                     <td class="day-name">Sun</td>
                                     <td><span class="focus-badge">Phrases</span></td>
                                     <td class="objectives">Say: "Can I try this?" / "How much?"</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Mar 9</td>
                                     <td class="day-name">Mon</td>
                                     <td><span class="focus-badge">Role Play</span></td>
                                     <td class="objectives">Practice shopping conversation</td>
@@ -1120,18 +1206,19 @@
                         </table>
                     </div>
 
-                    <!-- Week 10 -->
+                    <!-- Week 10: Mar 10-15 -->
                     <div class="week-card">
                         <div class="week-header">
                             <div>
                                 <span class="week-title">Week 10</span>
                                 <span class="week-topic">👨‍👩‍👧‍👦 Talk About Your Family</span>
                             </div>
-                            <span class="week-dates">4 Days</span>
+                            <span class="week-dates">Mar 10-15 | 4 Days</span>
                         </div>
                         <table class="schedule-table">
                             <thead>
                                 <tr>
+                                    <th>Date</th>
                                     <th>Day</th>
                                     <th>Focus</th>
                                     <th>Key Objectives</th>
@@ -1139,21 +1226,25 @@
                             </thead>
                             <tbody>
                                 <tr>
+                                    <td class="day-date">Mar 10</td>
                                     <td class="day-name">Tue</td>
                                     <td><span class="focus-badge">Family 1</span></td>
                                     <td class="objectives">Learn: mother, father, brother, sister</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Mar 11</td>
                                     <td class="day-name">Wed</td>
                                     <td><span class="focus-badge">Family 2</span></td>
                                     <td class="objectives">Learn: son, daughter, husband, wife</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Mar 12</td>
                                     <td class="day-name">Thu</td>
                                     <td><span class="focus-badge">Numbers</span></td>
                                     <td class="objectives">Learn: "I have 2 brothers"</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Mar 15</td>
                                     <td class="day-name">Sun</td>
                                     <td><span class="focus-badge">Practice</span></td>
                                     <td class="objectives">Describe your family members</td>
@@ -1162,18 +1253,19 @@
                         </table>
                     </div>
 
-                    <!-- Week 11 -->
+                    <!-- Week 11: Mar 16-22 -->
                     <div class="week-card">
                         <div class="week-header">
                             <div>
                                 <span class="week-title">Week 11</span>
                                 <span class="week-topic">🚗 Understand Your Car (Car Phrases)</span>
                             </div>
-                            <span class="week-dates">5 Days</span>
+                            <span class="week-dates">Mar 16-22 | 5 Days</span>
                         </div>
                         <table class="schedule-table">
                             <thead>
                                 <tr>
+                                    <th>Date</th>
                                     <th>Day</th>
                                     <th>Focus</th>
                                     <th>Key Objectives</th>
@@ -1181,26 +1273,31 @@
                             </thead>
                             <tbody>
                                 <tr>
+                                    <td class="day-date">Mar 16</td>
                                     <td class="day-name">Mon</td>
                                     <td><span class="focus-badge">Car Parts</span></td>
                                     <td class="objectives">Learn: wheel, engine, door, window, key</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Mar 17</td>
                                     <td class="day-name">Tue</td>
                                     <td><span class="focus-badge">Problems</span></td>
                                     <td class="objectives">Learn: broken, flat tire, empty, full</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Mar 18</td>
                                     <td class="day-name">Wed</td>
                                     <td><span class="focus-badge">Phrases</span></td>
                                     <td class="objectives">Say: "My car is broken" / "I need gas"</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Mar 19</td>
                                     <td class="day-name">Thu</td>
                                     <td><span class="focus-badge">Station</span></td>
                                     <td class="objectives">Say: "Fill it up please" / "Check the oil"</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Mar 22</td>
                                     <td class="day-name">Sun</td>
                                     <td><span class="focus-badge">Review</span></td>
                                     <td class="objectives">Practice all car vocabulary</td>
@@ -1209,18 +1306,19 @@
                         </table>
                     </div>
 
-                    <!-- Week 12 -->
+                    <!-- Week 12: Mar 23 - Apr 2 -->
                     <div class="week-card">
                         <div class="week-header">
                             <div>
                                 <span class="week-title">Week 12</span>
                                 <span class="week-topic">📸 Describe a Photo + 👗 Describe Your Outfit</span>
                             </div>
-                            <span class="week-dates">6 Days (Bonus Included)</span>
+                            <span class="week-dates">Mar 23 - Apr 2 | 6 Days (Bonus)</span>
                         </div>
                         <table class="schedule-table">
                             <thead>
                                 <tr>
+                                    <th>Date</th>
                                     <th>Day</th>
                                     <th>Focus</th>
                                     <th>Key Objectives</th>
@@ -1228,31 +1326,37 @@
                             </thead>
                             <tbody>
                                 <tr>
+                                    <td class="day-date">Mar 23</td>
                                     <td class="day-name">Mon</td>
                                     <td><span class="focus-badge">Photo</span></td>
                                     <td class="objectives">Learn: picture, photo, background, person</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Mar 24</td>
                                     <td class="day-name">Tue</td>
                                     <td><span class="focus-badge">Describing</span></td>
                                     <td class="objectives">Say: "In this photo, I see..."</td>
                                 </tr>
                                 <tr>
+                                    <td class="day-date">Mar 25</td>
                                     <td class="day-name">Wed</td>
                                     <td><span class="focus-badge">Practice</span></td>
                                     <td class="objectives">Describe simple photos</td>
                                 </tr>
                                 <tr style="background: rgba(212, 175, 55, 0.1);">
+                                    <td class="day-date">Mar 26</td>
                                     <td class="day-name">Thu</td>
                                     <td><span class="focus-badge">Bonus</span></td>
                                     <td class="objectives">Learn: wearing, outfit, today, yesterday</td>
                                 </tr>
                                 <tr style="background: rgba(212, 175, 55, 0.1);">
+                                    <td class="day-date">Mar 29</td>
                                     <td class="day-name">Sun</td>
                                     <td><span class="focus-badge">Colors</span></td>
                                     <td class="objectives">Combine: "I am wearing a blue shirt"</td>
                                 </tr>
                                 <tr style="background: rgba(212, 175, 55, 0.1);">
+                                    <td class="day-date">Mar 30</td>
                                     <td class="day-name">Mon</td>
                                     <td><span class="focus-badge">Final 🎉</span></td>
                                     <td class="objectives">Review all 13 topics</td>
@@ -1362,21 +1466,20 @@
 
                 <!-- Teacher Notes -->
                 <section class="teacher-notes">
-                    <h3 data-i18n="schedule.notesTitle">💡 Tips for Teachers</h3>
+                    <h3>💡 Tips for Teachers</h3>
                     <ul>
-                        <li data-i18n="schedule.note1">Keep sentences SHORT and SIMPLE</li>
-                        <li data-i18n="schedule.note2">Use PICTURES and GESTURES for new vocabulary</li>
-                        <li data-i18n="schedule.note3">Practice REPETITION - students need to hear words many times</li>
-                        <li data-i18n="schedule.note4">Allow MISTAKES - focus on communication, not perfection</li>
-                        <li data-i18n="schedule.note5">Use REAL objects when possible (real menu, real clothes, etc.)
-                        </li>
+                        <li>Keep sentences SHORT and SIMPLE</li>
+                        <li>Use PICTURES and GESTURES for new vocabulary</li>
+                        <li>Practice REPETITION - students need to hear words many times</li>
+                        <li>Allow MISTAKES - focus on communication, not perfection</li>
+                        <li>Use REAL objects when possible (real menu, real clothes, etc.)</li>
                     </ul>
                 </section>
 
                 <!-- Footer -->
                 <footer class="page-footer">
-                    <p data-i18n="schedule.footer1">📚 English Department | Blackgold High Institute</p>
-                    <p data-i18n="schedule.footer2">3-Month Conversational Program | December 2024 - March 2025</p>
+                    <p>📚 English Department | Blackgold High Institute</p>
+                    <p>🧪 Experimental 3-Month Conversational Program | January 4 - April 2, 2026</p>
                 </footer>
 
             </article>
@@ -1390,8 +1493,29 @@
     </div>
 
     <!-- Scripts -->
-    <script src="../../js/i18n.js"></script>
     <script src="../../js/main.js"></script>
+    <script src="../../js/i18n.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Check stored language preference
+            const storedLang = localStorage.getItem('language') || 'ar'; // Default to 'ar' if not set, or check 'en'
+
+            // If user prefers Arabic, redirect to Arabic version immediately
+            // But only if we haven't just switched from there (to avoid loops)
+            if (storedLang === 'ar' && !document.referrer.includes('full-schedule-ar.html')) {
+                window.location.href = 'full-schedule-ar.html';
+            }
+
+            const arBtn = document.querySelector('.lang-btn[data-lang="ar"]');
+            if (arBtn) {
+                arBtn.addEventListener('click', (e) => {
+                    // Set preference and redirect
+                    localStorage.setItem('language', 'ar');
+                    window.location.href = 'full-schedule-ar.html';
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
