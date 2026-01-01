@@ -480,6 +480,12 @@ const translations = {
     "conversational.card.excerpt": "خطة فصلية مبنية على تصويت المعلمين - 15 موضوع محادثة لـ 3 أشهر.",
     "conversational.card.date": "ديسمبر 2025 - مارس 2026",
 
+    // Annual Plan Card
+    "annualPlan.card.category": "خطة سنوية",
+    "annualPlan.card.title": "📅 الخطة السنوية الشاملة 2026",
+    "annualPlan.card.excerpt": "الخطة الدراسية الكاملة لمدة 11 شهراً (تأسيس + New Headway) مع التواريخ.",
+    "annualPlan.card.date": "يناير 2026 - نوفمبر 2026",
+
     // Full Schedule Card
     "fullSchedule.card.category": "🧪 الخطة التجريبية",
     "fullSchedule.card.title": "📅 الخطة التجريبية التفصيلية",
@@ -1053,6 +1059,12 @@ const translations = {
     "conversational.card.title": "3 Months Conversational Program",
     "conversational.card.excerpt": "Semester plan based on teacher voting - 15 conversation topics for 3 months.",
     "conversational.card.date": "December 2025 - March 2026",
+
+    // Annual Plan Card
+    "annualPlan.card.category": "Annual Plan",
+    "annualPlan.card.title": "Comprehensive Annual Plan 2026",
+    "annualPlan.card.excerpt": "Full 11-month curriculum (Foundation + New Headway) with dates.",
+    "annualPlan.card.date": "January 2026 - November 2026",
 
     // Full Schedule Card
     "fullSchedule.card.category": "🧪 Experimental Plan",
