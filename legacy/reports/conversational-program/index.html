@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="3 Months Conversational Program Report - English Department">
+
+    <title>برنامج المحادثة (3 أشهر) | 3 Months Conversational Program</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/rtl.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../../logo/image2.png">
+
+    <style>
+        body {
+            font-family: 'Outfit', 'Cairo', sans-serif;
+        }
+
+        .report-header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 3rem 2rem;
+            border-radius: 16px;
+            margin-bottom: 2rem;
+            text-align: center;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .report-header h1 {
+            color: #D4AF37;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .report-header .subtitle {
+            color: #a0a0a0;
+            font-size: 1.1rem;
+        }
+
+        .section-box {
+            margin: 2rem 0;
+            padding: 2rem;
+            background: rgba(212, 175, 55, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 12px;
+        }
+
+        .section-title {
+            color: #D4AF37;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .note-card {
+            background: rgba(26, 26, 46, 0.6);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border-right: 4px solid #D4AF37;
+        }
+
+        .note-card.important {
+            border-right-color: #e74c3c;
+            background: rgba(231, 76, 60, 0.1);
+        }
+
+        .note-card h3 {
+            color: #fff;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .note-card p {
+            color: #ccc;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* Voting Chart Styles */
+        .vote-chart {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .vote-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .vote-topic {
+            flex: 0 0 300px;
+            color: #e0e0e0;
+            font-size: 0.9rem;
+            text-align: left;
+        }
+
+        html[dir="rtl"] .vote-topic {
+            text-align: right;
+        }
+
+        .vote-bar-container {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            height: 24px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .vote-bar {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.5s ease;
+        }
+
+        .vote-bar.selected {
+            background: linear-gradient(90deg, #D4AF37, #F4D03F);
+        }
+
+        .vote-bar.not-selected {
+            background: rgba(150, 150, 150, 0.5);
+        }
+
+        .vote-count {
+            flex: 0 0 50px;
+            color: #D4AF37;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .vote-item.selected .vote-topic {
+            color: #D4AF37;
+            font-weight: 600;
+        }
+
+        /* Stats Cards */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: rgba(26, 26, 46, 0.8);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #D4AF37;
+        }
+
+        .stat-label {
+            color: #a0a0a0;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Monthly Schedule */
+        .month-card {
+            background: rgba(26, 26, 46, 0.6);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #D4AF37;
+        }
+
+        html[dir="rtl"] .month-card {
+            border-left: none;
+            border-right: 4px solid #D4AF37;
+        }
+
+        .month-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+
+        .month-name {
+            color: #D4AF37;
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        .month-weeks {
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        .topic-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .topic-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.75rem 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+        }
+
+        .topic-number {
+            width: 28px;
+            height: 28px;
+            background: #D4AF37;
+            color: #1a1a2e;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+            flex-shrink: 0;
+        }
+
+        .topic-name {
+            flex: 1;
+            color: #e0e0e0;
+        }
+
+        .topic-duration {
+            color: #D4AF37;
+            font-size: 0.85rem;
+            font-weight: 600;
+            background: rgba(212, 175, 55, 0.15);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            white-space: nowrap;
+        }
+
+        .topic-votes {
+            color: #888;
+            font-size: 0.85rem;
+        }
+
+        /* Process Steps */
+        .process-steps {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .step-card {
+            flex: 1;
+            min-width: 200px;
+            background: rgba(26, 26, 46, 0.6);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #D4AF37, #F4D03F);
+            color: #1a1a2e;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin: 0 auto 1rem;
+        }
+
+        .step-title {
+            color: #fff;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .step-desc {
+            color: #a0a0a0;
+            font-size: 0.9rem;
+        }
+
+        /* Download Button */
+        .download-section {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: 12px;
+            margin-top: 2rem;
+        }
+
+        .btn-download {
+            background: linear-gradient(135deg, #D4AF37, #F4D03F);
+            color: #1a1a2e;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn-download:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .report-header h1 {
+                font-size: 1.5rem;
+            }
+
+            .vote-topic {
+                flex: 0 0 150px;
+                font-size: 0.8rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .topic-item {
+                flex-wrap: wrap;
+            }
+
+            .topic-duration {
+                margin-left: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="/logo/image2.png" alt="Blackgold Logo" class="sidebar-logo">
+                <div class="sidebar-brand">
+                    <h1 data-i18n="sidebar.title">قسم اللغة الإنجليزية</h1>
+                    <span data-i18n="sidebar.subtitle">معهد بلاك جولد العالي</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <div class="nav-section-title" data-i18n="nav.mainMenu">القائمة الرئيسية</div>
+                    <a href="/" class="nav-item">
+                        <span class="nav-icon">🏠</span>
+                        <span class="nav-text" data-i18n="nav.home">الرئيسية</span>
+                    </a>
+                </div>
+
+                <div class="nav-section">
+                    <div class="nav-section-title" data-i18n="nav.content">المحتوى</div>
+                    <a href="/reports" class="nav-item active">
+                        <span class="nav-icon">📝</span>
+                        <span class="nav-text" data-i18n="nav.reports">التقارير الأسبوعية</span>
+                    </a>
+                    <a href="/blog" class="nav-item">
+                        <span class="nav-icon">📚</span>
+                        <span class="nav-text" data-i18n="nav.blog">المقالات</span>
+                    </a>
+                </div>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="language-toggle">
+                    <button class="lang-btn active" data-lang="ar">عربي</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+            </div>
+        </aside>
+
+        <div class="sidebar-overlay"></div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <article class="article-container">
+
+                <!-- Back Navigation -->
+                <a href="/reports" class="back-nav">
+                    <span>→</span>
+                    <span data-i18n="action.back">العودة</span>
+                </a>
+
+                <!-- Report Header -->
+                <div class="report-header">
+                    <h1 data-i18n="conversational.program.title">برنامج المحادثة (3 أشهر)</h1>
+                    <p class="subtitle" data-i18n="conversational.program.subtitle">خطة فصلية تشاركية مبنية على تصويت
+                        المعلمين</p>
+                </div>
+
+                <!-- Statistics -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">21</div>
+                        <div class="stat-label" data-i18n="conversational.stat.topics">موضوع مقترح</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">9</div>
+                        <div class="stat-label" data-i18n="conversational.stat.teachers">معلمين صوتوا</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">87</div>
+                        <div class="stat-label" data-i18n="conversational.stat.votes">إجمالي الأصوات</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">12</div>
+                        <div class="stat-label" data-i18n="conversational.stat.selected">موضوع تم اختياره</div>
+                    </div>
+                </div>
+
+                <!-- Process Section -->
+                <div class="section-box">
+                    <div class="section-title" data-i18n="conversational.process.title">📋 منهجية الاختيار التشاركي
+                    </div>
+
+                    <div class="process-steps">
+                        <div class="step-card">
+                            <div class="step-number">1</div>
+                            <div class="step-title" data-i18n="conversational.step1.title">جمع المقترحات</div>
+                            <div class="step-desc" data-i18n="conversational.step1.desc">21 موضوع محادثة تم اقتراحها
+                            </div>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-number">2</div>
+                            <div class="step-title" data-i18n="conversational.step2.title">تصويت المعلمين</div>
+                            <div class="step-desc" data-i18n="conversational.step2.desc">9 معلمين شاركوا في التصويت
+                            </div>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-number">3</div>
+                            <div class="step-title" data-i18n="conversational.step3.title">تحليل النتائج</div>
+                            <div class="step-desc" data-i18n="conversational.step3.desc">ترتيب حسب عدد الأصوات</div>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-number">4</div>
+                            <div class="step-title" data-i18n="conversational.step4.title">اختيار الأفضل</div>
+                            <div class="step-desc" data-i18n="conversational.step4.desc">أعلى 12 موضوع للخطة الفصلية
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Voting Results Chart -->
+                <div class="section-box">
+                    <div class="section-title" data-i18n="conversational.votes.title">📊 نتائج التصويت (21 موضوع)</div>
+
+                    <div class="vote-chart">
+                        <!-- Selected Topics (Top 12) -->
+                        <div class="vote-item selected">
+                            <div class="vote-topic">🍔 How to order food at a restaurant</div>
+                            <div class="vote-bar-container">
+                                <div class="vote-bar selected" style="width: 100%"></div>
+                            </div>
+                            <div class="vote-count">7</div>
+                        </div>
+                        <div class="vote-item selected">
+                            <div class="vote-topic">📅 Talk about daily routine</div>
+                            <div class="vote-bar-container">
+                                <div class="vote-bar selected" style="width: 100%"></div>
+                            </div>
+                            <div class="vote-count">7</div>
+                        </div>
+                        <div class="vote-item selected">
+                            <div class="vote-topic">🏙️ Talk about your country and city</div>
+                            <div class="vote-bar-container">
+                                <div class="vote-bar selected" style="width: 100%"></div>
+                            </div>
+                            <div class="vote-count">7</div>
+                        </div>
+                        <div class="vote-item selected">
+                            <div class="vote-topic">🛠️ Technical tools (Specialization English)</div>
+                            <div class="vote-bar-container">
+                                <div class="vote-bar selected" style="width: 86%"></div>
+                            </div>
+                            <div class="vote-count">6</div>
+                        </div>
+                        <div class="vote-item selected">
+                            <div class="vote-topic">🍕 What's your favorite food</div>
+                            <div class="vote-bar-container">
+                                <div class="vote-bar selected" style="width: 86%"></div>
+                            </div>
+                            <div class="vote-count">6</div>
+                        </div>
+                        <div class="vote-item selected">
+                            <div class="vote-topic">🚑 Emergency phrases (Medical emergencies)</div>
+                            <div class="vote-bar-container">
+                                <div class="vote-bar selected" style="width: 71%"></div>
+                            </div>
+                            <div class="vote-count">5</div>
+                        </div>
+                        <div class="vote-item selected">
+                            <div class="vote-topic">✈️ How to book a room/ticket (Travel)</div>
+                            <div class="vote-bar-container">
+                                <div class="vote-bar selected" style="width: 71%"></div>
+                            </div>
+                            <div class="vote-count">5</div>
+                        </div>
+                        <div class="vote-item selected">
+                            <div class="vote-topic">💼 Prepare for an interview</div>
+                            <div class="vote-bar-container">
+                                <div class="vote-bar selected" style="width: 71%"></div>
+                            </div>
+                            <div class="vote-count">5</div>
+                        </div>
+                        <div class="vote-item selected">
+                            <div class="vote-topic">👕 How to buy clothes in a shop</div>
+                            <div class="vote-bar-container">
+                                <div class="vote-bar selected" style="width: 57%"></div>
+                            </div>
+                            <div class="vote-count">4</div>
+                        </div>
+                        <div class="vote-item selected">
+                            <div class="vote-topic">👨‍👩‍👧‍👦 Talk about your family</div>
+                            <div class="vote-bar-container">
+                                <div class="vote-bar selected" style="width: 57%"></div>
+                            </div>
+                            <div class="vote-count">4</div>
+                        </div>
+                        <div class="vote-item selected">
+                            <div class="vote-topic">🚗 Understand your car (Car phrases)</div>
+                            <div class="vote-bar-container">
+                                <div class="vote-bar selected" style="width: 57%"></div>
+                            </div>
+                            <div class="vote-count">4</div>
+                        </div>
+                        <div class="vote-item selected">
+                            <div class="vote-topic">📸 Describe a photo</div>
+                            <div class="vote-bar-container">
+                                <div class="vote-bar selected" style="width: 43%"></div>
+                            </div>
+                            <div class="vote-count">3</div>
+                        </div>
+
+                        <!-- Not Selected Topics (Remaining 9) -->
+                        <div class="vote-item">
+                            <div class="vote-topic" style="opacity: 0.6;">👗 Describe your outfit</div>
+                            <div class="vote-bar-container">
+                                <div class="vote-bar not-selected" style="width: 43%"></div>
+                            </div>
+                            <div class="vote-count" style="opacity: 0.6;">3</div>
+                        </div>
+                        <div class="vote-item">
+                            <div class="vote-topic" style="opacity: 0.6;">👤 Share personal information</div>
+                            <div class="vote-bar-container">
+                                <div class="vote-bar not-selected" style="width: 43%"></div>
+                            </div>
+                            <div class="vote-count" style="opacity: 0.6;">3</div>
+                        </div>
+                        <div class="vote-item">
+                            <div class="vote-topic" style="opacity: 0.6;">🎒 Talk about a trip you made</div>
+                            <div class="vote-bar-container">
+                                <div class="vote-bar not-selected" style="width: 43%"></div>
+                            </div>
+                            <div class="vote-count" style="opacity: 0.6;">3</div>
+                        </div>
+                        <div class="vote-item">
+                            <div class="vote-topic" style="opacity: 0.6;">⏳ Time phrases and expressions</div>
+                            <div class="vote-bar-container">
+                                <div class="vote-bar not-selected" style="width: 43%"></div>
+                            </div>
+                            <div class="vote-count" style="opacity: 0.6;">3</div>
+                        </div>
+                        <div class="vote-item">
+                            <div class="vote-topic" style="opacity: 0.6;">🎬 Watch a movie and talk about it</div>
+                            <div class="vote-bar-container">
+                                <div class="vote-bar not-selected" style="width: 43%"></div>
+                            </div>
+                            <div class="vote-count" style="opacity: 0.6;">3</div>
+                        </div>
+                        <div class="vote-item">
+                            <div class="vote-topic" style="opacity: 0.6;">❤️ How to share feelings and basic needs</div>
+                            <div class="vote-bar-container">
+                                <div class="vote-bar not-selected" style="width: 29%"></div>
+                            </div>
+                            <div class="vote-count" style="opacity: 0.6;">2</div>
+                        </div>
+                        <div class="vote-item">
+                            <div class="vote-topic" style="opacity: 0.6;">🔢 Numbers and counting</div>
+                            <div class="vote-bar-container">
+                                <div class="vote-bar not-selected" style="width: 29%"></div>
+                            </div>
+                            <div class="vote-count" style="opacity: 0.6;">2</div>
+                        </div>
+                        <div class="vote-item">
+                            <div class="vote-topic" style="opacity: 0.6;">➕ Numbers and counting (Supplementary)</div>
+                            <div class="vote-bar-container">
+                                <div class="vote-bar not-selected" style="width: 29%"></div>
+                            </div>
+                            <div class="vote-count" style="opacity: 0.6;">2</div>
+                        </div>
+                        <div class="vote-item">
+                            <div class="vote-topic" style="opacity: 0.6;">🌟 Talk about a celebrity you like</div>
+                            <div class="vote-bar-container">
+                                <div class="vote-bar not-selected" style="width: 29%"></div>
+                            </div>
+                            <div class="vote-count" style="opacity: 0.6;">2</div>
+                        </div>
+                    </div>
+
+                    <div
+                        style="margin-top: 1.5rem; padding: 1rem; background: rgba(212, 175, 55, 0.1); border-radius: 8px; text-align: center;">
+                        <span style="color: #D4AF37;">🏆</span>
+                        <span style="color: #ccc;" data-i18n="conversational.votes.legend">الموضوعات الذهبية = تم
+                            اختيارها للخطة الفصلية | الموضوعات الرمادية = احتياطي للفصول القادمة</span>
+                    </div>
+                </div>
+
+                <!-- 3-Month Schedule -->
+                <div class="section-box">
+                    <div class="section-title" data-i18n="conversational.schedule.title">📅 الخطة الفصلية (3 أشهر - 13
+                        موضوع)</div>
+
+                    <!-- Month 1 -->
+                    <div class="month-card">
+                        <div class="month-header">
+                            <div class="month-name" data-i18n="conversational.month1.name">🗓️ الشهر الأول</div>
+                            <div class="month-weeks" data-i18n="conversational.month1.weeks">الأسابيع 1-4</div>
+                        </div>
+                        <div class="topic-list">
+                            <div class="topic-item">
+                                <div class="topic-number">1</div>
+                                <div class="topic-name">🍔 How to order food at a restaurant</div>
+                                <div class="topic-duration">5 أيام</div>
+                                <div class="topic-votes">7 votes</div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-number">2</div>
+                                <div class="topic-name">📅 Talk about daily routine</div>
+                                <div class="topic-duration">4 أيام</div>
+                                <div class="topic-votes">7 votes</div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-number">3</div>
+                                <div class="topic-name">🏙️ Talk about your country and city</div>
+                                <div class="topic-duration">4 أيام</div>
+                                <div class="topic-votes">7 votes</div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-number">4</div>
+                                <div class="topic-name">🛠️ Technical tools (Specialization English)</div>
+                                <div class="topic-duration">7 أيام</div>
+                                <div class="topic-votes">6 votes</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Month 2 -->
+                    <div class="month-card">
+                        <div class="month-header">
+                            <div class="month-name" data-i18n="conversational.month2.name">🗓️ الشهر الثاني</div>
+                            <div class="month-weeks" data-i18n="conversational.month2.weeks">الأسابيع 5-8</div>
+                        </div>
+                        <div class="topic-list">
+                            <div class="topic-item">
+                                <div class="topic-number">5</div>
+                                <div class="topic-name">🍕 What's your favorite food</div>
+                                <div class="topic-duration">3 أيام</div>
+                                <div class="topic-votes">6 votes</div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-number">6</div>
+                                <div class="topic-name">🚑 Emergency phrases (Medical emergencies)</div>
+                                <div class="topic-duration">6 أيام</div>
+                                <div class="topic-votes">5 votes</div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-number">7</div>
+                                <div class="topic-name">✈️ How to book a room/ticket (Travel)</div>
+                                <div class="topic-duration">6 أيام</div>
+                                <div class="topic-votes">5 votes</div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-number">8</div>
+                                <div class="topic-name">💼 Prepare for an interview</div>
+                                <div class="topic-duration">7 أيام</div>
+                                <div class="topic-votes">5 votes</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Month 3 -->
+                    <div class="month-card">
+                        <div class="month-header">
+                            <div class="month-name" data-i18n="conversational.month3.name">🗓️ الشهر الثالث</div>
+                            <div class="month-weeks" data-i18n="conversational.month3.weeks">الأسابيع 9-12</div>
+                        </div>
+                        <div class="topic-list">
+                            <div class="topic-item">
+                                <div class="topic-number">9</div>
+                                <div class="topic-name">👕 How to buy clothes in a shop</div>
+                                <div class="topic-duration">5 أيام</div>
+                                <div class="topic-votes">4 votes</div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-number">10</div>
+                                <div class="topic-name">👨‍👩‍👧‍👦 Talk about your family</div>
+                                <div class="topic-duration">4 أيام</div>
+                                <div class="topic-votes">4 votes</div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-number">11</div>
+                                <div class="topic-name">🚗 Understand your car (Car phrases)</div>
+                                <div class="topic-duration">5 أيام</div>
+                                <div class="topic-votes">4 votes</div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-number">12</div>
+                                <div class="topic-name">📸 Describe a photo</div>
+                                <div class="topic-duration">3 أيام</div>
+                                <div class="topic-votes">3 votes</div>
+                            </div>
+                            <div class="topic-item" style="border: 1px dashed rgba(212, 175, 55, 0.5);">
+                                <div class="topic-number" style="background: #888;">+</div>
+                                <div class="topic-name">👗 Describe your outfit <span
+                                        style="color: #D4AF37; font-size: 0.8rem;">(Bonus)</span></div>
+                                <div class="topic-duration">3 أيام</div>
+                                <div class="topic-votes">3 votes</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Time Summary -->
+                    <div
+                        style="background: rgba(212, 175, 55, 0.1); padding: 1rem; border-radius: 8px; margin-top: 1rem;">
+                        <div
+                            style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; color: #ccc;">
+                            <span data-i18n="summary.m1">📊 <strong style="color: #D4AF37;">الشهر الأول:</strong> 20
+                                يوم</span>
+                            <span data-i18n="summary.m2">📊 <strong style="color: #D4AF37;">الشهر الثاني:</strong> 22
+                                يوم</span>
+                            <span data-i18n="summary.m3">📊 <strong style="color: #D4AF37;">الشهر الثالث:</strong> 20
+                                يوم</span>
+                            <span data-i18n="summary.total">📊 <strong style="color: #D4AF37;">المجموع:</strong> 62 يوم
+                                (12.4 أسبوع)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Teacher Notes Section -->
+                <div class="section-box">
+                    <div class="section-title" data-i18n="conversational.notes.title">📢 ملاحظات هامة للمعلمين</div>
+
+                    <div class="note-card">
+                        <h3 data-i18n="conversational.note1.title">ℹ️ المرونة في الأهداف</h3>
+                        <p data-i18n="conversational.note1.text">يمكن للمعلمين إضافة أو استبدال بعض الأهداف الرئيسية
+                            طالما أنهم على المسار الصحيح للموضوع الرئيسي.</p>
+                    </div>
+
+                    <div class="note-card important">
+                        <h3 data-i18n="conversational.note2.title">⚠️ التزام موحد</h3>
+                        <p data-i18n="conversational.note2.text">يجب على جميع أعضاء قسم اللغة الإنجليزية العمل على نفس
+                            الخطة الأسبوعية كما هو مطلوب من الإدارة.</p>
+                    </div>
+                </div>
+
+                <!-- Download Section -->
+                <div class="download-section">
+                    <p style="color: #a0a0a0; margin-bottom: 1rem;" data-i18n="conversational.download.desc">للاطلاع على
+                        التفاصيل الكاملة للخطة الفصلية:</p>
+                    <a href="full-schedule.html" class="btn-download"
+                        style="background: linear-gradient(135deg, #D4AF37, #F4D03F);">
+                        📅 View Full Schedule
+                    </a>
+                </div>
+
+            </article>
+        </main>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+            ☰
+        </button>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="../../js/i18n.js"></script>
+    <script src="../../js/main.js"></script>
+</body>
+
+</html>

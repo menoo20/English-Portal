@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="3 Months Experimental Conversational Program - Full Schedule">
+
+    <title>الخطة التجريبية | Experimental Program Schedule</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/rtl.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../../logo/image2.png">
+
+    <style>
+        body {
+            font-family: 'Outfit', 'Cairo', sans-serif;
+        }
+
+        /* Print Styles - Vivid Colors for PDF */
+        @media print {
+
+            .sidebar,
+            .sidebar-overlay,
+            .mobile-menu-toggle,
+            .no-print {
+                display: none !important;
+            }
+
+            .main-content {
+                margin: 0 !important;
+                padding: 0.5rem !important;
+            }
+
+            .article-container {
+                max-width: 100% !important;
+                padding: 0 !important;
+            }
+
+            .week-card {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+
+            .month-section {
+                break-before: page;
+            }
+
+            .month-section:first-of-type {
+                break-before: auto;
+            }
+
+            /* White background with dark text */
+            body {
+                background: white !important;
+                color: #1a1a2e !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+
+            /* Header with gold background */
+            .schedule-header {
+                background: #D4AF37 !important;
+                border: 2px solid #8B7355 !important;
+                color: #1a1a2e !important;
+            }
+
+            .schedule-header h1,
+            .schedule-header .subtitle {
+                color: #1a1a2e !important;
+            }
+
+            .meta-item {
+                background: #fff !important;
+                border: 1px solid #8B7355 !important;
+            }
+
+            .meta-item .number {
+                color: #8B4513 !important;
+            }
+
+            .meta-item .label {
+                color: #333 !important;
+            }
+
+            /* Month headers with strong colors */
+            .month-header {
+                background: #1a1a2e !important;
+                color: #D4AF37 !important;
+                border-left: 6px solid #D4AF37 !important;
+            }
+
+            .month-header h2 {
+                color: #D4AF37 !important;
+            }
+
+            .month-header .duration {
+                color: #ccc !important;
+            }
+
+            /* Week cards with visible borders */
+            .week-card {
+                background: #f8f9fa !important;
+                border: 2px solid #1a1a2e !important;
+            }
+
+            .week-header {
+                background: #2c3e50 !important;
+                color: white !important;
+                border-bottom: 2px solid #D4AF37 !important;
+            }
+
+            .week-title {
+                color: #D4AF37 !important;
+            }
+
+            .week-topic {
+                color: #fff !important;
+            }
+
+            .week-dates {
+                color: #ccc !important;
+            }
+
+            /* Table styling for print */
+            .schedule-table {
+                border: 1px solid #333 !important;
+            }
+
+            .schedule-table th {
+                background: #D4AF37 !important;
+                color: #1a1a2e !important;
+                border: 1px solid #333 !important;
+                font-weight: 700 !important;
+            }
+
+            .schedule-table td {
+                border: 1px solid #ddd !important;
+                color: #333 !important;
+            }
+
+            .schedule-table tr:nth-child(even) {
+                background: #f0f0f0 !important;
+            }
+
+            .day-name {
+                color: #8B4513 !important;
+                font-weight: 700 !important;
+            }
+
+            .focus-badge {
+                background: #D4AF37 !important;
+                color: #1a1a2e !important;
+                font-weight: 600 !important;
+                padding: 0.1rem 0.4rem !important;
+                border-radius: 4px !important;
+            }
+
+            .objectives {
+                color: #333 !important;
+            }
+
+            /* Quick reference */
+            .quick-ref {
+                background: #f8f9fa !important;
+                border: 2px solid #D4AF37 !important;
+                break-inside: avoid !important;
+                page-break-inside: avoid !important;
+                break-before: page !important;
+            }
+
+            .quick-ref h3 {
+                color: #1a1a2e !important;
+            }
+
+            .phrase-item {
+                background: #fff !important;
+                border: 1px solid #ddd !important;
+            }
+
+            .phrase-number {
+                background: #D4AF37 !important;
+                color: #1a1a2e !important;
+            }
+
+            .phrase-topic {
+                color: #666 !important;
+            }
+
+            .phrase-text {
+                color: #8B4513 !important;
+            }
+
+            /* Teacher notes - keep together */
+            .teacher-notes {
+                background: #e8f5e9 !important;
+                border: 2px solid #4caf50 !important;
+                break-inside: avoid !important;
+                page-break-inside: avoid !important;
+            }
+
+            .teacher-notes h3 {
+                color: #2e7d32 !important;
+            }
+
+            .teacher-notes li {
+                color: #333 !important;
+            }
+
+            /* Footer */
+            .page-footer {
+                border-top: 2px solid #D4AF37 !important;
+                color: #333 !important;
+            }
+
+            .back-nav {
+                display: none !important;
+            }
+        }
+
+        /* Page Header */
+        .schedule-header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 2rem;
+            border-radius: 16px;
+            margin-bottom: 2rem;
+            text-align: center;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .schedule-header h1 {
+            color: #D4AF37;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .schedule-header .subtitle {
+            color: #a0a0a0;
+            font-size: 1rem;
+        }
+
+        .experimental-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .date-range {
+            color: #D4AF37;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+
+        .meta-grid {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .meta-item {
+            background: rgba(26, 26, 46, 0.6);
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .meta-item .number {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #D4AF37;
+        }
+
+        .meta-item .label {
+            font-size: 0.8rem;
+            color: #a0a0a0;
+        }
+
+        /* Action Buttons */
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #D4AF37, #F4D03F);
+            color: #1a1a2e;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: #e0e0e0;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(212, 175, 55, 0.1);
+        }
+
+        /* Month Section */
+        .month-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .month-header {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            padding: 1.25rem 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #D4AF37;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            direction: ltr !important;
+            text-align: left !important;
+        }
+
+        .month-header h2 {
+            color: #D4AF37;
+            font-size: 1.3rem;
+            margin: 0;
+            direction: ltr !important;
+        }
+
+        .month-header .duration {
+            color: #a0a0a0;
+            font-size: 0.85rem;
+        }
+
+        /* Week Card */
+        .week-card {
+            background: rgba(26, 26, 46, 0.6);
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.1);
+        }
+
+        .week-header {
+            background: rgba(212, 175, 55, 0.1);
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            direction: ltr !important;
+            text-align: left !important;
+        }
+
+        .week-title {
+            font-weight: 700;
+            color: #D4AF37;
+            margin-right: 0.75rem;
+        }
+
+        .week-topic {
+            color: #e0e0e0;
+            font-size: 1rem;
+        }
+
+        .week-dates {
+            color: #a0a0a0;
+            font-size: 0.85rem;
+        }
+
+        /* Schedule Table - Always LTR regardless of page direction */
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            direction: ltr !important;
+            text-align: left !important;
+        }
+
+        .schedule-table th,
+        .schedule-table td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            text-align: left !important;
+            direction: ltr !important;
+        }
+
+        .schedule-table th {
+            background: rgba(212, 175, 55, 0.05);
+            color: #D4AF37;
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .schedule-table th:first-child {
+            width: 100px;
+        }
+
+        .schedule-table th:nth-child(2) {
+            width: 70px;
+        }
+
+        .schedule-table th:nth-child(3) {
+            width: 120px;
+        }
+
+        .schedule-table tr:hover {
+            background: rgba(212, 175, 55, 0.05);
+        }
+
+        .day-date {
+            font-weight: 600;
+            color: #D4AF37;
+            font-size: 0.9rem;
+        }
+
+        .day-name {
+            font-weight: 500;
+            color: #a0a0a0;
+            font-size: 0.85rem;
+        }
+
+        .focus-badge {
+            display: inline-block;
+            background: rgba(212, 175, 55, 0.2);
+            color: #D4AF37;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .objectives {
+            color: #e0e0e0;
+        }
+
+        /* Quick Reference */
+        .quick-ref {
+            background: rgba(212, 175, 55, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .quick-ref h3 {
+            color: #D4AF37;
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .phrases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 0.75rem;
+            direction: ltr !important;
+        }
+
+        .phrase-item {
+            background: rgba(26, 26, 46, 0.6);
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            direction: ltr !important;
+            text-align: left !important;
+        }
+
+        .phrase-number {
+            width: 26px;
+            height: 26px;
+            background: #D4AF37;
+            color: #1a1a2e;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.8rem;
+            flex-shrink: 0;
+        }
+
+        .phrase-topic {
+            font-size: 0.75rem;
+            color: #a0a0a0;
+        }
+
+        .phrase-text {
+            color: #D4AF37;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        /* Teacher Notes */
+        .teacher-notes {
+            background: rgba(46, 204, 113, 0.1);
+            border: 1px solid rgba(46, 204, 113, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .teacher-notes h3 {
+            color: #2ecc71;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .teacher-notes ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .teacher-notes li {
+            padding: 0.4rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: #ccc;
+        }
+
+        .teacher-notes li::before {
+            content: "💡";
+            position: absolute;
+            left: 0;
+        }
+
+        /* Footer */
+        .page-footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+            color: #a0a0a0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .schedule-header h1 {
+                font-size: 1.5rem;
+            }
+
+            .month-header {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
+            }
+
+            .week-header {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .schedule-table th,
+            .schedule-table td {
+                padding: 0.5rem;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="/logo/image2.png" alt="Blackgold Logo" class="sidebar-logo">
+                <div class="sidebar-brand">
+                    <h1 data-i18n="sidebar.title">قسم اللغة الإنجليزية</h1>
+                    <span data-i18n="sidebar.subtitle">معهد بلاك جولد العالي</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <div class="nav-section-title" data-i18n="nav.mainMenu">القائمة الرئيسية</div>
+                    <a href="/" class="nav-item">
+                        <span class="nav-icon">🏠</span>
+                        <span class="nav-text" data-i18n="nav.home">الرئيسية</span>
+                    </a>
+                </div>
+
+                <div class="nav-section">
+                    <div class="nav-section-title" data-i18n="nav.content">المحتوى</div>
+                    <a href="/reports" class="nav-item active">
+                        <span class="nav-icon">📝</span>
+                        <span class="nav-text" data-i18n="nav.reports">التقارير الأسبوعية</span>
+                    </a>
+                    <a href="/blog" class="nav-item">
+                        <span class="nav-icon">📚</span>
+                        <span class="nav-text" data-i18n="nav.blog">المقالات</span>
+                    </a>
+                </div>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="language-toggle">
+                    <button class="lang-btn" data-lang="ar">عربي</button>
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                </div>
+            </div>
+        </aside>
+
+        <div class="sidebar-overlay"></div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <article class="article-container">
+
+                <!-- Back Navigation -->
+                <a href="index.html" class="back-nav">
+                    <span>→</span>
+                    <span data-i18n="action.back">Back</span>
+                </a>
+
+                <!-- Header -->
+                <header class="schedule-header" dir="ltr">
+                    <div class="experimental-badge">🧪 Experimental Program</div>
+                    <h1>📅 3-Month Conversational Program</h1>
+                    <p class="subtitle">Full Schedule - Blackgold High Institute</p>
+                    <p class="date-range">📆 January 4, 2026 — April 2, 2026</p>
+
+                    <div class="meta-grid">
+                        <div class="meta-item">
+                            <div class="number">12</div>
+                            <div class="label">Weeks</div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="number">13</div>
+                            <div class="label">Topics</div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="number">62</div>
+                            <div class="label">Days</div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="number">Sun-Thu</div>
+                            <div class="label">Schedule</div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Action Buttons -->
+                <div class="action-buttons no-print">
+                    <button onclick="window.print()" class="btn btn-primary">
+                        <span>🖨️ Print / Save as PDF</span>
+                    </button>
+                    <a href="index.html" class="btn btn-secondary">
+                        <span>← Back to Report</span>
+                    </a>
+                    <a href="full-schedule-ar.html" class="btn btn-secondary">
+                        <span>🇸🇦 النسخة العربية</span>
+                    </a>
+                </div>
+
+                <!-- MONTH 1: JANUARY 2026 -->
+                <section class="month-section">
+                    <div class="month-header">
+                        <h2>🗓️ Month 1: Foundation Topics (January 2026)</h2>
+                        <span class="duration">Weeks 1-4 | 20 Days | Jan 4 - Feb 5</span>
+                    </div>
+
+                    <!-- Week 1: Jan 4-8 -->
+                    <div class="week-card">
+                        <div class="week-header">
+                            <div>
+                                <span class="week-title">Week 1</span>
+                                <span class="week-topic">🍔 How to Order Food at a Restaurant</span>
+                            </div>
+                            <span class="week-dates">Jan 4-8 | 5 Days</span>
+                        </div>
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Day</th>
+                                    <th>Focus</th>
+                                    <th>Key Objectives</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="day-date">Jan 4</td>
+                                    <td class="day-name">Sun</td>
+                                    <td><span class="focus-badge">Vocabulary</span></td>
+                                    <td class="objectives">Learn: menu, order, waiter, table, check</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Jan 5</td>
+                                    <td class="day-name">Mon</td>
+                                    <td><span class="focus-badge">Phrases</span></td>
+                                    <td class="objectives">Say: "Can I have...?" / "I want..."</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Jan 6</td>
+                                    <td class="day-name">Tue</td>
+                                    <td><span class="focus-badge">Numbers</span></td>
+                                    <td class="objectives">Count 1-20, understand prices</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Jan 7</td>
+                                    <td class="day-name">Wed</td>
+                                    <td><span class="focus-badge">Role Play</span></td>
+                                    <td class="objectives">Practice ordering with a partner</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Jan 8</td>
+                                    <td class="day-name">Thu</td>
+                                    <td><span class="focus-badge">Review</span></td>
+                                    <td class="objectives">Review all vocabulary and phrases</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Week 2: Jan 11-14 -->
+                    <div class="week-card">
+                        <div class="week-header">
+                            <div>
+                                <span class="week-title">Week 2</span>
+                                <span class="week-topic">📅 Talk About Daily Routine</span>
+                            </div>
+                            <span class="week-dates">Jan 11-14 | 4 Days</span>
+                        </div>
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Day</th>
+                                    <th>Focus</th>
+                                    <th>Key Objectives</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="day-date">Jan 11</td>
+                                    <td class="day-name">Sun</td>
+                                    <td><span class="focus-badge">Time Words</span></td>
+                                    <td class="objectives">Learn: morning, afternoon, evening, night</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Jan 12</td>
+                                    <td class="day-name">Mon</td>
+                                    <td><span class="focus-badge">Verbs</span></td>
+                                    <td class="objectives">Learn: wake up, eat, go, sleep, work</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Jan 13</td>
+                                    <td class="day-name">Tue</td>
+                                    <td><span class="focus-badge">Sentences</span></td>
+                                    <td class="objectives">Say: "I wake up at 7" / "I eat breakfast"</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Jan 14</td>
+                                    <td class="day-name">Wed</td>
+                                    <td><span class="focus-badge">Practice</span></td>
+                                    <td class="objectives">Describe your daily routine</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Week 3: Jan 15-20 -->
+                    <div class="week-card">
+                        <div class="week-header">
+                            <div>
+                                <span class="week-title">Week 3</span>
+                                <span class="week-topic">🏙️ Talk About Your Country and City</span>
+                            </div>
+                            <span class="week-dates">Jan 15-20 | 4 Days</span>
+                        </div>
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Day</th>
+                                    <th>Focus</th>
+                                    <th>Key Objectives</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="day-date">Jan 15</td>
+                                    <td class="day-name">Thu</td>
+                                    <td><span class="focus-badge">Places</span></td>
+                                    <td class="objectives">Learn: country, city, capital, flag</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Jan 18</td>
+                                    <td class="day-name">Sun</td>
+                                    <td><span class="focus-badge">Describing</span></td>
+                                    <td class="objectives">Learn: big, small, beautiful, hot, cold</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Jan 19</td>
+                                    <td class="day-name">Mon</td>
+                                    <td><span class="focus-badge">Phrases</span></td>
+                                    <td class="objectives">Say: "I am from..." / "My city is..."</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Jan 20</td>
+                                    <td class="day-name">Tue</td>
+                                    <td><span class="focus-badge">Practice</span></td>
+                                    <td class="objectives">Describe your country to a partner</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Week 4: Jan 21 - Feb 5 -->
+                    <div class="week-card">
+                        <div class="week-header">
+                            <div>
+                                <span class="week-title">Week 4</span>
+                                <span class="week-topic">🛠️ Technical Tools (Specialization English)</span>
+                            </div>
+                            <span class="week-dates">Jan 21 - Feb 5 | 7 Days</span>
+                        </div>
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Day</th>
+                                    <th>Focus</th>
+                                    <th>Key Objectives</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="day-date">Jan 21</td>
+                                    <td class="day-name">Wed</td>
+                                    <td><span class="focus-badge">Basic Tools</span></td>
+                                    <td class="objectives">Learn: computer, phone, mouse, keyboard</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Jan 22</td>
+                                    <td class="day-name">Thu</td>
+                                    <td><span class="focus-badge">More Tools</span></td>
+                                    <td class="objectives">Learn: screen, cable, button, charger</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Jan 25</td>
+                                    <td class="day-name">Sun</td>
+                                    <td><span class="focus-badge">Actions</span></td>
+                                    <td class="objectives">Learn: click, type, press, connect</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Jan 26</td>
+                                    <td class="day-name">Mon</td>
+                                    <td><span class="focus-badge">Commands</span></td>
+                                    <td class="objectives">Say: "Click here" / "Press this button"</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Jan 27</td>
+                                    <td class="day-name">Tue</td>
+                                    <td><span class="focus-badge">Phrases</span></td>
+                                    <td class="objectives">Say: "The screen is broken" / "I need help"</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Jan 28</td>
+                                    <td class="day-name">Wed</td>
+                                    <td><span class="focus-badge">Review 1</span></td>
+                                    <td class="objectives">Review all vocabulary</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Jan 29</td>
+                                    <td class="day-name">Thu</td>
+                                    <td><span class="focus-badge">Review 2</span></td>
+                                    <td class="objectives">Practice all conversations</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- MONTH 2: FEBRUARY 2026 -->
+                <section class="month-section">
+                    <div class="month-header">
+                        <h2>🗓️ Month 2: Practical Skills (February 2026)</h2>
+                        <span class="duration">Weeks 5-8 | 22 Days | Feb 1 - Mar 2</span>
+                    </div>
+
+                    <!-- Week 5: Feb 1-3 -->
+                    <div class="week-card">
+                        <div class="week-header">
+                            <div>
+                                <span class="week-title">Week 5</span>
+                                <span class="week-topic">🍕 What's Your Favorite Food?</span>
+                            </div>
+                            <span class="week-dates">Feb 1-3 | 3 Days</span>
+                        </div>
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Day</th>
+                                    <th>Focus</th>
+                                    <th>Key Objectives</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="day-date">Feb 1</td>
+                                    <td class="day-name">Sun</td>
+                                    <td><span class="focus-badge">Food Words</span></td>
+                                    <td class="objectives">Learn: rice, chicken, pizza, coffee, juice</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Feb 2</td>
+                                    <td class="day-name">Mon</td>
+                                    <td><span class="focus-badge">Taste</span></td>
+                                    <td class="objectives">Learn: delicious, sweet, spicy, salty</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Feb 3</td>
+                                    <td class="day-name">Tue</td>
+                                    <td><span class="focus-badge">Phrases</span></td>
+                                    <td class="objectives">Say: "My favorite food is..." / "I like..."</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Week 6: Feb 4-11 -->
+                    <div class="week-card">
+                        <div class="week-header">
+                            <div>
+                                <span class="week-title">Week 6</span>
+                                <span class="week-topic">🚑 Emergency Phrases (Medical)</span>
+                            </div>
+                            <span class="week-dates">Feb 4-11 | 6 Days</span>
+                        </div>
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Day</th>
+                                    <th>Focus</th>
+                                    <th>Key Objectives</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="day-date">Feb 4</td>
+                                    <td class="day-name">Wed</td>
+                                    <td><span class="focus-badge">Body Parts</span></td>
+                                    <td class="objectives">Learn: head, stomach, hand, leg, eye</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Feb 5</td>
+                                    <td class="day-name">Thu</td>
+                                    <td><span class="focus-badge">Pain Words</span></td>
+                                    <td class="objectives">Learn: pain, sick, hurt, fever, cold</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Feb 8</td>
+                                    <td class="day-name">Sun</td>
+                                    <td><span class="focus-badge">Emergency</span></td>
+                                    <td class="objectives">Say: "I am sick" / "It hurts here"</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Feb 9</td>
+                                    <td class="day-name">Mon</td>
+                                    <td><span class="focus-badge">Help</span></td>
+                                    <td class="objectives">Say: "Help me please" / "Call a doctor"</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Feb 10</td>
+                                    <td class="day-name">Tue</td>
+                                    <td><span class="focus-badge">Numbers</span></td>
+                                    <td class="objectives">Phone numbers: 911, hospital, emergency</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Feb 11</td>
+                                    <td class="day-name">Wed</td>
+                                    <td><span class="focus-badge">Role Play</span></td>
+                                    <td class="objectives">Practice emergency scenarios</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Week 7: Feb 12-19 -->
+                    <div class="week-card">
+                        <div class="week-header">
+                            <div>
+                                <span class="week-title">Week 7</span>
+                                <span class="week-topic">✈️ How to Book a Room/Ticket (Travel)</span>
+                            </div>
+                            <span class="week-dates">Feb 12-19 | 6 Days</span>
+                        </div>
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Day</th>
+                                    <th>Focus</th>
+                                    <th>Key Objectives</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="day-date">Feb 12</td>
+                                    <td class="day-name">Thu</td>
+                                    <td><span class="focus-badge">Travel</span></td>
+                                    <td class="objectives">Learn: ticket, hotel, room, passport, visa</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Feb 15</td>
+                                    <td class="day-name">Sun</td>
+                                    <td><span class="focus-badge">Booking</span></td>
+                                    <td class="objectives">Learn: reserve, book, cancel, confirm</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Feb 16</td>
+                                    <td class="day-name">Mon</td>
+                                    <td><span class="focus-badge">Phrases</span></td>
+                                    <td class="objectives">Say: "I want a room" / "How much is it?"</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Feb 17</td>
+                                    <td class="day-name">Tue</td>
+                                    <td><span class="focus-badge">Dates</span></td>
+                                    <td class="objectives">Learn: days of the week, months</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Feb 18</td>
+                                    <td class="day-name">Wed</td>
+                                    <td><span class="focus-badge">Numbers</span></td>
+                                    <td class="objectives">Understand prices and room numbers</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Feb 19</td>
+                                    <td class="day-name">Thu</td>
+                                    <td><span class="focus-badge">Role Play</span></td>
+                                    <td class="objectives">Book a hotel room with a partner</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Week 8: Feb 22 - Mar 2 -->
+                    <div class="week-card">
+                        <div class="week-header">
+                            <div>
+                                <span class="week-title">Week 8</span>
+                                <span class="week-topic">💼 Prepare for an Interview</span>
+                            </div>
+                            <span class="week-dates">Feb 22 - Mar 2 | 7 Days</span>
+                        </div>
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Day</th>
+                                    <th>Focus</th>
+                                    <th>Key Objectives</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="day-date">Feb 22</td>
+                                    <td class="day-name">Sun</td>
+                                    <td><span class="focus-badge">Intro</span></td>
+                                    <td class="objectives">Say: "My name is..." / "I am from..."</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Feb 23</td>
+                                    <td class="day-name">Mon</td>
+                                    <td><span class="focus-badge">Education</span></td>
+                                    <td class="objectives">Say: "I studied..." / "I am a student"</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Feb 24</td>
+                                    <td class="day-name">Tue</td>
+                                    <td><span class="focus-badge">Skills</span></td>
+                                    <td class="objectives">Say: "I can..." / "I am good at..."</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Feb 25</td>
+                                    <td class="day-name">Wed</td>
+                                    <td><span class="focus-badge">Questions</span></td>
+                                    <td class="objectives">Answer: "Tell me about yourself"</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Feb 26</td>
+                                    <td class="day-name">Thu</td>
+                                    <td><span class="focus-badge">Polite</span></td>
+                                    <td class="objectives">Learn: please, thank you, excuse me</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Mar 1</td>
+                                    <td class="day-name">Sun</td>
+                                    <td><span class="focus-badge">Review</span></td>
+                                    <td class="objectives">Practice full mock interview</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Mar 2</td>
+                                    <td class="day-name">Mon</td>
+                                    <td><span class="focus-badge">Final</span></td>
+                                    <td class="objectives">Complete interview role play</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- MONTH 3: MARCH 2026 -->
+                <section class="month-section">
+                    <div class="month-header">
+                        <h2>🗓️ Month 3: Daily Life & Review (March 2026)</h2>
+                        <span class="duration">Weeks 9-12 | 20 Days | Mar 3 - Apr 2</span>
+                    </div>
+
+                    <!-- Week 9: Mar 3-9 -->
+                    <div class="week-card">
+                        <div class="week-header">
+                            <div>
+                                <span class="week-title">Week 9</span>
+                                <span class="week-topic">👕 How to Buy Clothes in a Shop</span>
+                            </div>
+                            <span class="week-dates">Mar 3-9 | 5 Days</span>
+                        </div>
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Day</th>
+                                    <th>Focus</th>
+                                    <th>Key Objectives</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="day-date">Mar 3</td>
+                                    <td class="day-name">Tue</td>
+                                    <td><span class="focus-badge">Clothes</span></td>
+                                    <td class="objectives">Learn: shirt, pants, shoes, dress, jacket</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Mar 4</td>
+                                    <td class="day-name">Wed</td>
+                                    <td><span class="focus-badge">Colors</span></td>
+                                    <td class="objectives">Learn: red, blue, black, white, green</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Mar 5</td>
+                                    <td class="day-name">Thu</td>
+                                    <td><span class="focus-badge">Sizes</span></td>
+                                    <td class="objectives">Learn: small, medium, large, too big</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Mar 8</td>
+                                    <td class="day-name">Sun</td>
+                                    <td><span class="focus-badge">Phrases</span></td>
+                                    <td class="objectives">Say: "Can I try this?" / "How much?"</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Mar 9</td>
+                                    <td class="day-name">Mon</td>
+                                    <td><span class="focus-badge">Role Play</span></td>
+                                    <td class="objectives">Practice shopping conversation</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Week 10: Mar 10-15 -->
+                    <div class="week-card">
+                        <div class="week-header">
+                            <div>
+                                <span class="week-title">Week 10</span>
+                                <span class="week-topic">👨‍👩‍👧‍👦 Talk About Your Family</span>
+                            </div>
+                            <span class="week-dates">Mar 10-15 | 4 Days</span>
+                        </div>
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Day</th>
+                                    <th>Focus</th>
+                                    <th>Key Objectives</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="day-date">Mar 10</td>
+                                    <td class="day-name">Tue</td>
+                                    <td><span class="focus-badge">Family 1</span></td>
+                                    <td class="objectives">Learn: mother, father, brother, sister</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Mar 11</td>
+                                    <td class="day-name">Wed</td>
+                                    <td><span class="focus-badge">Family 2</span></td>
+                                    <td class="objectives">Learn: son, daughter, husband, wife</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Mar 12</td>
+                                    <td class="day-name">Thu</td>
+                                    <td><span class="focus-badge">Numbers</span></td>
+                                    <td class="objectives">Learn: "I have 2 brothers"</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Mar 15</td>
+                                    <td class="day-name">Sun</td>
+                                    <td><span class="focus-badge">Practice</span></td>
+                                    <td class="objectives">Describe your family members</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Week 11: Mar 16-22 -->
+                    <div class="week-card">
+                        <div class="week-header">
+                            <div>
+                                <span class="week-title">Week 11</span>
+                                <span class="week-topic">🚗 Understand Your Car (Car Phrases)</span>
+                            </div>
+                            <span class="week-dates">Mar 16-22 | 5 Days</span>
+                        </div>
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Day</th>
+                                    <th>Focus</th>
+                                    <th>Key Objectives</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="day-date">Mar 16</td>
+                                    <td class="day-name">Mon</td>
+                                    <td><span class="focus-badge">Car Parts</span></td>
+                                    <td class="objectives">Learn: wheel, engine, door, window, key</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Mar 17</td>
+                                    <td class="day-name">Tue</td>
+                                    <td><span class="focus-badge">Problems</span></td>
+                                    <td class="objectives">Learn: broken, flat tire, empty, full</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Mar 18</td>
+                                    <td class="day-name">Wed</td>
+                                    <td><span class="focus-badge">Phrases</span></td>
+                                    <td class="objectives">Say: "My car is broken" / "I need gas"</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Mar 19</td>
+                                    <td class="day-name">Thu</td>
+                                    <td><span class="focus-badge">Station</span></td>
+                                    <td class="objectives">Say: "Fill it up please" / "Check the oil"</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Mar 22</td>
+                                    <td class="day-name">Sun</td>
+                                    <td><span class="focus-badge">Review</span></td>
+                                    <td class="objectives">Practice all car vocabulary</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Week 12: Mar 23 - Apr 2 -->
+                    <div class="week-card">
+                        <div class="week-header">
+                            <div>
+                                <span class="week-title">Week 12</span>
+                                <span class="week-topic">📸 Describe a Photo + 👗 Describe Your Outfit</span>
+                            </div>
+                            <span class="week-dates">Mar 23 - Apr 2 | 6 Days (Bonus)</span>
+                        </div>
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Day</th>
+                                    <th>Focus</th>
+                                    <th>Key Objectives</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="day-date">Mar 23</td>
+                                    <td class="day-name">Mon</td>
+                                    <td><span class="focus-badge">Photo</span></td>
+                                    <td class="objectives">Learn: picture, photo, background, person</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Mar 24</td>
+                                    <td class="day-name">Tue</td>
+                                    <td><span class="focus-badge">Describing</span></td>
+                                    <td class="objectives">Say: "In this photo, I see..."</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">Mar 25</td>
+                                    <td class="day-name">Wed</td>
+                                    <td><span class="focus-badge">Practice</span></td>
+                                    <td class="objectives">Describe simple photos</td>
+                                </tr>
+                                <tr style="background: rgba(212, 175, 55, 0.1);">
+                                    <td class="day-date">Mar 26</td>
+                                    <td class="day-name">Thu</td>
+                                    <td><span class="focus-badge">Bonus</span></td>
+                                    <td class="objectives">Learn: wearing, outfit, today, yesterday</td>
+                                </tr>
+                                <tr style="background: rgba(212, 175, 55, 0.1);">
+                                    <td class="day-date">Mar 29</td>
+                                    <td class="day-name">Sun</td>
+                                    <td><span class="focus-badge">Colors</span></td>
+                                    <td class="objectives">Combine: "I am wearing a blue shirt"</td>
+                                </tr>
+                                <tr style="background: rgba(212, 175, 55, 0.1);">
+                                    <td class="day-date">Mar 30</td>
+                                    <td class="day-name">Mon</td>
+                                    <td><span class="focus-badge">Final 🎉</span></td>
+                                    <td class="objectives">Review all 13 topics</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Quick Reference -->
+                <section class="quick-ref">
+                    <h3>📋 Quick Reference: Essential Phrases</h3>
+                    <div class="phrases-grid">
+                        <div class="phrase-item">
+                            <div class="phrase-number">1</div>
+                            <div>
+                                <div class="phrase-topic">Restaurant</div>
+                                <div class="phrase-text">"Can I have...?"</div>
+                            </div>
+                        </div>
+                        <div class="phrase-item">
+                            <div class="phrase-number">2</div>
+                            <div>
+                                <div class="phrase-topic">Daily Routine</div>
+                                <div class="phrase-text">"I wake up at..."</div>
+                            </div>
+                        </div>
+                        <div class="phrase-item">
+                            <div class="phrase-number">3</div>
+                            <div>
+                                <div class="phrase-topic">Country/City</div>
+                                <div class="phrase-text">"I am from..."</div>
+                            </div>
+                        </div>
+                        <div class="phrase-item">
+                            <div class="phrase-number">4</div>
+                            <div>
+                                <div class="phrase-topic">Technical</div>
+                                <div class="phrase-text">"Click here"</div>
+                            </div>
+                        </div>
+                        <div class="phrase-item">
+                            <div class="phrase-number">5</div>
+                            <div>
+                                <div class="phrase-topic">Food</div>
+                                <div class="phrase-text">"My favorite is..."</div>
+                            </div>
+                        </div>
+                        <div class="phrase-item">
+                            <div class="phrase-number">6</div>
+                            <div>
+                                <div class="phrase-topic">Emergency</div>
+                                <div class="phrase-text">"Help me please"</div>
+                            </div>
+                        </div>
+                        <div class="phrase-item">
+                            <div class="phrase-number">7</div>
+                            <div>
+                                <div class="phrase-topic">Travel</div>
+                                <div class="phrase-text">"I want a room"</div>
+                            </div>
+                        </div>
+                        <div class="phrase-item">
+                            <div class="phrase-number">8</div>
+                            <div>
+                                <div class="phrase-topic">Interview</div>
+                                <div class="phrase-text">"My name is..."</div>
+                            </div>
+                        </div>
+                        <div class="phrase-item">
+                            <div class="phrase-number">9</div>
+                            <div>
+                                <div class="phrase-topic">Shopping</div>
+                                <div class="phrase-text">"Can I try this?"</div>
+                            </div>
+                        </div>
+                        <div class="phrase-item">
+                            <div class="phrase-number">10</div>
+                            <div>
+                                <div class="phrase-topic">Family</div>
+                                <div class="phrase-text">"I have..."</div>
+                            </div>
+                        </div>
+                        <div class="phrase-item">
+                            <div class="phrase-number">11</div>
+                            <div>
+                                <div class="phrase-topic">Car</div>
+                                <div class="phrase-text">"My car is broken"</div>
+                            </div>
+                        </div>
+                        <div class="phrase-item">
+                            <div class="phrase-number">12</div>
+                            <div>
+                                <div class="phrase-topic">Photo</div>
+                                <div class="phrase-text">"In this photo..."</div>
+                            </div>
+                        </div>
+                        <div class="phrase-item">
+                            <div class="phrase-number">13</div>
+                            <div>
+                                <div class="phrase-topic">Outfit</div>
+                                <div class="phrase-text">"I am wearing..."</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Teacher Notes -->
+                <section class="teacher-notes">
+                    <h3>💡 Tips for Teachers</h3>
+                    <ul>
+                        <li>Keep sentences SHORT and SIMPLE</li>
+                        <li>Use PICTURES and GESTURES for new vocabulary</li>
+                        <li>Practice REPETITION - students need to hear words many times</li>
+                        <li>Allow MISTAKES - focus on communication, not perfection</li>
+                        <li>Use REAL objects when possible (real menu, real clothes, etc.)</li>
+                    </ul>
+                </section>
+
+                <!-- Footer -->
+                <footer class="page-footer">
+                    <p>📚 English Department | Blackgold High Institute</p>
+                    <p>🧪 Experimental 3-Month Conversational Program | January 4 - April 2, 2026</p>
+                </footer>
+
+            </article>
+        </main>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+            ☰
+        </button>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="../../js/main.js"></script>
+    <script src="../../js/i18n.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Check stored language preference
+            const storedLang = localStorage.getItem('language') || 'ar'; // Default to 'ar' if not set, or check 'en'
+
+            // If user prefers Arabic, redirect to Arabic version immediately
+            // But only if we haven't just switched from there (to avoid loops)
+            if (storedLang === 'ar' && !document.referrer.includes('full-schedule-ar.html')) {
+                window.location.href = 'full-schedule-ar.html';
+            }
+
+            const arBtn = document.querySelector('.lang-btn[data-lang="ar"]');
+            if (arBtn) {
+                arBtn.addEventListener('click', (e) => {
+                    // Set preference and redirect
+                    localStorage.setItem('language', 'ar');
+                    window.location.href = 'full-schedule-ar.html';
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

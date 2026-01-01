@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weekly Teachers Report - Week 1 (Dec 7-11, 2025) - English Department">
+
+    <title>Weekly Teachers Report | Week 1 (Dec 7-11, 2025)</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/rtl.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../../logo/image2.png">
+
+    <style>
+        /* Report-specific styles */
+        body {
+            font-family: 'Outfit', 'Cairo', sans-serif;
+        }
+
+        .report-header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 3rem 2rem;
+            border-radius: 16px;
+            margin-bottom: 2rem;
+            text-align: center;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .report-header h1 {
+            color: #D4AF37;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .report-header .subtitle {
+            color: #a0a0a0;
+            font-size: 1.1rem;
+        }
+
+        .report-header .week-badge {
+            display: inline-block;
+            background: rgba(212, 175, 55, 0.2);
+            color: #D4AF37;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            margin-top: 1rem;
+            font-weight: 600;
+        }
+
+        .summary-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(26, 26, 46, 0.8));
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .stat-card .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #D4AF37;
+        }
+
+        .stat-card .stat-label {
+            color: #a0a0a0;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        .teacher-card {
+            background: linear-gradient(135deg, rgba(26, 26, 46, 0.9), rgba(22, 33, 62, 0.9));
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .teacher-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 40px rgba(212, 175, 55, 0.1);
+        }
+
+        .teacher-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .teacher-number {
+            background: linear-gradient(135deg, #D4AF37, #F4D03F);
+            color: #1a1a2e;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .teacher-info h2 {
+            color: #fff;
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .teacher-info .course {
+            color: #D4AF37;
+            font-size: 0.9rem;
+        }
+
+        .status-badge {
+            margin-left: auto;
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .status-complete {
+            background: rgba(46, 204, 113, 0.2);
+            color: #2ecc71;
+        }
+
+        .status-partial {
+            background: rgba(241, 196, 15, 0.2);
+            color: #f1c40f;
+        }
+
+        .status-incomplete {
+            background: rgba(231, 76, 60, 0.2);
+            color: #e74c3c;
+        }
+
+        .teacher-content {
+            color: #c0c0c0;
+            line-height: 1.7;
+        }
+
+        .teacher-content h3 {
+            color: #D4AF37;
+            font-size: 1.1rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .teacher-content ul {
+            padding-left: 1.5rem;
+        }
+
+        .teacher-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .metric-item {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .metric-item .metric-value {
+            color: #D4AF37;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .metric-item .metric-label {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 0.3rem;
+        }
+
+        .quality-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        .quality-table th,
+        .quality-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+        }
+
+        .quality-table th {
+            color: #D4AF37;
+            font-weight: 600;
+        }
+
+        .quality-table td {
+            color: #c0c0c0;
+        }
+
+        .rating-star {
+            color: #D4AF37;
+        }
+
+        .rating-warning {
+            color: #f1c40f;
+        }
+
+        .rating-error {
+            color: #e74c3c;
+        }
+
+        .highlight-box {
+            background: rgba(212, 175, 55, 0.1);
+            border-left: 4px solid #D4AF37;
+            padding: 1rem 1.5rem;
+            margin: 1rem 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+        }
+
+        .recommendation-box {
+            background: rgba(46, 204, 113, 0.1);
+            border: 1px solid rgba(46, 204, 113, 0.3);
+            padding: 1rem 1.5rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+        }
+
+        .recommendation-box h4 {
+            color: #2ecc71;
+            margin-bottom: 0.5rem;
+        }
+
+        .warning-box {
+            background: rgba(241, 196, 15, 0.1);
+            border: 1px solid rgba(241, 196, 15, 0.3);
+            padding: 1rem 1.5rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+        }
+
+        .warning-box h4 {
+            color: #f1c40f;
+            margin-bottom: 0.5rem;
+        }
+
+        .screenshot-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .screenshot-item {
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .screenshot-item:hover {
+            transform: scale(1.02);
+        }
+
+        .screenshot-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .screenshot-caption {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 0.75rem;
+            text-align: center;
+            color: #a0a0a0;
+            font-size: 0.85rem;
+        }
+
+        .topics-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        .topic-item {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .topic-item::before {
+            content: "•";
+            color: #D4AF37;
+        }
+
+        @media print {
+
+            .sidebar,
+            .sidebar-overlay,
+            .mobile-menu-toggle,
+            .back-nav,
+            .article-actions {
+                display: none !important;
+            }
+
+            .main-content {
+                margin: 0 !important;
+            }
+
+            .teacher-card {
+                break-inside: avoid;
+            }
+
+            body {
+                background: white;
+                color: black;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .report-header h1 {
+                font-size: 1.5rem;
+            }
+
+            .report-header .subtitle {
+                font-size: 0.9rem;
+            }
+
+            .teacher-header {
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+
+            .teacher-number {
+                width: 35px;
+                height: 35px;
+                font-size: 1rem;
+            }
+
+            .teacher-info h2 {
+                font-size: 1.1rem;
+            }
+
+            .teacher-info .course {
+                font-size: 0.8rem;
+            }
+
+            .status-badge {
+                margin-left: 0;
+                margin-top: 0.25rem;
+                width: 100%;
+                text-align: center;
+                font-size: 0.75rem;
+                padding: 0.25rem 0.75rem;
+            }
+
+            .teacher-content {
+                font-size: 0.9rem;
+                line-height: 1.6;
+            }
+
+            .teacher-content h3 {
+                font-size: 1rem;
+            }
+
+            .screenshot-gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .topics-list {
+                grid-template-columns: 1fr;
+            }
+
+            .metrics-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.5rem;
+            }
+
+            .metric-item {
+                padding: 0.75rem;
+            }
+
+            .metric-item .metric-value {
+                font-size: 1.25rem;
+            }
+
+            .summary-stats {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.5rem;
+            }
+
+            .stat-card {
+                padding: 1rem;
+            }
+
+            .stat-card .stat-number {
+                font-size: 1.75rem;
+            }
+
+            .quality-table {
+                font-size: 0.8rem;
+            }
+
+            .quality-table th,
+            .quality-table td {
+                padding: 0.4rem;
+            }
+
+            .teacher-card {
+                padding: 1.25rem 0.75rem;
+            }
+
+            .report-header {
+                padding: 1.5rem 0.75rem;
+            }
+
+            .highlight-box,
+            .recommendation-box,
+            .warning-box {
+                padding: 0.75rem;
+                font-size: 0.85rem;
+            }
+
+            .screenshot-caption {
+                font-size: 0.75rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="../../logo/image2.png" alt="Blackgold Logo" class="sidebar-logo">
+                <div class="sidebar-brand">
+                    <h1 data-i18n="brand.name">قسم اللغة الإنجليزية</h1>
+                    <span data-i18n="brand.subtitle">معهد الذهب الأسود العالي</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <div class="nav-section-title" data-i18n="section.main">القائمة الرئيسية</div>
+                    <a href="../../index.html" class="nav-item">
+                        <span class="nav-icon">🏠</span>
+                        <span class="nav-text" data-i18n="nav.home">الرئيسية</span>
+                    </a>
+                </div>
+
+                <div class="nav-section">
+                    <div class="nav-section-title" data-i18n="section.content">المحتوى</div>
+                    <a href="../index.html" class="nav-item active">
+                        <span class="nav-icon">📝</span>
+                        <span class="nav-text" data-i18n="nav.reports">التقارير الأسبوعية</span>
+                    </a>
+                    <a href="../../blog/index.html" class="nav-item">
+                        <span class="nav-icon">📚</span>
+                        <span class="nav-text" data-i18n="nav.blog">المقالات</span>
+                    </a>
+                </div>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="language-toggle">
+                    <button class="lang-btn active" data-lang="ar">عربي</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+            </div>
+        </aside>
+
+        <div class="sidebar-overlay"></div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <article class="article-container">
+
+                <!-- Back Navigation -->
+                <a href="../index.html" class="back-nav">
+                    <span>→</span>
+                    <span data-i18n="action.back">العودة</span>
+                </a>
+
+                <!-- Report Header -->
+                <div class="report-header">
+                    <h1 data-i18n="teachersWeekly01.title">📊 تقرير أداء المعلمين الأسبوعي</h1>
+                    <p class="subtitle" data-i18n="teachersWeekly01.subtitle">قسم اللغة الإنجليزية - معهد الذهب الأسود
+                        العالي</p>
+                    <span class="week-badge" data-i18n="teachersWeekly01.week">📅 الأسبوع الأول: 7 - 11 ديسمبر
+                        2025</span>
+                </div>
+
+                <!-- Summary Statistics -->
+                <div class="summary-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label" data-i18n="teachersWeekly01.stat.teachers">معلمين تمت مراجعتهم</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label" data-i18n="teachersWeekly01.stat.complete">تقارير مكتملة</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">0</div>
+                        <div class="stat-label" data-i18n="teachersWeekly01.stat.partial">تقارير جزئية</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">+50</div>
+                        <div class="stat-label" data-i18n="teachersWeekly01.stat.files">إجمالي الملفات المقدمة</div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="article-actions" style="display: flex; gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap;">
+                    <button onclick="window.print()" class="btn btn-secondary">
+                        🖨️ <span data-i18n="action.print">طباعة</span>
+                    </button>
+                    <button
+                        onclick="navigator.share ? navigator.share({title: document.title, url: window.location.href}) : alert('Copy: ' + window.location.href)"
+                        class="btn btn-secondary">
+                        📤 <span data-i18n="action.share">مشاركة</span>
+                    </button>
+                </div>
+
+                <!-- Google Drive Link -->
+                <div
+                    style="background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(212, 175, 55, 0.05)); border: 1px solid rgba(212, 175, 55, 0.4); border-radius: 12px; padding: 1.25rem; margin-bottom: 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+                    <div style="display: flex; align-items: center; gap: 0.75rem;">
+                        <span style="font-size: 1.5rem;">📂</span>
+                        <div>
+                            <strong style="color: #D4AF37;" data-i18n="teachersWeekly01.drive.title">عرض التقارير
+                                الأصلية</strong>
+                            <p style="margin: 0; color: #a0a0a0; font-size: 0.9rem;"
+                                data-i18n="teachersWeekly01.drive.desc">الوصول إلى جميع ملفات عمل المعلمين على Google
+                                Drive</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1MIcG7P2TQrUIWQ6ww6n7P-T8X6DWR82S?usp=sharing"
+                        target="_blank" rel="noopener"
+                        style="background: linear-gradient(135deg, #D4AF37, #F4D03F); color: #1a1a2e; padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 0.5rem; transition: transform 0.2s ease, box-shadow 0.2s ease;"
+                        onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 15px rgba(212, 175, 55, 0.3)';"
+                        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
+                        data-i18n="teachersWeekly01.drive.btn">
+                        📁 فتح Google Drive
+                    </a>
+                </div>
+
+
+                <!-- ========== TEACHER 1: Dr. Sharaf El-Deen ========== -->
+                <div class="teacher-card">
+                    <div class="teacher-header">
+                        <div class="teacher-number">1</div>
+                        <div class="teacher-info">
+                            <h2 data-i18n="teachersWeekly01.t1.name">د. شرف الدين (شرف الدين عثمان)</h2>
+                            <span class="course" data-i18n="teachersWeekly01.t1.course">اللغة الإنجليزية اليومية |
+                                سايبم، المجموعة 8</span>
+                        </div>
+                        <span class="status-badge status-complete" data-i18n="teachersWeekly01.status.complete">✓
+                            مكتمل</span>
+                    </div>
+
+                    <div class="teacher-content">
+                        <h3 data-i18n="teachersWeekly01.section.objectives">📋 أهداف الأسبوع</h3>
+                        <ul>
+                            <li data-i18n="tw01.t1.obj1">تقديم التحيات الأساسية والوداع ("مرحباً"، "صباح الخير"،
+                                "وداعاً")</li>
+                            <li data-i18n="tw01.t1.obj2">تعليم الأبجدية الإنجليزية والصوتيات الأساسية</li>
+                            <li data-i18n="tw01.t1.obj3">ممارسة أسئلة وأجوبة المعلومات الشخصية ("ما اسمك؟"، "أنا...")
+                            </li>
+                            <li data-i18n="tw01.t1.obj4">بناء الثقة في الاستماع والتحدث من خلال التكرار والحوارات</li>
+                        </ul>
+
+                        <h3 data-i18n="teachersWeekly01.section.topics">📚 المواضيع المغطاة والأنشطة</h3>
+                        <div class="topics-list">
+                            <div class="topic-item" data-i18n="tw01.t1.topic1">التحيات والتقديمات (لعب الأدوار)</div>
+                            <div class="topic-item" data-i18n="tw01.t1.topic2">الأبجدية والأصوات (التركيز على صوت Ph)
+                            </div>
+                            <div class="topic-item" data-i18n="tw01.t1.topic3">مفردات الفصل (كتاب، قلم، إلخ)</div>
+                        </div>
+
+                        <h3 data-i18n="teachersWeekly01.section.progress">📈 تقدم المتدربين</h3>
+                        <div class="metrics-grid">
+                            <div class="metric-item">
+                                <div class="metric-value">⭐</div>
+                                <div class="metric-label" data-i18n="tw01.t1.engagement">التفاعل (عالي)</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-value">⭐</div>
+                                <div class="metric-label" data-i18n="tw01.t1.listening">الاستماع (جيد)</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-value">⭐</div>
+                                <div class="metric-label" data-i18n="tw01.t1.speaking">التحدث (واثق)</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-value">⚠️</div>
+                                <div class="metric-label" data-i18n="tw01.t1.phSound">صوت Ph (يحتاج تدريب)</div>
+                            </div>
+                        </div>
+
+                        <div class="highlight-box" data-i18n="tw01.t1.quote">
+                            "كان الأسبوع الأول ناجحاً جداً في تأسيس جو صفي إيجابي. المتدربون متحمسون ومستعدون لتعلم
+                            المزيد."
+                        </div>
+
+                        <h3 data-i18n="teachersWeekly01.section.evidence">📸 الأدلة</h3>
+                        <div class="screenshot-gallery">
+                            <div class="screenshot-item">
+                                <img src="week-01_7-11-Dec-2025/01-Dr-Sharaf-El-Deen/Screenshot 2025-12-11 134835.png"
+                                    alt="Dr. Sharaf's Weekly Report">
+                                <div class="screenshot-caption" data-i18n="tw01.t1.caption1">تقرير أسبوعي</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== TEACHER 2: Mr. Ahmed El-Marhoom ========== -->
+                <div class="teacher-card">
+                    <div class="teacher-header">
+                        <div class="teacher-number">2</div>
+                        <div class="teacher-info">
+                            <h2 data-i18n="teachersWeekly01.t2.name">أ. أحمد المرحوم (أحمد مرحوم)</h2>
+                            <span class="course" data-i18n="teachersWeekly01.t2.course">اللغة الإنجليزية اليومية
+                                للمبتدئين | الفصل 7 (8 مجموعات)</span>
+                        </div>
+                        <span class="status-badge status-complete" data-i18n="teachersWeekly01.status.complete">✓
+                            مكتمل</span>
+                    </div>
+
+                    <div class="teacher-content">
+                        <h3 data-i18n="teachersWeekly01.section.objectives">📋 أهداف الأسبوع</h3>
+                        <ul>
+                            <li data-i18n="tw01.t2.obj1">تقديم التحيات الأساسية (مرحباً، صباح الخير، مساء الخير، تصبح
+                                على خير، وداعاً)</li>
+                            <li data-i18n="tw01.t2.obj2">تعليم وتعزيز الأبجدية الإنجليزية والصوتيات الأساسية</li>
+                            <li data-i18n="tw01.t2.obj3">ممارسة أسئلة وأجوبة المعلومات الشخصية (كيف حالك؟ من أين أنت؟
+                                إلخ)</li>
+                            <li data-i18n="tw01.t2.obj4">تطوير الثقة في الاستماع والتحدث من خلال التكرار والحوارات</li>
+                        </ul>
+
+                        <h3 data-i18n="teachersWeekly01.section.topics">📚 المواضيع المغطاة</h3>
+                        <div class="topics-list">
+                            <div class="topic-item" data-i18n="tw01.t2.topic1">التحيات والتقديمات</div>
+                            <div class="topic-item" data-i18n="tw01.t2.topic2">الحروف والأصوات (b/p, th, z)</div>
+                            <div class="topic-item" data-i18n="tw01.t2.topic3">مفردات الفصل (حاسوب، قلم رصاص، مكتب)
+                            </div>
+                        </div>
+
+                        <h3 data-i18n="teachersWeekly01.section.challenge">⚠️ التحدي المحدد</h3>
+                        <div class="warning-box">
+                            <h4 data-i18n="tw01.t2.challengeTitle">إملاء الجمل</h4>
+                            <p data-i18n="tw01.t2.challengeDesc">"إملاء الجمل كان مهمة صعبة - لم يصل الطلاب لهذا المستوى
+                                بعد."</p>
+                            <p><strong data-i18n="tw01.t2.adjustment">التعديل:</strong> <span
+                                    data-i18n="tw01.t2.adjustmentDesc">الأسبوع القادم سيتضمن المزيد من التكرار على
+                                    تراكيب الجمل البسيطة.</span></p>
+                        </div>
+
+                        <h3 data-i18n="teachersWeekly01.section.evidence">📸 الأدلة</h3>
+                        <div class="screenshot-gallery">
+                            <div class="screenshot-item">
+                                <img src="week-01_7-11-Dec-2025/02-Mr-Ahmed-El-Marhoom/Screenshot 2025-12-17 091253.png"
+                                    alt="Mr. Ahmed's Weekly Report">
+                                <div class="screenshot-caption" data-i18n="tw01.t2.caption1">تقرير التقدم الأسبوعي</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== TEACHER 3: Mr. Ali Abd El-Salam ========== -->
+                <div class="teacher-card">
+                    <div class="teacher-header">
+                        <div class="teacher-number">3</div>
+                        <div class="teacher-info">
+                            <h2 data-i18n="teachersWeekly01.t3.name">أ. علي عبد السلام</h2>
+                            <span class="course" data-i18n="teachersWeekly01.t3.course">سيناريوهات المحادثة ولعب
+                                الأدوار</span>
+                        </div>
+                        <span class="status-badge status-complete" data-i18n="teachersWeekly01.status.exemplary">✓ مكتمل
+                            ومميز</span>
+                    </div>
+
+                    <div class="teacher-content">
+                        <div class="recommendation-box">
+                            <h4 data-i18n="tw01.t3.modelTitle">⭐ تقديم نموذجي - نهج "الخطة + الدليل"</h4>
+                            <p data-i18n="tw01.t3.modelDesc">قدم أ. علي كلاً من التخطيط التعليمي والأدلة المرئية لتنفيذ
+                                الفصل. يجب تسليط الضوء على هذا كنموذج للمعلمين الآخرين.</p>
+                        </div>
+
+                        <h3 data-i18n="teachersWeekly01.section.scenarios">📋 18 سيناريو محادثة مقترح</h3>
+                        <div class="topics-list">
+                            <div class="topic-item" data-i18n="tw01.t3.scenario1">تسجيل الوصول في المطار</div>
+                            <div class="topic-item" data-i18n="tw01.t3.scenario2">استعارة كتاب من المكتبة</div>
+                            <div class="topic-item" data-i18n="tw01.t3.scenario3">شراء تذاكر القطار</div>
+                            <div class="topic-item" data-i18n="tw01.t3.scenario4">فقدان المحفظة في محطة الحافلات</div>
+                            <div class="topic-item" data-i18n="tw01.t3.scenario5">الطلب في المطعم</div>
+                            <div class="topic-item" data-i18n="tw01.t3.scenario6">موعد الطبيب</div>
+                            <div class="topic-item" data-i18n="tw01.t3.scenario7">التحدث مع مضيفات الطيران</div>
+                            <div class="topic-item" data-i18n="tw01.t3.scenario8">مساعدة شخص غريب</div>
+                            <div class="topic-item" data-i18n="tw01.t3.scenario9">محادثات التاكسي</div>
+                            <div class="topic-item" data-i18n="tw01.t3.scenario10">طلبات طاولة المطعم</div>
+                            <div class="topic-item" data-i18n="tw01.t3.scenario11">التسجيل في دورة إنجليزية</div>
+                            <div class="topic-item" data-i18n="tw01.t3.scenario12">شكاوى المغسلة</div>
+                            <div class="topic-item" data-i18n="tw01.t3.scenario13">تنظيف غرفة الفندق</div>
+                            <div class="topic-item" data-i18n="tw01.t3.scenario14">الجلوس في حافلة مزدحمة</div>
+                            <div class="topic-item" data-i18n="tw01.t3.scenario15">مشاكل الصراف الآلي/البنك</div>
+                            <div class="topic-item" data-i18n="tw01.t3.scenario16">تذاكر القطار الفائتة</div>
+                            <div class="topic-item" data-i18n="tw01.t3.scenario17">طلب الخصومات</div>
+                            <div class="topic-item" data-i18n="tw01.t3.scenario18">فتح حساب بنكي</div>
+                        </div>
+
+                        <h3 data-i18n="teachersWeekly01.section.quality">📊 تقييم الجودة</h3>
+                        <table class="quality-table">
+                            <tr>
+                                <th data-i18n="teachersWeekly01.label.category">الفئة</th>
+                                <th data-i18n="teachersWeekly01.label.rating">التقييم</th>
+                                <th data-i18n="teachersWeekly01.label.notes">ملاحظات</th>
+                            </tr>
+                            <tr>
+                                <td data-i18n="tw01.t3.proofOfWork">دليل العمل</td>
+                                <td><span class="rating-star" data-i18n="teachersWeekly01.label.excellent">⭐
+                                        ممتاز</span></td>
+                                <td data-i18n="tw01.t3.proofNote">الفيديوهات توضح التطبيق الفعلي في الفصل</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="tw01.t3.alignment">التوافق</td>
+                                <td><span class="rating-star" data-i18n="teachersWeekly01.label.high">⭐ عالي</span></td>
+                                <td data-i18n="tw01.t3.alignmentNote">الأدلة المرئية تدعم المنهج المكتوب</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="teachersWeekly01.label.engagement">التفاعل</td>
+                                <td><span class="rating-star" data-i18n="teachersWeekly01.label.high">⭐ عالي</span></td>
+                                <td data-i18n="tw01.t3.engagementNote">مشاركة نشطة للطلاب في لعب الأدوار</td>
+                            </tr>
+                        </table>
+
+                        <h3 data-i18n="teachersWeekly01.section.evidence">📸 الأدلة</h3>
+                        <div class="screenshot-gallery">
+                            <div class="screenshot-item">
+                                <img src="week-01_7-11-Dec-2025/03-Mr-Ali-Abd-El-Salam/Screenshot 2025-12-11 135044.png"
+                                    alt="Mr. Ali's Folder">
+                                <div class="screenshot-caption" data-i18n="tw01.t3.caption1">مجلد التقديم مع الفيديوهات
+                                </div>
+                            </div>
+                            <div class="screenshot-item">
+                                <img src="week-01_7-11-Dec-2025/03-Mr-Ali-Abd-El-Salam/Screenshot 2025-12-11 135120.png"
+                                    alt="Mr. Ali's Scenarios">
+                                <div class="screenshot-caption" data-i18n="tw01.t3.caption2">مستند سيناريوهات المحادثة
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== TEACHER 4: Mr. Mohammed Ameen ========== -->
+                <div class="teacher-card">
+                    <div class="teacher-header">
+                        <div class="teacher-number">4</div>
+                        <div class="teacher-info">
+                            <h2 data-i18n="teachersWeekly01.t4.name">أ. محمد أمين</h2>
+                            <span class="course" data-i18n="teachersWeekly01.t4.course">الصوتيات الأساسية
+                                والإملاء</span>
+                        </div>
+                        <span class="status-badge status-complete" data-i18n="teachersWeekly01.status.datadriven">✓
+                            مكتمل (قائم على البيانات)</span>
+                    </div>
+
+                    <div class="teacher-content">
+                        <div class="recommendation-box">
+                            <h4 data-i18n="tw01.t4.dataTitle">📊 تعليم قائم على البيانات</h4>
+                            <p data-i18n="tw01.t4.dataDesc">قدم أ. أمين تقارير تقييم رقمية تتبع دقة كل طالب - مما يسمح
+                                بالتحقق الفوري من تعلم الطلاب.</p>
+                        </div>
+
+                        <h3 data-i18n="teachersWeekly01.section.instructional">📋 التركيز التعليمي</h3>
+                        <ul>
+                            <li data-i18n="tw01.t4.focus1">تمييز الصوتيات ("p" مقابل "b")</li>
+                            <li data-i18n="tw01.t4.focus2">إملاء كلمات من 3-4 حروف</li>
+                            <li data-i18n="tw01.t4.focus3">أصوات الحروف: 'a' و 't'</li>
+                        </ul>
+
+                        <h3 data-i18n="teachersWeekly01.section.assessment">📊 نتائج التقييم</h3>
+                        <table class="quality-table">
+                            <tr>
+                                <th data-i18n="tw01.t4.skillTested">المهارة المختبرة</th>
+                                <th data-i18n="tw01.t4.results">النتائج</th>
+                            </tr>
+                            <tr>
+                                <td data-i18n="tw01.t4.skill1">"الفرق بين b و p"</td>
+                                <td data-i18n="tw01.t4.result1">دقة عالية (كثير من الطلاب حققوا 100%)</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="tw01.t4.skill2">"نطق حرف T"</td>
+                                <td data-i18n="tw01.t4.result2">خالد سعد وحسن اليوسف: 100%</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="tw01.t4.skill3">الدقة الإجمالية</td>
+                                <td data-i18n="tw01.t4.result3">10/11 إجابات صحيحة لكثير من الطلاب</td>
+                            </tr>
+                        </table>
+
+                        <h3 data-i18n="teachersWeekly01.section.reflective">💡 الممارسة التأملية</h3>
+                        <div class="highlight-box" data-i18n="tw01.t4.quote">
+                            "أتقن الطلاب الأصوات والكلمات القصيرة، لكن إملاء الجمل كان صعباً - لم يصلوا لهذا المستوى
+                            بعد."
+                        </div>
+
+                        <h3 data-i18n="teachersWeekly01.section.evidence">📸 الأدلة</h3>
+                        <div class="screenshot-gallery">
+                            <div class="screenshot-item">
+                                <img src="week-01_7-11-Dec-2025/04-Mr-Mohammed-Ameen/Screenshot 2025-12-11 135250.png"
+                                    alt="Assessment Results">
+                                <div class="screenshot-caption" data-i18n="tw01.t4.caption1">نتائج الاختبار الرقمي</div>
+                            </div>
+                            <div class="screenshot-item">
+                                <img src="week-01_7-11-Dec-2025/04-Mr-Mohammed-Ameen/Screenshot 2025-12-11 135308.png"
+                                    alt="Student Scores">
+                                <div class="screenshot-caption" data-i18n="tw01.t4.caption2">درجات الطلاب الفردية</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== TEACHER 5: Mr. Mostafa ========== -->
+                <div class="teacher-card">
+                    <div class="teacher-header">
+                        <div class="teacher-number">5</div>
+                        <div class="teacher-info">
+                            <h2 data-i18n="teachersWeekly01.t5.name">أ. مصطفى</h2>
+                            <span class="course" data-i18n="teachersWeekly01.t5.course">التواصل الشفهي والتحدث أمام
+                                الجمهور</span>
+                        </div>
+                        <span class="status-badge status-complete" data-i18n="teachersWeekly01.status.complete">✓
+                            مكتمل</span>
+                    </div>
+
+                    <div class="teacher-content">
+                        <h3 data-i18n="teachersWeekly01.section.focus">📋 مجال التركيز: التقديم الذاتي</h3>
+                        <p data-i18n="tw01.t5.focusDesc">دمج أ. مصطفى المهارات اللغوية مع المهارات الناعمة، مستهدفاً
+                            تحديداً ثقة الطلاب ولغة الجسد.</p>
+
+                        <h3 data-i18n="teachersWeekly01.section.strategy">📚 استراتيجية التدريس ذات الـ 3 خطوات</h3>
+                        <div class="metrics-grid">
+                            <div class="metric-item">
+                                <div class="metric-value" data-i18n="tw01.t5.step1">1️⃣</div>
+                                <div class="metric-label" data-i18n="tw01.t5.step1Label">المدخلات: فيديوهات يوتيوب</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-value" data-i18n="tw01.t5.step2">2️⃣</div>
+                                <div class="metric-label" data-i18n="tw01.t5.step2Label">المعالجة: تعلم العبارات</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-value" data-i18n="tw01.t5.step3">3️⃣</div>
+                                <div class="metric-label" data-i18n="tw01.t5.step3Label">الأداء: لغة الجسد</div>
+                            </div>
+                        </div>
+
+                        <h3 data-i18n="teachersWeekly01.section.videoEvidence">🎬 دليل الفيديو: الطالب حسن القاري</h3>
+                        <div class="highlight-box">
+                            <strong data-i18n="tw01.t5.transcript">النص:</strong> <span
+                                data-i18n="tw01.t5.transcriptText">"اسمي حسن القاري. أنا من السعودية... أدرس في معهد
+                                بلاك جولد"</span>
+                            <br><br>
+                            <strong data-i18n="tw01.t5.flow">التسلسل:</strong> <span data-i18n="tw01.t5.flowDesc">الاسم
+                                ← الأصل ← المدينة ← التعليم (يظهر تدرجاً فعالاً)</span>
+                        </div>
+
+                        <h3 data-i18n="teachersWeekly01.section.quality">📊 تقييم الجودة</h3>
+                        <table class="quality-table">
+                            <tr>
+                                <th data-i18n="teachersWeekly01.label.category">الفئة</th>
+                                <th data-i18n="teachersWeekly01.label.rating">التقييم</th>
+                            </tr>
+                            <tr>
+                                <td data-i18n="tw01.t5.alignmentPlan">التوافق (الخطة مقابل الدليل)</td>
+                                <td><span class="rating-star" data-i18n="teachersWeekly01.label.perfect">⭐ مثالي</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="tw01.t5.holisticApproach">النهج الشامل</td>
+                                <td><span class="rating-star" data-i18n="tw01.t5.holisticNote">⭐ ممتاز - يعالج الحواجز
+                                        النفسية</span></td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="tw01.t5.studentOutput">مخرجات الطالب</td>
+                                <td><span class="rating-star" data-i18n="tw01.t5.outputNote">⭐ قوي - جمل كاملة، تسلسل
+                                        منطقي</span></td>
+                            </tr>
+                        </table>
+
+                        <h3 data-i18n="teachersWeekly01.section.evidence">📸 الأدلة</h3>
+                        <div class="screenshot-gallery">
+                            <div class="screenshot-item">
+                                <img src="week-01_7-11-Dec-2025/05-Mr-Mostafa/Screenshot 2025-12-17 090059.png"
+                                    alt="Mr. Mostafa's Folder">
+                                <div class="screenshot-caption" data-i18n="tw01.t5.caption1">مواد التقديم</div>
+                            </div>
+                            <div class="screenshot-item">
+                                <img src="week-01_7-11-Dec-2025/05-Mr-Mostafa/Screenshot 2025-12-17 090139.png"
+                                    alt="Weekly Report">
+                                <div class="screenshot-caption" data-i18n="tw01.t5.caption2">تفاصيل التقرير الأسبوعي
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== TEACHER 6: Mr. Tawfeek El-Haddad ========== -->
+                <div class="teacher-card">
+                    <div class="teacher-header">
+                        <div class="teacher-number">6</div>
+                        <div class="teacher-info">
+                            <h2 data-i18n="teachersWeekly01.t6.name">أ. توفيق الحداد</h2>
+                            <span class="course" data-i18n="teachersWeekly01.t6.course">التلعيب وتحفيز الطلاب</span>
+                        </div>
+                        <span class="status-badge status-complete" data-i18n="teachersWeekly01.status.complete">✓
+                            مكتمل</span>
+                    </div>
+
+                    <div class="teacher-content">
+                        <h3 data-i18n="teachersWeekly01.section.approach">📋 النهج: التلعيب</h3>
+                        <p data-i18n="tw01.t6.approachDesc">استخدم أ. توفيق مسابقة/اختبار ودي لتقييم فهم الطلاب، مع
+                            التركيز على التحفيز والحماس من خلال التعلم التنافسي. كما قدم أدلة فيديو لأنشطة الفصل.</p>
+
+                        <h3 data-i18n="teachersWeekly01.section.themes">📚 7 محاور محادثة رئيسية مخططة</h3>
+                        <div class="topics-list">
+                            <div class="topic-item" data-i18n="tw01.t6.theme1">السفر (الآداب، النصائح)</div>
+                            <div class="topic-item" data-i18n="tw01.t6.theme2">العمل والدراسة</div>
+                            <div class="topic-item" data-i18n="tw01.t6.theme3">الأحداث الجارية</div>
+                            <div class="topic-item" data-i18n="tw01.t6.theme4">الاختلافات الثقافية</div>
+                            <div class="topic-item" data-i18n="tw01.t6.theme5">اتجاهات التكنولوجيا المستقبلية</div>
+                            <div class="topic-item" data-i18n="tw01.t6.theme6">القضايا العالمية</div>
+                            <div class="topic-item" data-i18n="tw01.t6.theme7">تأثير التكنولوجيا</div>
+                        </div>
+
+                        <div class="highlight-box" data-i18n="tw01.t6.quote">
+                            "أظهر الطلاب تركيزاً وحماساً ممتازين خلال المنافسة الودية."
+                        </div>
+
+                        <h3 data-i18n="teachersWeekly01.section.strengths">💡 نقاط القوة الملاحظة</h3>
+                        <ul>
+                            <li><strong data-i18n="tw01.t6.strength1">استراتيجيات التحفيز:</strong> <span
+                                    data-i18n="tw01.t6.strength1Desc">تركيز صريح على "المنافسة الصحية" وطاقة
+                                    الفصل</span></li>
+                            <li><strong data-i18n="tw01.t6.strength2">مواضيع منظمة:</strong> <span
+                                    data-i18n="tw01.t6.strength2Desc">تقسيم منظم للمواضيع المعقدة إلى نقاط قابلة
+                                    للنقاش</span></li>
+                            <li><strong data-i18n="tw01.t6.strength3">أدلة الفيديو:</strong> <span
+                                    data-i18n="tw01.t6.strength3Desc">قدم تسجيلات الفصل توضح تنفيذ الدرس</span></li>
+                        </ul>
+
+                        <div class="recommendation-box">
+                            <h4 data-i18n="tw01.t6.noteTitle">📁 ملاحظة للتقديمات المستقبلية</h4>
+                            <p data-i18n="tw01.t6.noteDesc">فكر في استخدام أسماء ملفات وصفية (مثل
+                                "Competition_Activity_Dec9.mp4") لتسهيل الأرشفة.</p>
+                        </div>
+
+                        <h3 data-i18n="teachersWeekly01.section.evidence">📸 الأدلة</h3>
+                        <div class="screenshot-gallery">
+                            <div class="screenshot-item">
+                                <img src="week-01_7-11-Dec-2025/06-Mr-Tawfeek-El-Haddad/Screenshot 2025-12-11 135616.png"
+                                    alt="Mr. Tawfeek's Folder">
+                                <div class="screenshot-caption" data-i18n="tw01.t6.caption1">مجلد التقديم</div>
+                            </div>
+                            <div class="screenshot-item">
+                                <img src="week-01_7-11-Dec-2025/06-Mr-Tawfeek-El-Haddad/Screenshot 2025-12-11 135719.png"
+                                    alt="Conversation Topics">
+                                <div class="screenshot-caption" data-i18n="tw01.t6.caption2">مستند محاور المحادثة</div>
+                            </div>
+                            <div class="screenshot-item">
+                                <img src="week-01_7-11-Dec-2025/06-Mr-Tawfeek-El-Haddad/Screenshot 2025-12-11 150849.png"
+                                    alt="Classroom Video">
+                                <div class="screenshot-caption" data-i18n="tw01.t6.caption3">فيديو نشاط الفصل</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== TEACHER 7: Ms. Balsam ========== -->
+                <div class="teacher-card">
+                    <div class="teacher-header">
+                        <div class="teacher-number">7</div>
+                        <div class="teacher-info">
+                            <h2 data-i18n="teachersWeekly01.t7.name">أ. بلسم</h2>
+                            <span class="course" data-i18n="teachersWeekly01.t7.course">التعلم عن بُعد | العمل
+                                الثنائي</span>
+                        </div>
+                        <span class="status-badge status-complete" data-i18n="teachersWeekly01.status.exemplary">✓ مكتمل
+                            ومميز</span>
+                    </div>
+
+                    <div class="teacher-content">
+                        <div class="recommendation-box">
+                            <h4 data-i18n="tw01.t7.contextTitle">🌐 سياق فريد: التعلم عن بُعد</h4>
+                            <p data-i18n="tw01.t7.contextDesc">أ. بلسم هي المعلمة الوحيدة التي تعمل في سياق أونلاين،
+                                موضحة كيفية تكييف ممارسة المحادثة للتعلم عن بُعد مع غرف Zoom المنفصلة وأنشطة الفيديو
+                                الثنائية.</p>
+                        </div>
+
+                        <h3 data-i18n="teachersWeekly01.section.submission">📊 ملخص التقديم</h3>
+                        <div class="metrics-grid">
+                            <div class="metric-item">
+                                <div class="metric-value">12</div>
+                                <div class="metric-label" data-i18n="tw01.t7.totalFiles">إجمالي الملفات</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-value">5</div>
+                                <div class="metric-label" data-i18n="tw01.t7.instructionalPDFs">ملفات PDF تعليمية</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-value">6</div>
+                                <div class="metric-label" data-i18n="tw01.t7.studentVideos">فيديوهات الطلاب</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-value">1</div>
+                                <div class="metric-label" data-i18n="tw01.t7.weeklyReport">التقرير الأسبوعي</div>
+                            </div>
+                        </div>
+
+                        <h3 data-i18n="teachersWeekly01.section.materials">📚 المواد التعليمية</h3>
+                        <div class="topics-list">
+                            <div class="topic-item" data-i18n="tw01.t7.material1">ملف التحيات الأساسية</div>
+                            <div class="topic-item" data-i18n="tw01.t7.material2">ملف الوداع</div>
+                            <div class="topic-item" data-i18n="tw01.t7.material3">ملف التقديم الذاتي</div>
+                            <div class="topic-item" data-i18n="tw01.t7.material4">ملف نصائح المحادثة</div>
+                            <div class="topic-item" data-i18n="tw01.t7.material5">مواضيع (المطعم، المستشفى، إلخ)</div>
+                        </div>
+
+                        <h3 data-i18n="teachersWeekly01.section.pairWork">🎬 دليل الفيديو: عمل ثنائي للطلاب</h3>
+                        <ul>
+                            <li><strong data-i18n="tw01.t7.pair1">بيان + فدك</strong> - <span
+                                    data-i18n="tw01.t7.pair1Desc">محادثة في غرفة منفصلة</span></li>
+                            <li><strong data-i18n="tw01.t7.pair2">فيان + ريم العجدعة</strong> - <span
+                                    data-i18n="tw01.t7.pair2Desc">نشاط ثنائي</span></li>
+                            <li><strong data-i18n="tw01.t7.pair3">زهراء عياش + زهراء الخاطر</strong> - <span
+                                    data-i18n="tw01.t7.pair3Desc">تعاون طلابي</span></li>
+                            <li><strong data-i18n="tw01.t7.pair4">آية سعيد</strong> - <span
+                                    data-i18n="tw01.t7.pair4Desc">أداء فردي</span></li>
+                        </ul>
+
+                        <h3 data-i18n="teachersWeekly01.section.challenges">⚠️ التحديات والحلول</h3>
+                        <div class="warning-box">
+                            <h4 data-i18n="tw01.t7.challengeTitle">التحدي: التفاعل عبر الإنترنت</h4>
+                            <p data-i18n="tw01.t7.challengeDesc">"الطالبات لا يزلن خجولات قليلاً... خاصة في النقاشات
+                                المفتوحة" - غالباً ما تكون الكاميرات مغلقة.</p>
+                            <p><strong data-i18n="tw01.t7.solutionLabel">حلها:</strong> <span
+                                    data-i18n="tw01.t7.solutionDesc">إنشاء غرف Zoom منفصلة وفرض استخدام الكاميرا لممارسة
+                                    المجموعات الصغيرة.</span></p>
+                        </div>
+
+                        <h3 data-i18n="teachersWeekly01.section.evidence">📸 الأدلة</h3>
+                        <div class="screenshot-gallery">
+                            <div class="screenshot-item">
+                                <img src="week-01_7-11-Dec-2025/07-Ms-Balsam/Screenshot 2025-12-11 135820.png"
+                                    alt="Ms. Balsam's Folder">
+                                <div class="screenshot-caption" data-i18n="tw01.t7.caption1">حزمة التقديم الكاملة</div>
+                            </div>
+                            <div class="screenshot-item">
+                                <img src="week-01_7-11-Dec-2025/07-Ms-Balsam/Screenshot 2025-12-11 135855.png"
+                                    alt="Instructional Materials">
+                                <div class="screenshot-caption" data-i18n="tw01.t7.caption2">المواد التعليمية</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== TEACHER 8: Ms. Khadija Tahir ========== -->
+                <div class="teacher-card">
+                    <div class="teacher-header">
+                        <div class="teacher-number">8</div>
+                        <div class="teacher-info">
+                            <h2 data-i18n="teachersWeekly01.t8.name">أ. خديجة طاهر</h2>
+                            <span class="course" data-i18n="teachersWeekly01.t8.course">الإنجليزية الموقفية للبقاء | عن
+                                بُعد</span>
+                        </div>
+                        <span class="status-badge status-complete" data-i18n="teachersWeekly01.status.complete">✓
+                            مكتمل</span>
+                    </div>
+
+                    <div class="teacher-content">
+                        <div class="recommendation-box">
+                            <h4 data-i18n="tw01.t8.contextTitle">🌐 سياق التعليم عن بُعد</h4>
+                            <p data-i18n="tw01.t8.contextDesc">أ. خديجة تقوم بجلسات عن بُعد (مثل أ. بلسم). قدمت تقريراً
+                                أسبوعياً مفصلاً ولقطات شاشة للجلسة المباشرة كدليل على الحضور والتقديم.</p>
+                        </div>
+
+                        <h3 data-i18n="teachersWeekly01.section.submission">📊 ملخص التقديم</h3>
+                        <div class="metrics-grid">
+                            <div class="metric-item">
+                                <div class="metric-value">4</div>
+                                <div class="metric-label" data-i18n="tw01.t7.totalFiles">إجمالي الملفات</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-value">1</div>
+                                <div class="metric-label" data-i18n="tw01.t8.curriculumDoc">مستند المنهج</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-value">1</div>
+                                <div class="metric-label" data-i18n="tw01.t7.weeklyReport">التقرير الأسبوعي</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-value">2</div>
+                                <div class="metric-label" data-i18n="tw01.t8.evidenceScreenshots">لقطات شاشة الأدلة
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 data-i18n="tw01.t8.weekFocus">📋 تركيز الأسبوع 1: التقديم الذاتي الرسمي</h3>
+                        <p data-i18n="tw01.t8.weekFocusDesc">ركز درس هذا الأسبوع على "التقديم الذاتي الرسمي" للسياقات
+                            المهنية مثل مقابلات العمل والمؤتمرات وورش العمل.</p>
+
+                        <h3 data-i18n="tw01.t8.topicsSection">📚 المواضيع الممارسة مقابل المُقدَّمة</h3>
+                        <div class="topics-list">
+                            <div class="topic-item"><strong data-i18n="tw01.t8.practiced">تم التدريب:</strong> <span
+                                    data-i18n="tw01.t8.practicedDesc">المواقف الرسمية (المقابلات، ورش العمل)</span>
+                            </div>
+                            <div class="topic-item"><strong data-i18n="tw01.t8.introduced">تم التقديم:</strong> <span
+                                    data-i18n="tw01.t8.introducedDesc">المواقف غير الرسمية (التحدث مع حارس الأمن)</span>
+                            </div>
+                            <div class="topic-item" data-i18n="tw01.t8.keyVocab">المفردات الرئيسية: السياق، الخبرة،
+                                المشاركة</div>
+                        </div>
+
+                        <h3 data-i18n="tw01.t8.sampleSection">🎤 نماذج الجمل الممارسة</h3>
+                        <div class="highlight-box">
+                            <ul style="margin: 0; padding-left: 1.2rem;">
+                                <li data-i18n="tw01.t8.sample1">"أعمل حالياً كـ ______ في ______"</li>
+                                <li data-i18n="tw01.t8.sample2">الاسم والأصل</li>
+                                <li data-i18n="tw01.t8.sample3">الدور الحالي والمسؤوليات</li>
+                            </ul>
+                        </div>
+
+                        <h3 data-i18n="tw01.t8.verificationSection">📸 التحقق من الأدلة المرئية</h3>
+                        <table class="quality-table">
+                            <tr>
+                                <th data-i18n="tw01.t8.element">العنصر</th>
+                                <th data-i18n="tw01.t8.verification">التحقق</th>
+                            </tr>
+                            <tr>
+                                <td data-i18n="tw01.t8.timestamp">الطابع الزمني</td>
+                                <td><span class="rating-star">✓</span> <span data-i18n="tw01.t8.timestampVal">11/12/2025
+                                        الساعة 3:14 م</span></td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="tw01.t8.attendance">حضور الطالبات</td>
+                                <td><span class="rating-star">✓</span> <span data-i18n="tw01.t8.attendanceVal">ريماس،
+                                        روان الحربي مرئيتان</span></td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="tw01.t8.contentAlign">توافق المحتوى</td>
+                                <td><span class="rating-star">✓</span> <span data-i18n="tw01.t8.contentAlignVal">الشريحة
+                                        تطابق التقرير المكتوب</span></td>
+                            </tr>
+                        </table>
+
+                        <h3 data-i18n="teachersWeekly01.section.strengths">💡 نقاط القوة الملاحظة</h3>
+                        <ul>
+                            <li><strong data-i18n="tw01.t8.strength1">شرائح ثنائية اللغة:</strong> <span
+                                    data-i18n="tw01.t8.strength1Desc">العرض بالإنجليزية/العربية - تدرج ممتاز لطلاب
+                                    الإنجليزية للبقاء</span></li>
+                            <li><strong data-i18n="tw01.t8.strength2">تقارير واضحة:</strong> <span
+                                    data-i18n="tw01.t8.strength2Desc">تمييز بين ما تم التدريب عليه مقابل ما تم تقديمه
+                                    فقط</span></li>
+                            <li><strong data-i18n="tw01.t8.strength3">تراكيب محددة:</strong> <span
+                                    data-i18n="tw01.t8.strength3Desc">أنماط جمل دقيقة مقدمة لاختبار الطلاب لاحقاً</span>
+                            </li>
+                        </ul>
+
+                        <h3 data-i18n="teachersWeekly01.section.quality">📊 تقييم الجودة</h3>
+                        <table class="quality-table">
+                            <tr>
+                                <th data-i18n="teachersWeekly01.label.category">الفئة</th>
+                                <th data-i18n="teachersWeekly01.label.rating">التقييم</th>
+                            </tr>
+                            <tr>
+                                <td data-i18n="tw01.t8.curriculumDesign">تصميم المنهج</td>
+                                <td><span class="rating-star" data-i18n="tw01.t8.curriculumNote">⭐ متميز - 50 سيناريو
+                                        عملي</span></td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="tw01.t8.reportQuality">التقرير الأسبوعي</td>
+                                <td><span class="rating-star" data-i18n="tw01.t8.reportNote">⭐ ممتاز - واضح ومفصل</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="tw01.t8.evidenceQuality">الأدلة</td>
+                                <td><span class="rating-star" data-i18n="tw01.t8.evidenceNote">⭐ مكتملة - لقطات شاشة
+                                        بطابع زمني</span></td>
+                            </tr>
+                        </table>
+
+                        <h3 data-i18n="teachersWeekly01.section.evidence">📸 الأدلة</h3>
+                        <div class="screenshot-gallery">
+                            <div class="screenshot-item">
+                                <img src="week-01_7-11-Dec-2025/08-Ms-Khadija-Tahir/Screenshot 2025-12-11 154546.png"
+                                    alt="Weekly Report">
+                                <div class="screenshot-caption" data-i18n="tw01.t8.caption1">التقرير الأسبوعي (الأسبوع
+                                    1)</div>
+                            </div>
+                            <div class="screenshot-item">
+                                <img src="week-01_7-11-Dec-2025/08-Ms-Khadija-Tahir/Screenshot 2025-12-11 154611.png"
+                                    alt="Live Session Screenshot">
+                                <div class="screenshot-caption" data-i18n="tw01.t8.caption2">الجلسة المباشرة - شريحة
+                                    التقديم الذاتي الرسمي</div>
+                            </div>
+                            <div class="screenshot-item">
+                                <img src="week-01_7-11-Dec-2025/08-Ms-Khadija-Tahir/Screenshot 2025-12-11 140057.png"
+                                    alt="Situational English Framework">
+                                <div class="screenshot-caption" data-i18n="tw01.t8.caption3">إطار الإنجليزية الموقفية
+                                    (50 موضوعاً)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+
+    </article>
+    </main>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" aria-label="Toggle Menu">☰</button>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="../../js/i18n.js"></script>
+    <script src="../../js/main.js"></script>
+</body>
+
+</html>

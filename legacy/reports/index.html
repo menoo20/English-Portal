@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="التقارير الأسبوعية - قسم اللغة الإنجليزية">
+
+    <title>التقارير الأسبوعية | Weekly Reports</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/rtl.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../logo/image2.png">
+</head>
+
+<body>
+    <div class="app-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="../logo/image2.png" alt="Blackgold Logo" class="sidebar-logo">
+                <div class="sidebar-brand">
+                    <h1 data-i18n="brand.name">قسم اللغة الإنجليزية</h1>
+                    <span data-i18n="brand.subtitle">معهد بلاك جولد العالي</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <!-- Main Navigation -->
+                <div class="nav-section">
+                    <div class="nav-section-title" data-i18n="section.main">القائمة الرئيسية</div>
+                    <a href="../index.html" class="nav-item">
+                        <span class="nav-icon">🏠</span>
+                        <span class="nav-text" data-i18n="nav.home">الرئيسية</span>
+                    </a>
+                </div>
+
+                <!-- Content Navigation -->
+                <div class="nav-section">
+                    <div class="nav-section-title" data-i18n="section.content">المحتوى</div>
+                    <a href="index.html" class="nav-item active">
+                        <span class="nav-icon">📝</span>
+                        <span class="nav-text" data-i18n="nav.reports">التقارير الأسبوعية</span>
+                    </a>
+                    <a href="../blog/index.html" class="nav-item">
+                        <span class="nav-icon">📚</span>
+                        <span class="nav-text" data-i18n="nav.blog">المقالات</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">📂</span>
+                        <span class="nav-text" data-i18n="nav.resources">الموارد</span>
+                    </a>
+                </div>
+            </nav>
+
+            <!-- Language Toggle -->
+            <div class="sidebar-footer">
+                <div class="language-toggle">
+                    <button class="lang-btn active" data-lang="ar">عربي</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Sidebar Overlay (Mobile) -->
+        <div class="sidebar-overlay"></div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Page Header -->
+            <header class="page-header">
+                <a href="../index.html" class="back-nav">
+                    <span>→</span>
+                    <span data-i18n="action.back">العودة</span>
+                </a>
+                <h1 class="page-title" data-i18n="page.reports.title">التقارير الأسبوعية</h1>
+                <p class="page-description" data-i18n="page.reports.description">أرشيف التقارير الأسبوعية لقسم اللغة
+                    الإنجليزية</p>
+            </header>
+
+            <!-- Filter Bar -->
+            <div class="filter-bar">
+                <button class="filter-chip active" data-i18n="filter.all">الكل</button>
+                <button class="filter-chip" data-i18n="filter.recent">الأحدث</button>
+                <button class="filter-chip" data-i18n="filter.oldest">الأقدم</button>
+            </div>
+
+            <!-- Reports Grid -->
+            <section class="content-section">
+                <div class="cards-grid" id="reports-grid">
+
+                    <!-- Annual English Plan (New) -->
+                    <a href="annual-plan/index.html" class="content-card">
+                        <div class="card-content">
+                            <span class="card-category" style="color: #D4AF37;">خطة سنوية</span>
+                            <h3 class="card-title">📅 الخطة السنوية الشاملة 2026</h3>
+                            <p class="card-excerpt">الخطة الدراسية الكاملة لمدة 11 شهراً (تأسيس + New Headway) مع
+                                التواريخ.</p>
+                            <div class="card-meta">
+                                <span class="card-date">يناير 2026 - نوفمبر 2026</span>
+                                <span class="card-arrow">←</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Conversational Program Report Card -->
+                    <a href="conversational-program/index.html" class="content-card">
+                        <div class="card-content">
+                            <span class="card-category" style="color: #D4AF37;"
+                                data-i18n="conversational.card.category">خطة دراسية</span>
+                            <h3 class="card-title" data-i18n="conversational.card.title">برنامج المحادثة (3 أشهر)</h3>
+                            <p class="card-excerpt" data-i18n="conversational.card.excerpt">الخطة الأسبوعية الموحدة لقسم
+                                اللغة الإنجليزية، تشمل الأهداف
+                                والملاحظات الهامة.</p>
+                            <div class="card-meta">
+                                <span class="card-date" data-i18n="conversational.card.date">ديسمبر 2025 - مارس
+                                    2026</span>
+                                <span class="card-arrow">←</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Full Program Schedule (Detailed Plan) -->
+                    <a href="conversational-program/full-schedule.html" class="content-card">
+                        <div class="card-content">
+                            <span class="card-category" style="color: #F4D03F;"
+                                data-i18n="fullSchedule.card.category">الخطة التفصيلية</span>
+                            <h3 class="card-title" data-i18n="fullSchedule.card.title">📅 الخطة التفصيلية الكاملة</h3>
+                            <p class="card-excerpt" data-i18n="fullSchedule.card.excerpt">جدول تفصيلي يومي لبرنامج
+                                المحادثة يشمل جميع المواضيع والأهداف والأنشطة.</p>
+                            <div class="card-meta">
+                                <span class="card-date" data-i18n="fullSchedule.card.date">ديسمبر 2025 - مارس
+                                    2026</span>
+                                <span class="card-arrow">←</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Teachers Weekly Report 02 -->
+                    <a href="teachers-weekly-02/index.html" class="content-card">
+                        <div class="card-content">
+                            <span class="card-category" data-i18n="teachersWeekly02.category">تقرير المعلمين
+                                الأسبوعي</span>
+                            <h3 class="card-title" data-i18n="teachersWeekly02.title">📊 تقرير أداء المعلمين - الأسبوع 2
+                            </h3>
+                            <p class="card-excerpt" data-i18n="teachersWeekly02.excerpt">تقييم أسبوعي شامل لـ 9 معلمين،
+                                يشمل الأهداف والأدلة وتقييم الجودة...</p>
+                            <div class="card-meta">
+                                <span class="card-date" data-i18n="teachersWeekly02.date">21 - 25 ديسمبر 2025</span>
+                                <span class="card-arrow">←</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Teachers Weekly Report 01 -->
+                    <a href="teachers-weekly-01/index.html" class="content-card">
+                        <div class="card-content">
+                            <span class="card-category" data-i18n="teachersWeekly01.category">تقرير المعلمين
+                                الأسبوعي</span>
+                            <h3 class="card-title" data-i18n="teachersWeekly01.title">📊 تقرير أداء المعلمين الأسبوعي
+                            </h3>
+                            <p class="card-excerpt" data-i18n="teachersWeekly01.excerpt">تقييم أسبوعي شامل لـ 8 معلمين،
+                                يشمل الأهداف والأدلة وتقييم الجودة...</p>
+                            <div class="card-meta">
+                                <span class="card-date" data-i18n="teachersWeekly01.date">7-11 ديسمبر 2025</span>
+                                <span class="card-arrow">←</span>
+                            </div>
+                        </div>
+                    </a> <!-- Shortages Report Card -->
+                    <a href="shortages-01/index.html" class="content-card">
+                        <div class="card-content">
+                            <span class="card-category" data-i18n="shortages01.category">تقرير النواقص</span>
+                            <h3 class="card-title" data-i18n="shortages01.title">نواقص المدربين</h3>
+                            <p class="card-excerpt" data-i18n="shortages01.excerpt">جدول يوضح النواقص في مستلزمات فصول
+                                المدربين</p>
+                            <div class="card-meta">
+                                <span class="card-date" data-i18n="shortages01.date">8 ديسمبر 2025</span>
+                                <span class="card-arrow">←</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Meeting 01 Report Card -->
+                    <a href="meeting-01/index.html" class="content-card">
+                        <div class="card-content">
+                            <span class="card-category" data-i18n="meeting01.category">الاجتماع الأول</span>
+                            <h3 class="card-title" data-i18n="meeting01.title">محضر اجتماع قسم اللغة الإنجليزية</h3>
+                            <p class="card-excerpt" data-i18n="reports.meeting01.excerpt">منهجية التدريس الجديدة،
+                                التقارير الأسبوعية، ومواد الفصل الدراسي...</p>
+                            <div class="card-meta">
+                                <span class="card-date" data-i18n="meeting01.date">4 ديسمبر 2025</span>
+                                <span class="card-arrow">←</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Example Card (hidden, for reference) 
+          <a href="week-01/index.html" class="content-card">
+            <div class="card-content">
+              <span class="card-category">الأسبوع الأول</span>
+              <h3 class="card-title">تقرير الأسبوع الأول</h3>
+              <p class="card-excerpt">ملخص أنشطة الأسبوع الأول من الفصل الدراسي...</p>
+              <div class="card-meta">
+                <span class="card-date">1 ديسمبر 2024</span>
+                <span class="card-arrow">←</span>
+              </div>
+            </div>
+          </a>
+          -->
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+            ☰
+        </button>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/i18n.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

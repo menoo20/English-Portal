@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="محضر اجتماع قسم اللغة الإنجليزية الأول - English Department First Meeting Minutes">
+
+    <title>محضر اجتماع قسم اللغة الإنجليزية (1) | English Department Meeting (1)</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/rtl.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../../logo/image2.png">
+
+    <!-- Print Styles -->
+    <style>
+        @media print {
+
+            .sidebar,
+            .sidebar-overlay,
+            .mobile-menu-toggle,
+            .back-nav,
+            .article-actions {
+                display: none !important;
+            }
+
+            .main-content {
+                margin: 0 !important;
+            }
+
+            .article-container {
+                max-width: 100%;
+                padding: 20px;
+            }
+
+            body {
+                background: white;
+                color: black;
+            }
+
+            .article-title {
+                color: black;
+            }
+
+            .article-content {
+                color: #333;
+            }
+        }
+
+        .question-box {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(244, 208, 63, 0.05));
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .question-box h2 {
+            color: #D4AF37;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="../../logo/image2.png" alt="Blackgold Logo" class="sidebar-logo">
+                <div class="sidebar-brand">
+                    <h1 data-i18n="brand.name">قسم اللغة الإنجليزية</h1>
+                    <span data-i18n="brand.subtitle">معهد بلاك جولد العالي</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <!-- Main Navigation -->
+                <div class="nav-section">
+                    <div class="nav-section-title" data-i18n="section.main">القائمة الرئيسية</div>
+                    <a href="../../index.html" class="nav-item">
+                        <span class="nav-icon">🏠</span>
+                        <span class="nav-text" data-i18n="nav.home">الرئيسية</span>
+                    </a>
+                </div>
+
+                <!-- Content Navigation -->
+                <div class="nav-section">
+                    <div class="nav-section-title" data-i18n="section.content">المحتوى</div>
+                    <a href="../index.html" class="nav-item active">
+                        <span class="nav-icon">📝</span>
+                        <span class="nav-text" data-i18n="nav.reports">التقارير الأسبوعية</span>
+                    </a>
+                    <a href="../../blog/index.html" class="nav-item">
+                        <span class="nav-icon">📚</span>
+                        <span class="nav-text" data-i18n="nav.blog">المقالات</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">📂</span>
+                        <span class="nav-text" data-i18n="nav.resources">الموارد</span>
+                    </a>
+                </div>
+            </nav>
+
+            <!-- Language Toggle -->
+            <div class="sidebar-footer">
+                <div class="language-toggle">
+                    <button class="lang-btn active" data-lang="ar">عربي</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Sidebar Overlay (Mobile) -->
+        <div class="sidebar-overlay"></div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <article class="article-container">
+
+                <!-- Back Navigation -->
+                <a href="../index.html" class="back-nav">
+                    <span>→</span>
+                    <span data-i18n="action.back">العودة</span>
+                </a>
+
+                <!-- Article Header -->
+                <header class="article-header">
+                    <span class="article-category" data-i18n="meeting01.category">الاجتماع الأول</span>
+                    <h1 class="article-title" data-i18n="meeting01.title">محضر اجتماع قسم اللغة الإنجليزية</h1>
+                    <div class="article-meta">
+                        <span>📅 <span data-i18n="meeting01.date">4 ديسمبر 2025</span></span>
+                        <span>👥 <span data-i18n="meeting01.author">قسم اللغة الإنجليزية</span></span>
+                    </div>
+                </header>
+
+                <!-- Action Buttons -->
+                <div class="article-actions" style="display: flex; gap: 1rem; margin-bottom: 2rem;">
+                    <button onclick="printPage()" class="btn btn-secondary">
+                        🖨️ <span data-i18n="action.print">طباعة</span>
+                    </button>
+                    <button onclick="sharePage()" class="btn btn-secondary">
+                        📤 <span data-i18n="action.share">مشاركة</span>
+                    </button>
+                </div>
+
+                <!-- Article Content -->
+                <div class="article-content">
+
+                    <!-- Section 1: New Teaching Method -->
+                    <h2 data-i18n="meeting01.section1.title">📚 منهجية التدريس الجديدة</h2>
+                    <p data-i18n="meeting01.section1.content">
+                        تم إبلاغ المعلمين بمنهجية التدريس الجديدة التي تشجع على اللغة الإنجليزية المحادثية والتدريس
+                        التفاعلي. يهدف هذا النهج إلى تعزيز مهارات التواصل لدى الطلاب من خلال الحوار والتفاعل المباشر في
+                        الفصل الدراسي.
+                    </p>
+
+                    <!-- Section 2: Weekly Reports -->
+                    <h2 data-i18n="meeting01.section2.title">📝 التقارير الأسبوعية</h2>
+                    <p>
+                        <span data-i18n="meeting01.section2.content1">يجب على كل معلم في قسم اللغة الإنجليزية تقديم
+                            تقرير أسبوعي عن عمله وتقدم طلابه. يتم حفظ جميع التقارير في مجلد واحد يمكن الوصول إليه
+                            عبر</span>
+                        <a href="https://drive.google.com/drive/folders/1MIcG7P2TQrUIWQ6ww6n7P-T8X6DWR82S?usp=sharing"
+                            target="_blank" rel="noopener" style="color: #D4AF37; text-decoration: underline;">Google
+                            Drive</a>.
+                    </p>
+
+                    <!-- Section 3: Classroom Materials -->
+                    <h2 data-i18n="meeting01.section3.title">🎯 مواد الفصل الدراسي</h2>
+                    <p data-i18n="meeting01.section3.intro">طُلب من المعلمين الإبلاغ عن أي نقص في مواد الفصل الدراسي
+                        مثل:</p>
+                    <ul>
+                        <li data-i18n="meeting01.section3.item1">السبورات البيضاء</li>
+                        <li data-i18n="meeting01.section3.item2">الشاشات</li>
+                        <li data-i18n="meeting01.section3.item3">لوحات الإعلانات</li>
+                        <li data-i18n="meeting01.section3.item4">الأقلام</li>
+                        <li data-i18n="meeting01.section3.item5">وغيرها من المستلزمات...</li>
+                    </ul>
+
+                    <!-- Section 4: Teacher Participation -->
+                    <h2 data-i18n="meeting01.section4.title">💬 مشاركة المعلمين</h2>
+                    <p data-i18n="meeting01.section4.content">
+                        تم تشجيع المعلمين على المشاركة بآرائهم حول منهجية التدريس الجديدة وتوقعاتهم لكيفية استجابة
+                        طلابهم لهذا النهج الجديد.
+                    </p>
+
+                    <!-- Questions Section -->
+                    <div class="question-box">
+                        <h2 data-i18n="meeting01.questions.title">❓ أسئلة تحتاج إجابة</h2>
+                        <ol>
+                            <li data-i18n="meeting01.questions.q1">
+                                في الأشهر الثلاثة الأولى: هل يجب أن نُدرِّس نفس المنهج، أم يجب على كل منا تعليم الطلاب
+                                التحدث من خلال محادثات يجدها مناسبة لاحتياجات طلابه؟
+                            </li>
+                        </ol>
+                    </div>
+
+                </div>
+
+            </article>
+
+        </main>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+            ☰
+        </button>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="../../js/i18n.js"></script>
+    <script src="../../js/main.js"></script>
+</body>
+
+</html>

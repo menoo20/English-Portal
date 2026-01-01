@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="برنامج المحادثة التجريبي - 3 أشهر - الجدول الكامل">
+    <title>الخطة التجريبية التفصيلية | معهد بلاك جولد</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/rtl.css">
+    <link rel="icon" type="image/png" href="../../logo/image2.png">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+
+        @media print {
+
+            .sidebar,
+            .sidebar-overlay,
+            .mobile-menu-toggle,
+            .no-print {
+                display: none !important;
+            }
+
+            .main-content {
+                margin: 0 !important;
+                padding: 0.5rem !important;
+            }
+
+            .article-container {
+                max-width: 100% !important;
+                padding: 0 !important;
+            }
+
+            .week-card {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+
+            .month-section {
+                break-before: page;
+            }
+
+            .month-section:first-of-type {
+                break-before: auto;
+            }
+
+            body {
+                background: white !important;
+                color: #1a1a2e !important;
+                -webkit-print-color-adjust: exact !important;
+            }
+
+            .schedule-header {
+                background: #D4AF37 !important;
+                border: 2px solid #8B7355 !important;
+                color: #1a1a2e !important;
+            }
+
+            .schedule-header h1,
+            .schedule-header .subtitle {
+                color: #1a1a2e !important;
+            }
+
+            .month-header {
+                background: #1a1a2e !important;
+                color: #D4AF37 !important;
+                border-right: 6px solid #D4AF37 !important;
+            }
+
+            .month-header h2 {
+                color: #D4AF37 !important;
+            }
+
+            .week-card {
+                background: #f8f9fa !important;
+                border: 2px solid #1a1a2e !important;
+            }
+
+            .week-header {
+                background: #2c3e50 !important;
+                color: white !important;
+            }
+
+            .schedule-table th {
+                background: #D4AF37 !important;
+                color: #1a1a2e !important;
+            }
+
+            .schedule-table td {
+                border: 1px solid #ddd !important;
+                color: #333 !important;
+            }
+
+            .focus-badge {
+                background: #D4AF37 !important;
+                color: #1a1a2e !important;
+            }
+
+            .quick-ref,
+            .teacher-notes {
+                break-inside: avoid !important;
+                break-before: page !important;
+            }
+        }
+
+        .schedule-header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 2rem;
+            border-radius: 16px;
+            margin-bottom: 2rem;
+            text-align: center;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .schedule-header h1 {
+            color: #D4AF37;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .schedule-header .subtitle {
+            color: #a0a0a0;
+            font-size: 1rem;
+        }
+
+        .experimental-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .date-range {
+            color: #D4AF37;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+
+        .meta-grid {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .meta-item {
+            background: rgba(26, 26, 46, 0.6);
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .meta-item .number {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #D4AF37;
+        }
+
+        .meta-item .label {
+            font-size: 0.8rem;
+            color: #a0a0a0;
+        }
+
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #D4AF37, #F4D03F);
+            color: #1a1a2e;
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: #e0e0e0;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .month-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .month-header {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            padding: 1.25rem 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            border-right: 4px solid #D4AF37;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .month-header h2 {
+            color: #D4AF37;
+            font-size: 1.3rem;
+            margin: 0;
+        }
+
+        .month-header .duration {
+            color: #a0a0a0;
+            font-size: 0.85rem;
+        }
+
+        .week-card {
+            background: rgba(26, 26, 46, 0.6);
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.1);
+        }
+
+        .week-header {
+            background: rgba(212, 175, 55, 0.1);
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .week-title {
+            font-weight: 700;
+            color: #D4AF37;
+            margin-left: 0.75rem;
+        }
+
+        .week-topic {
+            color: #e0e0e0;
+            font-size: 1rem;
+        }
+
+        .week-dates {
+            color: #a0a0a0;
+            font-size: 0.85rem;
+        }
+
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .schedule-table th,
+        .schedule-table td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            text-align: right;
+        }
+
+        .schedule-table th {
+            background: rgba(212, 175, 55, 0.05);
+            color: #D4AF37;
+            font-weight: 600;
+            font-size: 0.8rem;
+        }
+
+        .schedule-table th:first-child {
+            width: 100px;
+        }
+
+        .schedule-table th:nth-child(2) {
+            width: 70px;
+        }
+
+        .schedule-table th:nth-child(3) {
+            width: 120px;
+        }
+
+        .day-date {
+            font-weight: 600;
+            color: #D4AF37;
+            font-size: 0.9rem;
+        }
+
+        .day-name {
+            font-weight: 500;
+            color: #a0a0a0;
+            font-size: 0.85rem;
+        }
+
+        .focus-badge {
+            display: inline-block;
+            background: rgba(212, 175, 55, 0.2);
+            color: #D4AF37;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .objectives {
+            color: #e0e0e0;
+        }
+
+        .quick-ref {
+            background: rgba(212, 175, 55, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .quick-ref h3 {
+            color: #D4AF37;
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .phrases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 0.75rem;
+        }
+
+        .phrase-item {
+            background: rgba(26, 26, 46, 0.6);
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .phrase-number {
+            width: 26px;
+            height: 26px;
+            background: #D4AF37;
+            color: #1a1a2e;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.8rem;
+            flex-shrink: 0;
+        }
+
+        .phrase-topic {
+            font-size: 0.75rem;
+            color: #a0a0a0;
+        }
+
+        .phrase-text {
+            color: #D4AF37;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .teacher-notes {
+            background: rgba(46, 204, 113, 0.1);
+            border: 1px solid rgba(46, 204, 113, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .teacher-notes h3 {
+            color: #2ecc71;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .teacher-notes ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .teacher-notes li {
+            padding: 0.4rem 0;
+            padding-right: 1.5rem;
+            position: relative;
+            color: #ccc;
+        }
+
+        .teacher-notes li::before {
+            content: "💡";
+            position: absolute;
+            right: 0;
+        }
+
+        .page-footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+            color: #a0a0a0;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .schedule-header h1 {
+                font-size: 1.5rem;
+            }
+
+            .month-header,
+            .week-header {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
+            }
+
+            .schedule-table th,
+            .schedule-table td {
+                padding: 0.5rem;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="/logo/image2.png" alt="شعار بلاك جولد" class="sidebar-logo">
+                <div class="sidebar-brand">
+                    <h1>قسم اللغة الإنجليزية</h1>
+                    <span>معهد بلاك جولد العالي</span>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <div class="nav-section-title">القائمة الرئيسية</div>
+                    <a href="/" class="nav-item"><span class="nav-icon">🏠</span><span
+                            class="nav-text">الرئيسية</span></a>
+                </div>
+                <div class="nav-section">
+                    <div class="nav-section-title">المحتوى</div>
+                    <a href="/reports" class="nav-item active"><span class="nav-icon">📝</span><span
+                            class="nav-text">التقارير الأسبوعية</span></a>
+                    <a href="/blog" class="nav-item"><span class="nav-icon">📚</span><span
+                            class="nav-text">المقالات</span></a>
+                </div>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="language-toggle">
+                    <button class="lang-btn active" data-lang="ar">عربي</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <div class="copyright">
+                    <p data-i18n="footer.rights">جميع الحقوق محفوظة</p>
+                    <p>&copy; 2025</p>
+                </div>
+            </div>
+        </aside>
+        <div class="sidebar-overlay"></div>
+
+        <main class="main-content">
+            <article class="article-container">
+                <a href="index.html" class="back-nav"><span>→</span><span>رجوع</span></a>
+
+                <header class="schedule-header">
+                    <div class="experimental-badge">🧪 برنامج تجريبي</div>
+                    <h1>📅 برنامج المحادثة - 3 أشهر</h1>
+                    <p class="subtitle">الجدول التفصيلي - معهد بلاك جولد العالي</p>
+                    <p class="date-range">📆 4 يناير 2026 — 2 أبريل 2026</p>
+                    <div class="meta-grid">
+                        <div class="meta-item">
+                            <div class="number">12</div>
+                            <div class="label">أسبوع</div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="number">13</div>
+                            <div class="label">موضوع</div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="number">62</div>
+                            <div class="label">يوم</div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="number">أحد-خميس</div>
+                            <div class="label">الجدول</div>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="action-buttons no-print">
+                    <button onclick="window.print()" class="btn btn-primary"><span>🖨️ طباعة / حفظ PDF</span></button>
+                    <a href="index.html" class="btn btn-secondary"><span>→ العودة للتقرير</span></a>
+                    <a href="full-schedule.html" class="btn btn-secondary"><span>🇬🇧 English Version</span></a>
+                </div>
+
+                <!-- الشهر الأول: يناير 2026 -->
+                <section class="month-section">
+                    <div class="month-header">
+                        <h2>🗓️ الشهر الأول: مواضيع تأسيسية (يناير 2026)</h2>
+                        <span class="duration">الأسابيع 1-4 | 20 يوم | 4 يناير - 5 فبراير</span>
+                    </div>
+
+                    <!-- الأسبوع 1 -->
+                    <div class="week-card">
+                        <div class="week-header">
+                            <div><span class="week-title">الأسبوع 1</span><span class="week-topic">🍔 كيف تطلب الطعام في
+                                    المطعم</span></div>
+                            <span class="week-dates">4-8 يناير | 5 أيام</span>
+                        </div>
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>التاريخ</th>
+                                    <th>اليوم</th>
+                                    <th>التركيز</th>
+                                    <th>الأهداف الرئيسية</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="day-date">4 يناير</td>
+                                    <td class="day-name">أحد</td>
+                                    <td><span class="focus-badge">مفردات</span></td>
+                                    <td class="objectives">تعلم: قائمة الطعام، طلب، نادل، طاولة، فاتورة</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">5 يناير</td>
+                                    <td class="day-name">اثنين</td>
+                                    <td><span class="focus-badge">عبارات</span></td>
+                                    <td class="objectives">قل: "ممكن أحصل على...؟" / "أريد..."</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">6 يناير</td>
+                                    <td class="day-name">ثلاثاء</td>
+                                    <td><span class="focus-badge">أرقام</span></td>
+                                    <td class="objectives">العد من 1-20، فهم الأسعار</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">7 يناير</td>
+                                    <td class="day-name">أربعاء</td>
+                                    <td><span class="focus-badge">تمثيل أدوار</span></td>
+                                    <td class="objectives">تدرب على الطلب مع زميل</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">8 يناير</td>
+                                    <td class="day-name">خميس</td>
+                                    <td><span class="focus-badge">مراجعة</span></td>
+                                    <td class="objectives">مراجعة جميع المفردات والعبارات</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- الأسبوع 2 -->
+                    <div class="week-card">
+                        <div class="week-header">
+                            <div><span class="week-title">الأسبوع 2</span><span class="week-topic">📅 تحدث عن روتينك
+                                    اليومي</span></div>
+                            <span class="week-dates">11-14 يناير | 4 أيام</span>
+                        </div>
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>التاريخ</th>
+                                    <th>اليوم</th>
+                                    <th>التركيز</th>
+                                    <th>الأهداف الرئيسية</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="day-date">11 يناير</td>
+                                    <td class="day-name">أحد</td>
+                                    <td><span class="focus-badge">كلمات الوقت</span></td>
+                                    <td class="objectives">تعلم: صباح، ظهر، مساء، ليل</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">12 يناير</td>
+                                    <td class="day-name">اثنين</td>
+                                    <td><span class="focus-badge">أفعال</span></td>
+                                    <td class="objectives">تعلم: أستيقظ، آكل، أذهب، أنام، أعمل</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">13 يناير</td>
+                                    <td class="day-name">ثلاثاء</td>
+                                    <td><span class="focus-badge">جمل</span></td>
+                                    <td class="objectives">قل: "أستيقظ الساعة 7" / "آكل الفطور"</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">14 يناير</td>
+                                    <td class="day-name">أربعاء</td>
+                                    <td><span class="focus-badge">تدريب</span></td>
+                                    <td class="objectives">صف روتينك اليومي</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- الأسبوع 3 -->
+                    <div class="week-card">
+                        <div class="week-header">
+                            <div><span class="week-title">الأسبوع 3</span><span class="week-topic">🏙️ تحدث عن بلدك
+                                    ومدينتك</span></div>
+                            <span class="week-dates">15-20 يناير | 4 أيام</span>
+                        </div>
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>التاريخ</th>
+                                    <th>اليوم</th>
+                                    <th>التركيز</th>
+                                    <th>الأهداف الرئيسية</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="day-date">15 يناير</td>
+                                    <td class="day-name">خميس</td>
+                                    <td><span class="focus-badge">أماكن</span></td>
+                                    <td class="objectives">تعلم: بلد، مدينة، عاصمة، علم</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">18 يناير</td>
+                                    <td class="day-name">أحد</td>
+                                    <td><span class="focus-badge">وصف</span></td>
+                                    <td class="objectives">تعلم: كبير، صغير، جميل، حار، بارد</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">19 يناير</td>
+                                    <td class="day-name">اثنين</td>
+                                    <td><span class="focus-badge">عبارات</span></td>
+                                    <td class="objectives">قل: "أنا من..." / "مدينتي..."</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">20 يناير</td>
+                                    <td class="day-name">ثلاثاء</td>
+                                    <td><span class="focus-badge">تدريب</span></td>
+                                    <td class="objectives">صف بلدك لزميل</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- الأسبوع 4 -->
+                    <div class="week-card">
+                        <div class="week-header">
+                            <div><span class="week-title">الأسبوع 4</span><span class="week-topic">🛠️ الأدوات التقنية
+                                    (إنجليزي التخصص)</span></div>
+                            <span class="week-dates">21 يناير - 5 فبراير | 7 أيام</span>
+                        </div>
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>التاريخ</th>
+                                    <th>اليوم</th>
+                                    <th>التركيز</th>
+                                    <th>الأهداف الرئيسية</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="day-date">21 يناير</td>
+                                    <td class="day-name">أربعاء</td>
+                                    <td><span class="focus-badge">أدوات أساسية</span></td>
+                                    <td class="objectives">تعلم: كمبيوتر، هاتف، ماوس، لوحة مفاتيح</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">22 يناير</td>
+                                    <td class="day-name">خميس</td>
+                                    <td><span class="focus-badge">أدوات إضافية</span></td>
+                                    <td class="objectives">تعلم: شاشة، كابل، زر، شاحن</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">25 يناير</td>
+                                    <td class="day-name">أحد</td>
+                                    <td><span class="focus-badge">أفعال</span></td>
+                                    <td class="objectives">تعلم: انقر، اكتب، اضغط، وصّل</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">26 يناير</td>
+                                    <td class="day-name">اثنين</td>
+                                    <td><span class="focus-badge">أوامر</span></td>
+                                    <td class="objectives">قل: "انقر هنا" / "اضغط هذا الزر"</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">27 يناير</td>
+                                    <td class="day-name">ثلاثاء</td>
+                                    <td><span class="focus-badge">عبارات</span></td>
+                                    <td class="objectives">قل: "الشاشة معطلة" / "أحتاج مساعدة"</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">28 يناير</td>
+                                    <td class="day-name">أربعاء</td>
+                                    <td><span class="focus-badge">مراجعة 1</span></td>
+                                    <td class="objectives">مراجعة جميع المفردات</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">29 يناير</td>
+                                    <td class="day-name">خميس</td>
+                                    <td><span class="focus-badge">مراجعة 2</span></td>
+                                    <td class="objectives">تدريب على جميع المحادثات</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- الشهر الثاني: فبراير 2026 -->
+                <section class="month-section">
+                    <div class="month-header">
+                        <h2>🗓️ الشهر الثاني: مهارات عملية (فبراير 2026)</h2>
+                        <span class="duration">الأسابيع 5-8 | 22 يوم | 1 فبراير - 2 مارس</span>
+                    </div>
+
+                    <!-- الأسبوع 5 -->
+                    <div class="week-card">
+                        <div class="week-header">
+                            <div><span class="week-title">الأسبوع 5</span><span class="week-topic">🍕 ما هو طعامك
+                                    المفضل؟</span></div>
+                            <span class="week-dates">1-3 فبراير | 3 أيام</span>
+                        </div>
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>التاريخ</th>
+                                    <th>اليوم</th>
+                                    <th>التركيز</th>
+                                    <th>الأهداف الرئيسية</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="day-date">1 فبراير</td>
+                                    <td class="day-name">أحد</td>
+                                    <td><span class="focus-badge">كلمات الطعام</span></td>
+                                    <td class="objectives">تعلم: رز، دجاج، بيتزا، قهوة، عصير</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">2 فبراير</td>
+                                    <td class="day-name">اثنين</td>
+                                    <td><span class="focus-badge">المذاق</span></td>
+                                    <td class="objectives">تعلم: لذيذ، حلو، حار، مالح</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">3 فبراير</td>
+                                    <td class="day-name">ثلاثاء</td>
+                                    <td><span class="focus-badge">عبارات</span></td>
+                                    <td class="objectives">قل: "طعامي المفضل هو..." / "أحب..."</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- الأسبوع 6 -->
+                    <div class="week-card">
+                        <div class="week-header">
+                            <div><span class="week-title">الأسبوع 6</span><span class="week-topic">🚑 عبارات الطوارئ
+                                    (الطبية)</span></div>
+                            <span class="week-dates">4-11 فبراير | 6 أيام</span>
+                        </div>
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>التاريخ</th>
+                                    <th>اليوم</th>
+                                    <th>التركيز</th>
+                                    <th>الأهداف الرئيسية</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="day-date">4 فبراير</td>
+                                    <td class="day-name">أربعاء</td>
+                                    <td><span class="focus-badge">أجزاء الجسم</span></td>
+                                    <td class="objectives">تعلم: رأس، معدة، يد، ساق، عين</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">5 فبراير</td>
+                                    <td class="day-name">خميس</td>
+                                    <td><span class="focus-badge">كلمات الألم</span></td>
+                                    <td class="objectives">تعلم: ألم، مريض، يؤلم، حمى، برد</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">8 فبراير</td>
+                                    <td class="day-name">أحد</td>
+                                    <td><span class="focus-badge">طوارئ</span></td>
+                                    <td class="objectives">قل: "أنا مريض" / "يؤلمني هنا"</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">9 فبراير</td>
+                                    <td class="day-name">اثنين</td>
+                                    <td><span class="focus-badge">مساعدة</span></td>
+                                    <td class="objectives">قل: "ساعدني من فضلك" / "اتصل بطبيب"</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">10 فبراير</td>
+                                    <td class="day-name">ثلاثاء</td>
+                                    <td><span class="focus-badge">أرقام</span></td>
+                                    <td class="objectives">أرقام الهاتف: 911، مستشفى، طوارئ</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">11 فبراير</td>
+                                    <td class="day-name">أربعاء</td>
+                                    <td><span class="focus-badge">تمثيل أدوار</span></td>
+                                    <td class="objectives">تدريب على سيناريوهات الطوارئ</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- الأسبوع 7 -->
+                    <div class="week-card">
+                        <div class="week-header">
+                            <div><span class="week-title">الأسبوع 7</span><span class="week-topic">✈️ كيف تحجز
+                                    غرفة/تذكرة (سفر)</span></div>
+                            <span class="week-dates">12-19 فبراير | 6 أيام</span>
+                        </div>
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>التاريخ</th>
+                                    <th>اليوم</th>
+                                    <th>التركيز</th>
+                                    <th>الأهداف الرئيسية</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="day-date">12 فبراير</td>
+                                    <td class="day-name">خميس</td>
+                                    <td><span class="focus-badge">سفر</span></td>
+                                    <td class="objectives">تعلم: تذكرة، فندق، غرفة، جواز سفر، تأشيرة</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">15 فبراير</td>
+                                    <td class="day-name">أحد</td>
+                                    <td><span class="focus-badge">حجز</span></td>
+                                    <td class="objectives">تعلم: احجز، ألغِ، أكّد</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">16 فبراير</td>
+                                    <td class="day-name">اثنين</td>
+                                    <td><span class="focus-badge">عبارات</span></td>
+                                    <td class="objectives">قل: "أريد غرفة" / "كم السعر؟"</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">17 فبراير</td>
+                                    <td class="day-name">ثلاثاء</td>
+                                    <td><span class="focus-badge">تواريخ</span></td>
+                                    <td class="objectives">تعلم: أيام الأسبوع، الأشهر</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">18 فبراير</td>
+                                    <td class="day-name">أربعاء</td>
+                                    <td><span class="focus-badge">أرقام</span></td>
+                                    <td class="objectives">فهم الأسعار وأرقام الغرف</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">19 فبراير</td>
+                                    <td class="day-name">خميس</td>
+                                    <td><span class="focus-badge">تمثيل أدوار</span></td>
+                                    <td class="objectives">احجز غرفة فندق مع زميل</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- الأسبوع 8 -->
+                    <div class="week-card">
+                        <div class="week-header">
+                            <div><span class="week-title">الأسبوع 8</span><span class="week-topic">💼 التحضير للمقابلة
+                                    الشخصية</span></div>
+                            <span class="week-dates">22 فبراير - 2 مارس | 7 أيام</span>
+                        </div>
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>التاريخ</th>
+                                    <th>اليوم</th>
+                                    <th>التركيز</th>
+                                    <th>الأهداف الرئيسية</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="day-date">22 فبراير</td>
+                                    <td class="day-name">أحد</td>
+                                    <td><span class="focus-badge">تقديم</span></td>
+                                    <td class="objectives">قل: "اسمي..." / "أنا من..."</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">23 فبراير</td>
+                                    <td class="day-name">اثنين</td>
+                                    <td><span class="focus-badge">تعليم</span></td>
+                                    <td class="objectives">قل: "درست..." / "أنا طالب"</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">24 فبراير</td>
+                                    <td class="day-name">ثلاثاء</td>
+                                    <td><span class="focus-badge">مهارات</span></td>
+                                    <td class="objectives">قل: "أستطيع..." / "أنا جيد في..."</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">25 فبراير</td>
+                                    <td class="day-name">أربعاء</td>
+                                    <td><span class="focus-badge">أسئلة</span></td>
+                                    <td class="objectives">أجب: "حدثني عن نفسك"</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">26 فبراير</td>
+                                    <td class="day-name">خميس</td>
+                                    <td><span class="focus-badge">مجاملات</span></td>
+                                    <td class="objectives">تعلم: من فضلك، شكراً، عفواً</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">1 مارس</td>
+                                    <td class="day-name">أحد</td>
+                                    <td><span class="focus-badge">مراجعة</span></td>
+                                    <td class="objectives">تدريب على مقابلة تجريبية كاملة</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">2 مارس</td>
+                                    <td class="day-name">اثنين</td>
+                                    <td><span class="focus-badge">نهائي</span></td>
+                                    <td class="objectives">إكمال تمثيل دور المقابلة</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- الشهر الثالث: مارس 2026 -->
+                <section class="month-section">
+                    <div class="month-header">
+                        <h2>🗓️ الشهر الثالث: الحياة اليومية والمراجعة (مارس 2026)</h2>
+                        <span class="duration">الأسابيع 9-12 | 20 يوم | 3 مارس - 2 أبريل</span>
+                    </div>
+
+                    <!-- الأسبوع 9 -->
+                    <div class="week-card">
+                        <div class="week-header">
+                            <div><span class="week-title">الأسبوع 9</span><span class="week-topic">👕 كيف تشتري ملابس من
+                                    المتجر</span></div>
+                            <span class="week-dates">3-9 مارس | 5 أيام</span>
+                        </div>
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>التاريخ</th>
+                                    <th>اليوم</th>
+                                    <th>التركيز</th>
+                                    <th>الأهداف الرئيسية</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="day-date">3 مارس</td>
+                                    <td class="day-name">ثلاثاء</td>
+                                    <td><span class="focus-badge">ملابس</span></td>
+                                    <td class="objectives">تعلم: قميص، بنطلون، حذاء، فستان، جاكيت</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">4 مارس</td>
+                                    <td class="day-name">أربعاء</td>
+                                    <td><span class="focus-badge">ألوان</span></td>
+                                    <td class="objectives">تعلم: أحمر، أزرق، أسود، أبيض، أخضر</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">5 مارس</td>
+                                    <td class="day-name">خميس</td>
+                                    <td><span class="focus-badge">مقاسات</span></td>
+                                    <td class="objectives">تعلم: صغير، متوسط، كبير، كبير جداً</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">8 مارس</td>
+                                    <td class="day-name">أحد</td>
+                                    <td><span class="focus-badge">عبارات</span></td>
+                                    <td class="objectives">قل: "ممكن أجرب هذا؟" / "كم السعر؟"</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">9 مارس</td>
+                                    <td class="day-name">اثنين</td>
+                                    <td><span class="focus-badge">تمثيل أدوار</span></td>
+                                    <td class="objectives">تدريب على محادثة التسوق</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- الأسبوع 10 -->
+                    <div class="week-card">
+                        <div class="week-header">
+                            <div><span class="week-title">الأسبوع 10</span><span class="week-topic">👨‍👩‍👧‍👦 تحدث عن
+                                    عائلتك</span></div>
+                            <span class="week-dates">10-15 مارس | 4 أيام</span>
+                        </div>
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>التاريخ</th>
+                                    <th>اليوم</th>
+                                    <th>التركيز</th>
+                                    <th>الأهداف الرئيسية</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="day-date">10 مارس</td>
+                                    <td class="day-name">ثلاثاء</td>
+                                    <td><span class="focus-badge">عائلة 1</span></td>
+                                    <td class="objectives">تعلم: أم، أب، أخ، أخت</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">11 مارس</td>
+                                    <td class="day-name">أربعاء</td>
+                                    <td><span class="focus-badge">عائلة 2</span></td>
+                                    <td class="objectives">تعلم: ابن، بنت، زوج، زوجة</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">12 مارس</td>
+                                    <td class="day-name">خميس</td>
+                                    <td><span class="focus-badge">أرقام</span></td>
+                                    <td class="objectives">تعلم: "عندي أخوين"</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">15 مارس</td>
+                                    <td class="day-name">أحد</td>
+                                    <td><span class="focus-badge">تدريب</span></td>
+                                    <td class="objectives">صف أفراد عائلتك</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- الأسبوع 11 -->
+                    <div class="week-card">
+                        <div class="week-header">
+                            <div><span class="week-title">الأسبوع 11</span><span class="week-topic">🚗 افهم سيارتك
+                                    (عبارات السيارة)</span></div>
+                            <span class="week-dates">16-22 مارس | 5 أيام</span>
+                        </div>
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>التاريخ</th>
+                                    <th>اليوم</th>
+                                    <th>التركيز</th>
+                                    <th>الأهداف الرئيسية</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="day-date">16 مارس</td>
+                                    <td class="day-name">اثنين</td>
+                                    <td><span class="focus-badge">أجزاء السيارة</span></td>
+                                    <td class="objectives">تعلم: عجلة، محرك، باب، نافذة، مفتاح</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">17 مارس</td>
+                                    <td class="day-name">ثلاثاء</td>
+                                    <td><span class="focus-badge">مشاكل</span></td>
+                                    <td class="objectives">تعلم: معطل، إطار مثقوب، فارغ، ممتلئ</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">18 مارس</td>
+                                    <td class="day-name">أربعاء</td>
+                                    <td><span class="focus-badge">عبارات</span></td>
+                                    <td class="objectives">قل: "سيارتي معطلة" / "أحتاج بنزين"</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">19 مارس</td>
+                                    <td class="day-name">خميس</td>
+                                    <td><span class="focus-badge">محطة</span></td>
+                                    <td class="objectives">قل: "املأها من فضلك" / "افحص الزيت"</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">22 مارس</td>
+                                    <td class="day-name">أحد</td>
+                                    <td><span class="focus-badge">مراجعة</span></td>
+                                    <td class="objectives">تدريب على جميع مفردات السيارة</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- الأسبوع 12 -->
+                    <div class="week-card">
+                        <div class="week-header">
+                            <div><span class="week-title">الأسبوع 12</span><span class="week-topic">📸 صف صورة + 👗 صف
+                                    ملابسك</span></div>
+                            <span class="week-dates">23 مارس - 2 أبريل | 6 أيام (إضافي)</span>
+                        </div>
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>التاريخ</th>
+                                    <th>اليوم</th>
+                                    <th>التركيز</th>
+                                    <th>الأهداف الرئيسية</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="day-date">23 مارس</td>
+                                    <td class="day-name">اثنين</td>
+                                    <td><span class="focus-badge">صورة</span></td>
+                                    <td class="objectives">تعلم: صورة، خلفية، شخص</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">24 مارس</td>
+                                    <td class="day-name">ثلاثاء</td>
+                                    <td><span class="focus-badge">وصف</span></td>
+                                    <td class="objectives">قل: "في هذه الصورة، أرى..."</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-date">25 مارس</td>
+                                    <td class="day-name">أربعاء</td>
+                                    <td><span class="focus-badge">تدريب</span></td>
+                                    <td class="objectives">صف صور بسيطة</td>
+                                </tr>
+                                <tr style="background: rgba(212, 175, 55, 0.1);">
+                                    <td class="day-date">26 مارس</td>
+                                    <td class="day-name">خميس</td>
+                                    <td><span class="focus-badge">إضافي</span></td>
+                                    <td class="objectives">تعلم: ألبس، ملابس، اليوم، أمس</td>
+                                </tr>
+                                <tr style="background: rgba(212, 175, 55, 0.1);">
+                                    <td class="day-date">29 مارس</td>
+                                    <td class="day-name">أحد</td>
+                                    <td><span class="focus-badge">ألوان</span></td>
+                                    <td class="objectives">اجمع: "أنا ألبس قميص أزرق"</td>
+                                </tr>
+                                <tr style="background: rgba(212, 175, 55, 0.1);">
+                                    <td class="day-date">30 مارس</td>
+                                    <td class="day-name">اثنين</td>
+                                    <td><span class="focus-badge">نهائي 🎉</span></td>
+                                    <td class="objectives">مراجعة جميع الـ13 موضوع</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- مرجع سريع -->
+                <section class="quick-ref">
+                    <h3>📋 مرجع سريع: العبارات الأساسية</h3>
+                    <div class="phrases-grid">
+                        <div class="phrase-item">
+                            <div class="phrase-number">1</div>
+                            <div>
+                                <div class="phrase-topic">المطعم</div>
+                                <div class="phrase-text">"ممكن أحصل على...؟"</div>
+                            </div>
+                        </div>
+                        <div class="phrase-item">
+                            <div class="phrase-number">2</div>
+                            <div>
+                                <div class="phrase-topic">الروتين اليومي</div>
+                                <div class="phrase-text">"أستيقظ الساعة..."</div>
+                            </div>
+                        </div>
+                        <div class="phrase-item">
+                            <div class="phrase-number">3</div>
+                            <div>
+                                <div class="phrase-topic">البلد/المدينة</div>
+                                <div class="phrase-text">"أنا من..."</div>
+                            </div>
+                        </div>
+                        <div class="phrase-item">
+                            <div class="phrase-number">4</div>
+                            <div>
+                                <div class="phrase-topic">التقنية</div>
+                                <div class="phrase-text">"انقر هنا"</div>
+                            </div>
+                        </div>
+                        <div class="phrase-item">
+                            <div class="phrase-number">5</div>
+                            <div>
+                                <div class="phrase-topic">الطعام</div>
+                                <div class="phrase-text">"المفضل عندي..."</div>
+                            </div>
+                        </div>
+                        <div class="phrase-item">
+                            <div class="phrase-number">6</div>
+                            <div>
+                                <div class="phrase-topic">الطوارئ</div>
+                                <div class="phrase-text">"ساعدني من فضلك"</div>
+                            </div>
+                        </div>
+                        <div class="phrase-item">
+                            <div class="phrase-number">7</div>
+                            <div>
+                                <div class="phrase-topic">السفر</div>
+                                <div class="phrase-text">"أريد غرفة"</div>
+                            </div>
+                        </div>
+                        <div class="phrase-item">
+                            <div class="phrase-number">8</div>
+                            <div>
+                                <div class="phrase-topic">المقابلة</div>
+                                <div class="phrase-text">"اسمي..."</div>
+                            </div>
+                        </div>
+                        <div class="phrase-item">
+                            <div class="phrase-number">9</div>
+                            <div>
+                                <div class="phrase-topic">التسوق</div>
+                                <div class="phrase-text">"ممكن أجرب هذا؟"</div>
+                            </div>
+                        </div>
+                        <div class="phrase-item">
+                            <div class="phrase-number">10</div>
+                            <div>
+                                <div class="phrase-topic">العائلة</div>
+                                <div class="phrase-text">"عندي..."</div>
+                            </div>
+                        </div>
+                        <div class="phrase-item">
+                            <div class="phrase-number">11</div>
+                            <div>
+                                <div class="phrase-topic">السيارة</div>
+                                <div class="phrase-text">"سيارتي معطلة"</div>
+                            </div>
+                        </div>
+                        <div class="phrase-item">
+                            <div class="phrase-number">12</div>
+                            <div>
+                                <div class="phrase-topic">الصورة</div>
+                                <div class="phrase-text">"في هذه الصورة..."</div>
+                            </div>
+                        </div>
+                        <div class="phrase-item">
+                            <div class="phrase-number">13</div>
+                            <div>
+                                <div class="phrase-topic">الملابس</div>
+                                <div class="phrase-text">"أنا ألبس..."</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- نصائح للمعلمين -->
+                <section class="teacher-notes">
+                    <h3>💡 نصائح للمعلمين</h3>
+                    <ul>
+                        <li>اجعل الجمل قصيرة وبسيطة</li>
+                        <li>استخدم الصور والإيماءات للمفردات الجديدة</li>
+                        <li>مارس التكرار - الطلاب يحتاجون لسماع الكلمات مرات عديدة</li>
+                        <li>اسمح بالأخطاء - ركز على التواصل وليس الكمال</li>
+                        <li>استخدم أشياء حقيقية عند الإمكان (قائمة حقيقية، ملابس حقيقية، إلخ)</li>
+                    </ul>
+                </section>
+
+                <footer class="page-footer">
+                    <p>📚 قسم اللغة الإنجليزية | معهد بلاك جولد العالي</p>
+                    <p>🧪 برنامج المحادثة التجريبي - 3 أشهر | 4 يناير - 2 أبريل 2026</p>
+                </footer>
+            </article>
+        </main>
+
+        <button class="mobile-menu-toggle" aria-label="القائمة">☰</button>
+    </div>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/i18n.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Check stored language preference
+            const storedLang = localStorage.getItem('language');
+
+            // If user prefers English, redirect to English version immediately
+            // But only if we haven't just switched from there (to avoid loops)
+            if (storedLang === 'en' && !document.referrer.includes('full-schedule.html')) {
+                window.location.href = 'full-schedule.html';
+            }
+
+            const enBtn = document.querySelector('.lang-btn[data-lang="en"]');
+            if (enBtn) {
+                enBtn.addEventListener('click', (e) => {
+                    // Set preference and redirect
+                    localStorage.setItem('language', 'en');
+                    window.location.href = 'full-schedule.html';
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
