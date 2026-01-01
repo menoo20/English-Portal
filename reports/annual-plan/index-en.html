@@ -48,7 +48,7 @@
 
             body {
                 background: white !important;
-                color: black !important;
+                color: #1a1a2e !important;
                 -webkit-print-color-adjust: exact !important;
                 print-color-adjust: exact !important;
             }
@@ -64,43 +64,51 @@
                 break-before: auto;
             }
 
-            /* Improved Header Styling for Print */
+            /* Header - Experimental Plan Style (Gold BG, Dark Text) */
             .schedule-header {
-                background: #fff !important;
-                color: black !important;
-                border: 3px solid #D4AF37 !important;
+                background: #D4AF37 !important;
+                border: 2px solid #8B7355 !important;
+                color: #1a1a2e !important;
                 padding: 1.5rem !important;
                 margin-bottom: 2rem !important;
                 box-shadow: none !important;
             }
 
             .schedule-header h1 {
-                color: #000 !important;
+                color: #1a1a2e !important;
                 text-shadow: none !important;
             }
 
             .schedule-header .subtitle {
-                color: #333 !important;
+                color: #1a1a2e !important;
             }
 
             .date-range {
-                color: #000 !important;
+                color: #1a1a2e !important;
             }
 
+            /* Meta Items - Experimental Plan Style */
             .meta-item {
                 background: #fff !important;
-                border: 1px solid #000 !important;
+                border: 1px solid #8B7355 !important;
                 color: black !important;
                 box-shadow: none !important;
             }
 
             .meta-item .number {
-                color: #000 !important;
+                color: #8B4513 !important;
+                /* Dark Brown */
+            }
+
+            .meta-item .label,
+            .meta-item div:not(.number) {
+                color: #333 !important;
+                /* Dark Grey */
             }
 
             .month-header {
-                background: #fff !important;
-                color: #000 !important;
+                background: #1a1a2e !important;
+                color: #D4AF37 !important;
                 -webkit-print-color-adjust: exact !important;
                 print-color-adjust: exact !important;
                 border: 2px solid #D4AF37 !important;
@@ -109,40 +117,40 @@
             }
 
             .month-header .month-meta {
-                color: #333 !important;
+                color: #ccc !important;
             }
 
             .week-block {
-                border: 1px solid #000 !important;
+                border: 1px solid #1a1a2e !important;
                 break-inside: avoid;
             }
 
             .week-title {
-                background: #eee !important;
-                color: black !important;
-                border-bottom: 2px solid #000 !important;
+                background: #2c3e50 !important;
+                color: white !important;
+                border-bottom: 2px solid #D4AF37 !important;
                 font-weight: bold !important;
             }
 
             th {
-                background: #ddd !important;
-                color: black !important;
-                border: 1px solid #000 !important;
+                background: #D4AF37 !important;
+                color: #1a1a2e !important;
+                border: 1px solid #333 !important;
                 font-weight: bold !important;
             }
 
             td {
-                color: black !important;
-                border: 1px solid #000 !important;
+                color: #333 !important;
+                border: 1px solid #ddd !important;
             }
 
             tr:nth-child(even) {
-                background-color: #f9f9f9 !important;
+                background-color: #f0f0f0 !important;
             }
 
             .tag {
-                border: 1px solid #000 !important;
-                color: black !important;
+                border: 1px solid #666 !important;
+                color: #333 !important;
             }
         }
 
