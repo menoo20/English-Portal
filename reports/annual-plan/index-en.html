@@ -57,47 +57,83 @@
                 break-inside: avoid;
                 page-break-inside: avoid;
                 break-before: page;
-                margin-bottom: 0 !important;
+                margin-bottom: 2rem !important;
             }
 
             .month-section:first-of-type {
                 break-before: auto;
             }
 
+            /* Improved Header Styling for Print */
             .schedule-header {
-                background: #D4AF37 !important;
+                background: #fff !important;
                 color: black !important;
-                border: 2px solid #000 !important;
+                border: 3px solid #D4AF37 !important;
+                padding: 1.5rem !important;
+                margin-bottom: 2rem !important;
+                box-shadow: none !important;
+            }
+
+            .schedule-header h1 {
+                color: #000 !important;
+                text-shadow: none !important;
+            }
+
+            .schedule-header .subtitle {
+                color: #333 !important;
+            }
+
+            .date-range {
+                color: #000 !important;
+            }
+
+            .meta-item {
+                background: #fff !important;
+                border: 1px solid #000 !important;
+                color: black !important;
+                box-shadow: none !important;
+            }
+
+            .meta-item .number {
+                color: #000 !important;
             }
 
             .month-header {
-                background: #1a1a2e !important;
-                color: #D4AF37 !important;
+                background: #fff !important;
+                color: #000 !important;
                 -webkit-print-color-adjust: exact !important;
                 print-color-adjust: exact !important;
+                border: 2px solid #D4AF37 !important;
                 border-left: 6px solid #D4AF37 !important;
-                border-right: none !important;
+                box-shadow: none !important;
+            }
+
+            .month-header .month-meta {
+                color: #333 !important;
             }
 
             .week-block {
-                border: 1px solid #ddd !important;
+                border: 1px solid #000 !important;
                 break-inside: avoid;
             }
 
             .week-title {
-                background: #f0f0f0 !important;
+                background: #eee !important;
                 color: black !important;
-                border-bottom: 1px solid #ccc !important;
+                border-bottom: 2px solid #000 !important;
+                font-weight: bold !important;
             }
 
             th {
-                background: #D4AF37 !important;
+                background: #ddd !important;
                 color: black !important;
+                border: 1px solid #000 !important;
+                font-weight: bold !important;
             }
 
             td {
                 color: black !important;
-                border-bottom: 1px solid #eee !important;
+                border: 1px solid #000 !important;
             }
 
             tr:nth-child(even) {
@@ -105,7 +141,8 @@
             }
 
             .tag {
-                border: 1px solid #ccc !important;
+                border: 1px solid #000 !important;
+                color: black !important;
             }
         }
 
