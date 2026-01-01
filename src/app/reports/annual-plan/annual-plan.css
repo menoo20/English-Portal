@@ -1,0 +1,436 @@
+/* Annual Plan Scoped Styles */
+.annual-plan-page {
+    /* Scope all styles to this wrapper */
+}
+
+.annual-plan-page .article-container {
+    background: transparent;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.annual-plan-page .back-nav {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: #D4AF37;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.annual-plan-page .back-nav:hover {
+    color: #F4D03F;
+}
+
+/* Header & Meta */
+.annual-plan-page .schedule-header {
+    background: linear-gradient(135deg, #16213e 0%, #0f0f1a 100%);
+    padding: 2.5rem;
+    border-radius: 16px;
+    margin-bottom: 3rem;
+    text-align: center;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.annual-plan-page .schedule-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #D4AF37, #F4D03F, #D4AF37);
+}
+
+.annual-plan-page .schedule-header h1 {
+    color: #D4AF37;
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: var(--font-cairo), sans-serif;
+}
+
+.annual-plan-page .schedule-header .subtitle {
+    color: #a0a0a0;
+    font-size: 1.1rem;
+}
+
+.annual-plan-page .date-range {
+    color: #fff;
+    font-weight: 600;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.annual-plan-page .meta-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.annual-plan-page .meta-item {
+    background: rgba(26, 26, 46, 0.6);
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.annual-plan-page .meta-item .number {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #D4AF37;
+}
+
+.annual-plan-page .meta-item .label {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+}
+
+/* Actions */
+.annual-plan-page .actions {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.annual-plan-page .btn-print {
+    background: linear-gradient(135deg, #D4AF37, #F4D03F);
+    color: #1a1a2e;
+    border: none;
+    padding: 0.8rem 2.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+}
+
+.annual-plan-page .btn-print:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
+
+/* Month Sections */
+.annual-plan-page .month-section {
+    margin-bottom: 3rem;
+}
+
+.annual-plan-page .month-header {
+    background: linear-gradient(135deg, #16213e, #1a1a2e);
+    color: #D4AF37;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    border-inline-start: 4px solid #D4AF37;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.annual-plan-page .month-header h2 {
+    margin: 0;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.annual-plan-page .month-header .month-meta {
+    color: #a0a0a0;
+    font-size: 0.9rem;
+}
+
+/* Week Blocks */
+.annual-plan-page .week-block {
+    background: rgba(26, 26, 46, 0.4);
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    border: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.annual-plan-page .week-title {
+    background: rgba(212, 175, 55, 0.1);
+    padding: 1rem 1.5rem;
+    font-weight: 700;
+    color: #D4AF37;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Tables */
+.annual-plan-page .plan-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.annual-plan-page .plan-table th,
+.annual-plan-page .plan-table td {
+    padding: 1rem;
+    text-align: start;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.annual-plan-page .plan-table th {
+    background: rgba(212, 175, 55, 0.05);
+    color: #D4AF37;
+    font-weight: 600;
+    font-size: 0.9rem;
+    width: 15%;
+}
+
+.annual-plan-page .plan-table td.date-cell {
+    font-weight: 600;
+    color: #fff;
+    width: 14%;
+    white-space: nowrap;
+    font-size: 0.95rem;
+}
+
+.annual-plan-page .plan-table td.topic-cell {
+    font-weight: 600;
+    color: #e0e0e0;
+    width: 35%;
+    font-size: 1rem;
+}
+
+.annual-plan-page .plan-table td.details-cell {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+}
+
+.annual-plan-page .plan-table tr:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+/* Tags */
+.annual-plan-page .tag {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+
+.annual-plan-page .tag-vocab {
+    background: rgba(25, 118, 210, 0.2);
+    color: #90caf9;
+    border: 1px solid rgba(144, 202, 249, 0.3);
+}
+
+.annual-plan-page .tag-grammar {
+    background: rgba(123, 31, 162, 0.2);
+    color: #ce93d8;
+    border: 1px solid rgba(206, 147, 216, 0.3);
+}
+
+.annual-plan-page .tag-skills {
+    background: rgba(0, 121, 107, 0.2);
+    color: #80cbc4;
+    border: 1px solid rgba(128, 203, 196, 0.3);
+}
+
+.annual-plan-page .tag-phonics {
+    background: rgba(230, 81, 0, 0.2);
+    color: #ffcc80;
+    border: 1px solid rgba(255, 204, 128, 0.3);
+}
+
+.annual-plan-page .tag-holiday {
+    background: rgba(198, 40, 40, 0.2);
+    color: #ef9a9a;
+    border: 1px solid rgba(239, 154, 154, 0.3);
+}
+
+.annual-plan-page .tag-review {
+    background: rgba(69, 90, 100, 0.3);
+    color: #b0bec5;
+    border: 1px solid rgba(176, 190, 197, 0.3);
+}
+
+/* Print Styles */
+@media print {
+    .annual-plan-page .article-container {
+        max-width: 100% !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+        background: white !important;
+        color: black !important;
+    }
+
+    .no-print {
+        display: none !important;
+    }
+
+    .annual-plan-page .back-nav {
+        display: none !important;
+    }
+
+    .annual-plan-page .month-section {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        break-before: page;
+        margin-bottom: 2rem !important;
+    }
+
+    .annual-plan-page .month-section:first-of-type {
+        break-before: auto;
+    }
+
+    .annual-plan-page .schedule-header {
+        background: #D4AF37 !important;
+        border: 2px solid #8B7355 !important;
+        color: #1a1a2e !important;
+        padding: 1.5rem !important;
+        margin-bottom: 2rem !important;
+        box-shadow: none !important;
+    }
+
+    .annual-plan-page .schedule-header h1 {
+        color: #1a1a2e !important;
+        text-shadow: none !important;
+    }
+
+    .annual-plan-page .schedule-header .subtitle {
+        color: #1a1a2e !important;
+    }
+
+    .annual-plan-page .date-range {
+        color: #1a1a2e !important;
+    }
+
+    .annual-plan-page .meta-item {
+        background: #fff !important;
+        border: 1px solid #8B7355 !important;
+        color: black !important;
+        box-shadow: none !important;
+    }
+
+    .annual-plan-page .meta-item .number {
+        color: #8B4513 !important;
+    }
+
+    .annual-plan-page .meta-item .label {
+        color: #333 !important;
+    }
+
+    .annual-plan-page .month-header {
+        background: #1a1a2e !important;
+        color: #D4AF37 !important;
+        border: 2px solid #D4AF37 !important;
+        border-right: 6px solid #D4AF37 !important;
+        box-shadow: none !important;
+    }
+
+    .annual-plan-page .month-header .month-meta {
+        color: #ccc !important;
+    }
+
+    .annual-plan-page .week-block {
+        border: 1px solid #1a1a2e !important;
+        break-inside: avoid;
+    }
+
+    .annual-plan-page .week-title {
+        background: #2c3e50 !important;
+        color: white !important;
+        border-bottom: 2px solid #D4AF37 !important;
+        font-weight: bold !important;
+    }
+
+    .annual-plan-page .plan-table th {
+        background: #D4AF37 !important;
+        color: #1a1a2e !important;
+        border: 1px solid #333 !important;
+        font-weight: bold !important;
+    }
+
+    .annual-plan-page .plan-table td {
+        color: #333 !important;
+        border: 1px solid #ddd !important;
+    }
+
+    .annual-plan-page .plan-table tr:nth-child(even) {
+        background-color: #f0f0f0 !important;
+    }
+
+    .annual-plan-page .tag {
+        border: 1px solid #666 !important;
+        color: #333 !important;
+    }
+}
+
+/* Headway Table Specific Column Widths */
+.annual-plan-page .plan-table.headway-table th:nth-child(1) {
+    width: 14%;
+}
+
+/* Date */
+.annual-plan-page .plan-table.headway-table th:nth-child(2) {
+    width: 28%;
+}
+
+/* Lesson Focus */
+.annual-plan-page .plan-table.headway-table th:nth-child(3) {
+    width: 33%;
+}
+
+/* Student's Book - Expanded */
+.annual-plan-page .plan-table.headway-table th:nth-child(4) {
+    width: 25%;
+}
+
+/* Workbook */
+
+.annual-plan-page .plan-table td.sb-cell {
+    color: #e0e0e0;
+    vertical-align: top;
+    line-height: 1.5;
+}
+
+.annual-plan-page .plan-table td.wb-cell {
+    color: #ccc;
+    vertical-align: top;
+    line-height: 1.5;
+}
+
+/* Ensure generic cells don't conflict excessively if used in headway table */
+.annual-plan-page .plan-table.headway-table td.topic-cell {
+    width: auto;
+    /* Let header decide */
+}
+
+/* Text Highlights for readability */
+.annual-plan-page .text-gold {
+    color: #D4AF37;
+    font-weight: 700;
+}
+
+.annual-plan-page .text-blue {
+    color: #64b5f6;
+    font-weight: 600;
+}
+
+.annual-plan-page .text-purple {
+    color: #ce93d8;
+    font-weight: 600;
+}
+
+.annual-plan-page .text-green {
+    color: #81c784;
+    font-weight: 600;
+}

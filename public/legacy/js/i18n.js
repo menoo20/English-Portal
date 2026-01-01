@@ -1194,6 +1194,19 @@ function setLanguage(lang) {
 
   // Update language toggle buttons
   updateLanguageToggle();
+
+  // Sync with Next.js cookie
+  document.cookie = `language=${lang}; path=/; max-age=31536000`; // 1 year
+
+  // Update Report Link (Specific to Conversational Program Report)
+  const reportLink = document.getElementById('full-schedule-btn');
+  if (reportLink) {
+    if (lang === 'ar') {
+      reportLink.href = 'full-schedule-ar.html';
+    } else {
+      reportLink.href = 'full-schedule.html';
+    }
+  }
 }
 
 /**

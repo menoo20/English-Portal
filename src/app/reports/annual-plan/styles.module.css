@@ -1,0 +1,372 @@
+/* Annual Plan CSS Module */
+
+.container {
+    background: transparent;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.backNav {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: #D4AF37;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.backNav:hover {
+    color: #F4D03F;
+}
+
+/* Header & Meta */
+.scheduleHeader {
+    background: linear-gradient(135deg, #16213e 0%, #0f0f1a 100%);
+    padding: 2.5rem;
+    border-radius: 16px;
+    margin-bottom: 3rem;
+    text-align: center;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.scheduleHeader::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #D4AF37, #F4D03F, #D4AF37);
+}
+
+.scheduleHeader h1 {
+    color: #D4AF37;
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: var(--font-cairo), sans-serif;
+}
+
+.scheduleHeader .subtitle {
+    color: #a0a0a0;
+    font-size: 1.1rem;
+}
+
+.dateRange {
+    color: #fff;
+    font-weight: 600;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.metaGrid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.metaItem {
+    background: rgba(26, 26, 46, 0.6);
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.metaItem .number {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #D4AF37;
+}
+
+.metaItem .label {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+}
+
+/* Actions */
+.actions {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.btnPrint {
+    background: linear-gradient(135deg, #D4AF37, #F4D03F);
+    color: #1a1a2e;
+    border: none;
+    padding: 0.8rem 2.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+}
+
+.btnPrint:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
+
+/* Month Sections */
+.monthSection {
+    margin-bottom: 3rem;
+}
+
+.monthHeader {
+    background: linear-gradient(135deg, #16213e, #1a1a2e);
+    color: #D4AF37;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    border-right: 4px solid #D4AF37;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.monthHeader h2 {
+    margin: 0;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.monthHeader .monthMeta {
+    color: #a0a0a0;
+    font-size: 0.9rem;
+}
+
+/* Week Blocks */
+.weekBlock {
+    background: rgba(26, 26, 46, 0.4);
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    border: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.weekTitle {
+    background: rgba(212, 175, 55, 0.1);
+    padding: 1rem 1.5rem;
+    font-weight: 700;
+    color: #D4AF37;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Tables */
+.planTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.planTable th,
+.planTable td {
+    padding: 1rem;
+    text-align: right;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.planTable th {
+    background: rgba(212, 175, 55, 0.05);
+    color: #D4AF37;
+    font-weight: 600;
+    font-size: 0.9rem;
+    width: 15%;
+}
+
+.planTable td.dateCell {
+    font-weight: 600;
+    color: #fff;
+    width: 14%;
+    white-space: nowrap;
+    font-size: 0.95rem;
+}
+
+.planTable td.topicCell {
+    font-weight: 600;
+    color: #e0e0e0;
+    width: 35%;
+    font-size: 1rem;
+}
+
+.planTable td.detailsCell {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+}
+
+.planTable tr:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+/* Tags */
+.tag {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+
+.tagVocab {
+    background: rgba(25, 118, 210, 0.2);
+    color: #90caf9;
+    border: 1px solid rgba(144, 202, 249, 0.3);
+}
+
+.tagGrammar {
+    background: rgba(123, 31, 162, 0.2);
+    color: #ce93d8;
+    border: 1px solid rgba(206, 147, 216, 0.3);
+}
+
+.tagSkills {
+    background: rgba(0, 121, 107, 0.2);
+    color: #80cbc4;
+    border: 1px solid rgba(128, 203, 196, 0.3);
+}
+
+.tagPhonics {
+    background: rgba(230, 81, 0, 0.2);
+    color: #ffcc80;
+    border: 1px solid rgba(255, 204, 128, 0.3);
+}
+
+.tagHoliday {
+    background: rgba(198, 40, 40, 0.2);
+    color: #ef9a9a;
+    border: 1px solid rgba(239, 154, 154, 0.3);
+}
+
+.tagReview {
+    background: rgba(69, 90, 100, 0.3);
+    color: #b0bec5;
+    border: 1px solid rgba(176, 190, 197, 0.3);
+}
+
+/* Print Styles */
+@media print {
+    .container {
+        max-width: 100% !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+        background: white !important;
+        color: black !important;
+    }
+
+    .noPrint {
+        display: none !important;
+    }
+
+    .backNav {
+        display: none !important;
+    }
+
+    .monthSection {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        break-before: page;
+        margin-bottom: 2rem !important;
+    }
+
+    .monthSection:first-of-type {
+        break-before: auto;
+    }
+
+    .scheduleHeader {
+        background: #D4AF37 !important;
+        border: 2px solid #8B7355 !important;
+        color: #1a1a2e !important;
+        padding: 1.5rem !important;
+        margin-bottom: 2rem !important;
+        box-shadow: none !important;
+    }
+
+    .scheduleHeader h1 {
+        color: #1a1a2e !important;
+        text-shadow: none !important;
+    }
+
+    .scheduleHeader .subtitle {
+        color: #1a1a2e !important;
+    }
+
+    .dateRange {
+        color: #1a1a2e !important;
+    }
+
+    .metaItem {
+        background: #fff !important;
+        border: 1px solid #8B7355 !important;
+        color: black !important;
+        box-shadow: none !important;
+    }
+
+    .metaItem .number {
+        color: #8B4513 !important;
+    }
+
+    .metaItem .label {
+        color: #333 !important;
+    }
+
+    .monthHeader {
+        background: #1a1a2e !important;
+        color: #D4AF37 !important;
+        border: 2px solid #D4AF37 !important;
+        border-right: 6px solid #D4AF37 !important;
+        box-shadow: none !important;
+    }
+
+    .monthHeader .monthMeta {
+        color: #ccc !important;
+    }
+
+    .weekBlock {
+        border: 1px solid #1a1a2e !important;
+        break-inside: avoid;
+    }
+
+    .weekTitle {
+        background: #2c3e50 !important;
+        color: white !important;
+        border-bottom: 2px solid #D4AF37 !important;
+        font-weight: bold !important;
+    }
+
+    .planTable th {
+        background: #D4AF37 !important;
+        color: #1a1a2e !important;
+        border: 1px solid #333 !important;
+        font-weight: bold !important;
+    }
+
+    .planTable td {
+        color: #333 !important;
+        border: 1px solid #ddd !important;
+    }
+
+    .planTable tr:nth-child(even) {
+        background-color: #f0f0f0 !important;
+    }
+
+    .tag {
+        border: 1px solid #666 !important;
+        color: #333 !important;
+    }
+}
