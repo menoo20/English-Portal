@@ -73,8 +73,8 @@ export default function Home() {
           title: "نواقص المدربين",
           excerpt: "جدول يوضح النواقص في مستلزمات فصول المدربين",
           date: "8 ديسمبر 2025",
-          link: "/English-Portal/legacy/reports/shortages-01/index.html",
-          isInternal: false
+          link: "/reports/shortages-01",
+          isInternal: true
         }
       ]
     },
@@ -142,8 +142,8 @@ export default function Home() {
           title: "Instructor Shortages",
           excerpt: "Table showing shortages in instructor classroom supplies.",
           date: "Dec 8, 2025",
-          link: "/English-Portal/legacy/reports/shortages-01/index.html",
-          isInternal: false
+          link: "/reports/shortages-01",
+          isInternal: true
         }
       ]
     }

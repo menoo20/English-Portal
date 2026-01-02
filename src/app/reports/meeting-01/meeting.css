@@ -1,0 +1,127 @@
+/* Meeting Minutes Styles */
+
+.meeting-report {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.meeting-header {
+    margin-bottom: 2rem;
+}
+
+.meeting-header .category {
+    display: inline-block;
+    background: rgba(212, 175, 55, 0.2);
+    color: #D4AF37;
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.meeting-header h1 {
+    color: #D4AF37;
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+}
+
+.meeting-header .meta {
+    color: #a0a0a0;
+    font-size: 0.9rem;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.meeting-actions {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.meeting-content {
+    color: #c0c0c0;
+    line-height: 1.8;
+}
+
+.meeting-content h2 {
+    color: #D4AF37;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.meeting-content p {
+    margin-bottom: 1rem;
+}
+
+.meeting-content ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+[dir="rtl"] .meeting-content ul {
+    padding-left: 0;
+    padding-right: 1.5rem;
+}
+
+.meeting-content li {
+    margin-bottom: 0.5rem;
+}
+
+.meeting-content a {
+    color: #D4AF37;
+    text-decoration: underline;
+}
+
+.meeting-content a:hover {
+    color: #F4D03F;
+}
+
+.question-box {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(244, 208, 63, 0.05));
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.question-box h2 {
+    color: #D4AF37;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.question-box ol {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+[dir="rtl"] .question-box ol {
+    padding-left: 0;
+    padding-right: 1.5rem;
+}
+
+/* Print Styles */
+@media print {
+    .meeting-report {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+
+    .meeting-header h1 {
+        color: black;
+    }
+
+    .meeting-content {
+        color: #333;
+    }
+}

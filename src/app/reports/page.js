@@ -69,8 +69,8 @@ export default function ReportsPage() {
                     title: "نواقص المدربين",
                     excerpt: "جدول يوضح النواقص في مستلزمات فصول المدربين",
                     date: "8 ديسمبر 2025",
-                    link: "/English-Portal/legacy/reports/shortages-01/index.html",
-                    isInternal: false
+                    link: "/reports/shortages-01",
+                    isInternal: true
                 },
                 {
                     id: 'meeting-01',
@@ -78,8 +78,8 @@ export default function ReportsPage() {
                     title: "محضر اجتماع قسم اللغة الإنجليزية",
                     excerpt: "منهجية التدريس الجديدة، التقارير الأسبوعية، ومواد الفصل الدراسي...",
                     date: "4 ديسمبر 2025",
-                    link: "/English-Portal/legacy/reports/meeting-01/index.html",
-                    isInternal: false
+                    link: "/reports/meeting-01",
+                    isInternal: true
                 }
             ]
         },
@@ -144,8 +144,8 @@ export default function ReportsPage() {
                     title: "Instructor Shortages",
                     excerpt: "Table showing shortages in instructor classroom supplies.",
                     date: "Dec 8, 2025",
-                    link: "/English-Portal/legacy/reports/shortages-01/index.html",
-                    isInternal: false
+                    link: "/reports/shortages-01",
+                    isInternal: true
                 },
                 {
                     id: 'meeting-01',
@@ -153,8 +153,8 @@ export default function ReportsPage() {
                     title: "English Department Meeting Minutes",
                     excerpt: "New teaching methodology, weekly reports, and semester materials...",
                     date: "Dec 4, 2025",
-                    link: "/English-Portal/legacy/reports/meeting-01/index.html",
-                    isInternal: false
+                    link: "/reports/meeting-01",
+                    isInternal: true
                 }
             ]
         }

@@ -1,0 +1,149 @@
+/* Shortages Report Styles */
+
+.shortages-report {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.shortages-header {
+    margin-bottom: 2rem;
+}
+
+.shortages-header .category {
+    display: inline-block;
+    background: rgba(212, 175, 55, 0.2);
+    color: #D4AF37;
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.shortages-header h1 {
+    color: #D4AF37;
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+}
+
+.shortages-header .meta {
+    color: #a0a0a0;
+    font-size: 0.9rem;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.shortages-actions {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.shortages-content {
+    color: #c0c0c0;
+    line-height: 1.8;
+}
+
+.shortages-content p {
+    margin-bottom: 1.5rem;
+}
+
+/* Shortages Table */
+.shortages-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.shortages-table th,
+.shortages-table td {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+[dir="rtl"] .shortages-table th,
+[dir="rtl"] .shortages-table td {
+    text-align: right;
+}
+
+.shortages-table th {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.2), rgba(244, 208, 63, 0.1));
+    color: #D4AF37;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.shortages-table tr:hover {
+    background: rgba(212, 175, 55, 0.05);
+}
+
+.shortages-table td:last-child {
+    text-align: center;
+    font-weight: 600;
+    color: #D4AF37;
+}
+
+.shortage-icon {
+    margin-right: 0.5rem;
+}
+
+[dir="rtl"] .shortage-icon {
+    margin-right: 0;
+    margin-left: 0.5rem;
+}
+
+/* Note Box */
+.note-box {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(244, 208, 63, 0.05));
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.note-box p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.note-box strong {
+    color: #D4AF37;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .shortages-table th,
+    .shortages-table td {
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .shortages-report {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+
+    .shortages-header h1 {
+        color: black;
+    }
+
+    .shortages-content {
+        color: #333;
+    }
+}
