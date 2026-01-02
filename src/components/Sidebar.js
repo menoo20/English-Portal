@@ -67,7 +67,7 @@ export default function Sidebar() {
             <aside className={`sidebar ${isOpen ? "open" : ""}`}>
                 <div className="sidebar-header">
                     <Image
-                        src="/logo/image2.png"
+                        src="/English-Portal/logo/image2.png"
                         alt="Blackgold Logo"
                         width={50}
                         height={50}

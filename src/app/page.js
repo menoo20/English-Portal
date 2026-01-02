@@ -158,7 +158,7 @@ export default function Home() {
         <div className="hero-decoration"></div>
         <div className="hero-decoration"></div>
         <Image
-          src="/logo/image2.png"
+          src="/English-Portal/logo/image2.png"
           alt="Blackgold High Institute"
           width={150}
           height={150}
