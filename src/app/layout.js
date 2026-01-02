@@ -20,6 +20,11 @@ const cairo = Cairo({
 export const metadata = {
   title: "English Portal | Blackgold High Institute",
   description: "Weekly reports and resources for the English Department at Blackgold High Institute.",
+  icons: {
+    icon: '/English-Portal/logo/image2.png',
+    shortcut: '/English-Portal/logo/image2.png',
+    apple: '/English-Portal/logo/image2.png',
+  },
 };
 
 export default function RootLayout({ children }) {
