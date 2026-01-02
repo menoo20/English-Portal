@@ -60,8 +60,8 @@ export default function ReportsPage() {
                     title: "📊 تقرير أداء المعلمين الأسبوعي",
                     excerpt: "تقييم أسبوعي شامل لـ 8 معلمين، يشمل الأهداف والأدلة وتقييم الجودة...",
                     date: "7 - 11 ديسمبر 2025",
-                    link: "/English-Portal/legacy/reports/teachers-weekly-01/index.html",
-                    isInternal: false
+                    link: "/reports/teachers-weekly-01",
+                    isInternal: true
                 },
                 {
                     id: 'shortages-01',
@@ -135,8 +135,8 @@ export default function ReportsPage() {
                     title: "📊 Teachers Performance Report",
                     excerpt: "Comprehensive evaluation of 8 teachers, including goals and quality assessment...",
                     date: "Dec 7 - 11, 2025",
-                    link: "/English-Portal/legacy/reports/teachers-weekly-01/index.html",
-                    isInternal: false
+                    link: "/reports/teachers-weekly-01",
+                    isInternal: true
                 },
                 {
                     id: 'shortages-01',
