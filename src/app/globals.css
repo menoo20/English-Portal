@@ -818,3 +818,65 @@ body.sidebar-collapsed .main-content {
 [dir="rtl"] .page-title {
   font-family: 'Cairo', sans-serif;
 }
+
+/* ============================================
+   PAGE LAYOUT STYLES
+   ============================================ */
+.reports-page,
+.blog-page,
+.resources-page {
+  padding: var(--space-xl) var(--space-2xl);
+}
+
+.page-header {
+  margin-bottom: var(--space-xl);
+}
+
+.page-title {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: var(--space-sm);
+}
+
+.page-description {
+  font-size: var(--font-size-base);
+  color: var(--color-gray-light);
+  margin-bottom: var(--space-lg);
+}
+
+.back-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--color-gold);
+  font-weight: 500;
+  margin-bottom: var(--space-md);
+  transition: opacity var(--transition-fast);
+}
+
+.back-nav:hover {
+  opacity: 0.8;
+}
+
+.filter-bar {
+  display: flex;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xl);
+  flex-wrap: wrap;
+}
+
+.filter-chip {
+  padding: var(--space-sm) var(--space-lg);
+  background: var(--color-black-lighter);
+  color: var(--color-gray-light);
+  border-radius: var(--border-radius-lg);
+  font-size: var(--font-size-sm);
+  transition: all var(--transition-fast);
+}
+
+.filter-chip:hover,
+.filter-chip.active {
+  background: var(--color-gold);
+  color: var(--color-black);
+}
