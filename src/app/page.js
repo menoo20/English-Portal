@@ -45,9 +45,9 @@ export default function Home() {
           title: "📅 الخطة التفصيلية الكاملة",
           excerpt: "جدول تفصيلي يومي لبرنامج المحادثة يشمل جميع المواضيع والأهداف والأنشطة.",
           date: "ديسمبر 2025 - مارس 2026",
-          link: "/English-Portal/legacy/reports/conversational-program/full-schedule.html",
+          link: "/reports/full-schedule",
           color: "#F4D03F",
-          isInternal: false
+          isInternal: true
         },
         {
           id: 'weekly-02',
@@ -114,9 +114,9 @@ export default function Home() {
           title: "📅 Full Detailed Schedule",
           excerpt: "Daily detailed schedule for the Conversational Program covering all topics.",
           date: "Dec 2025 - Mar 2026",
-          link: "/English-Portal/legacy/reports/conversational-program/full-schedule.html",
+          link: "/reports/full-schedule",
           color: "#F4D03F",
-          isInternal: false
+          isInternal: true
         },
         {
           id: 'weekly-02',

@@ -1,0 +1,409 @@
+/* Full Schedule Page Styles */
+
+.schedule-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Schedule Header */
+.schedule-header {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    padding: 2rem;
+    border-radius: 16px;
+    margin-bottom: 2rem;
+    text-align: center;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.schedule-header h1 {
+    color: #D4AF37;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.schedule-header .subtitle {
+    color: #a0a0a0;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.experimental-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.date-range {
+    color: #D4AF37;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+/* Meta Grid */
+.meta-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.meta-item {
+    background: rgba(26, 26, 46, 0.6);
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.meta-item .number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #D4AF37;
+}
+
+.meta-item .label {
+    font-size: 0.8rem;
+    color: #a0a0a0;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.btn-schedule {
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+}
+
+.btn-schedule.primary {
+    background: linear-gradient(135deg, #D4AF37, #F4D03F);
+    color: #1a1a2e;
+}
+
+.btn-schedule.primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+}
+
+.btn-schedule.secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: #e0e0e0;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.btn-schedule.secondary:hover {
+    background: rgba(212, 175, 55, 0.1);
+}
+
+/* Month Section */
+.month-section {
+    margin-bottom: 2.5rem;
+}
+
+.month-header {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    padding: 1.25rem 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #D4AF37;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.month-header h2 {
+    color: #D4AF37;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.month-header .duration {
+    color: #a0a0a0;
+    font-size: 0.85rem;
+}
+
+/* Week Card */
+.week-card {
+    background: rgba(26, 26, 46, 0.6);
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    border: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.week-header {
+    background: rgba(212, 175, 55, 0.1);
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.week-title {
+    font-weight: 700;
+    color: #D4AF37;
+    margin-right: 0.75rem;
+}
+
+.week-topic {
+    color: #e0e0e0;
+    font-size: 1rem;
+}
+
+.week-dates {
+    color: #a0a0a0;
+    font-size: 0.85rem;
+}
+
+/* Schedule Table */
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.schedule-table th,
+.schedule-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: left;
+}
+
+.schedule-table th {
+    background: rgba(212, 175, 55, 0.05);
+    color: #D4AF37;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.schedule-table th:first-child {
+    width: 100px;
+}
+
+.schedule-table th:nth-child(2) {
+    width: 70px;
+}
+
+.schedule-table th:nth-child(3) {
+    width: 120px;
+}
+
+.schedule-table tr:hover {
+    background: rgba(212, 175, 55, 0.05);
+}
+
+.day-date {
+    font-weight: 600;
+    color: #D4AF37;
+    font-size: 0.9rem;
+}
+
+.day-name {
+    font-weight: 500;
+    color: #a0a0a0;
+    font-size: 0.85rem;
+}
+
+.focus-badge {
+    display: inline-block;
+    background: rgba(212, 175, 55, 0.2);
+    color: #D4AF37;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.objectives {
+    color: #e0e0e0;
+}
+
+/* Quick Reference */
+.quick-ref {
+    background: rgba(212, 175, 55, 0.05);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.quick-ref h3 {
+    color: #D4AF37;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+    text-align: center;
+}
+
+.phrases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 0.75rem;
+}
+
+.phrase-item {
+    background: rgba(26, 26, 46, 0.6);
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.phrase-number {
+    width: 26px;
+    height: 26px;
+    background: #D4AF37;
+    color: #1a1a2e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+}
+
+.phrase-content {
+    flex: 1;
+}
+
+.phrase-topic {
+    font-size: 0.75rem;
+    color: #a0a0a0;
+}
+
+.phrase-text {
+    color: #D4AF37;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Teacher Notes */
+.teacher-notes {
+    background: rgba(46, 204, 113, 0.1);
+    border: 1px solid rgba(46, 204, 113, 0.3);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.teacher-notes h3 {
+    color: #2ecc71;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+.teacher-notes ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.teacher-notes li {
+    padding: 0.4rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #ccc;
+}
+
+.teacher-notes li::before {
+    content: "💡";
+    position: absolute;
+    left: 0;
+}
+
+/* Footer */
+.page-footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(212, 175, 55, 0.2);
+    color: #a0a0a0;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .schedule-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .month-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .week-header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .schedule-table th,
+    .schedule-table td {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Print Styles */
+@media print {
+
+    .sidebar,
+    .sidebar-overlay,
+    .mobile-menu-toggle,
+    .action-buttons {
+        display: none !important;
+    }
+
+    .schedule-container {
+        margin: 0;
+        padding: 0.5rem;
+        max-width: 100%;
+    }
+
+    .week-card {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .month-section {
+        break-before: page;
+    }
+
+    .month-section:first-of-type {
+        break-before: auto;
+    }
+}
