@@ -31,9 +31,9 @@ export default function ReportsPage() {
                     title: "برنامج المحادثة (3 أشهر)",
                     excerpt: "الخطة الأسبوعية الموحدة لقسم اللغة الإنجليزية، تشمل الأهداف والملاحظات الهامة.",
                     date: "ديسمبر 2025 - مارس 2026",
-                    link: "/English-Portal/legacy/reports/conversational-program/index.html",
+                    link: "/reports/conversational-program",
                     color: "#D4AF37",
-                    isInternal: false
+                    isInternal: true
                 },
                 {
                     id: 'full-schedule',
@@ -106,9 +106,9 @@ export default function ReportsPage() {
                     title: "Conversational Program (3 Months)",
                     excerpt: "Unified weekly plan for the English Department, covering goals and notes.",
                     date: "Dec 2025 - Mar 2026",
-                    link: "/English-Portal/legacy/reports/conversational-program/index.html",
+                    link: "/reports/conversational-program",
                     color: "#D4AF37",
-                    isInternal: false
+                    isInternal: true
                 },
                 {
                     id: 'full-schedule',
