@@ -35,7 +35,7 @@ export default function Home() {
           title: "برنامج المحادثة (3 أشهر)",
           excerpt: "الخطة الأسبوعية الموحدة لقسم اللغة الإنجليزية، تشمل الأهداف والملاحظات الهامة.",
           date: "ديسمبر 2025 - مارس 2026",
-          link: "/legacy/reports/conversational-program/index.html",
+          link: "/English-Portal/legacy/reports/conversational-program/index.html",
           color: "#D4AF37",
           isInternal: false
         },
@@ -45,7 +45,7 @@ export default function Home() {
           title: "📅 الخطة التفصيلية الكاملة",
           excerpt: "جدول تفصيلي يومي لبرنامج المحادثة يشمل جميع المواضيع والأهداف والأنشطة.",
           date: "ديسمبر 2025 - مارس 2026",
-          link: "/legacy/reports/conversational-program/full-schedule.html",
+          link: "/English-Portal/legacy/reports/conversational-program/full-schedule.html",
           color: "#F4D03F",
           isInternal: false
         },
@@ -55,7 +55,7 @@ export default function Home() {
           title: "📊 تقرير أداء المعلمين - الأسبوع 2",
           excerpt: "تقييم أسبوعي شامل لـ 9 معلمين، يشمل الأهداف والأدلة وتقييم الجودة...",
           date: "21 - 25 ديسمبر 2025",
-          link: "/legacy/reports/teachers-weekly-02/index.html",
+          link: "/English-Portal/legacy/reports/teachers-weekly-02/index.html",
           isInternal: false
         },
         {
@@ -64,7 +64,7 @@ export default function Home() {
           title: "📊 تقرير أداء المعلمين الأسبوعي",
           excerpt: "تقييم أسبوعي شامل لـ 8 معلمين، يشمل الأهداف والأدلة وتقييم الجودة...",
           date: "7 - 11 ديسمبر 2025",
-          link: "/legacy/reports/teachers-weekly-01/index.html",
+          link: "/English-Portal/legacy/reports/teachers-weekly-01/index.html",
           isInternal: false
         },
         {
@@ -73,7 +73,7 @@ export default function Home() {
           title: "نواقص المدربين",
           excerpt: "جدول يوضح النواقص في مستلزمات فصول المدربين",
           date: "8 ديسمبر 2025",
-          link: "/legacy/reports/shortages-01/index.html",
+          link: "/English-Portal/legacy/reports/shortages-01/index.html",
           isInternal: false
         }
       ]
@@ -104,7 +104,7 @@ export default function Home() {
           title: "Conversational Program (3 Months)",
           excerpt: "Unified weekly plan for the English Department, covering goals and notes.",
           date: "Dec 2025 - Mar 2026",
-          link: "/legacy/reports/conversational-program/index.html",
+          link: "/English-Portal/legacy/reports/conversational-program/index.html",
           color: "#D4AF37",
           isInternal: false
         },
@@ -114,7 +114,7 @@ export default function Home() {
           title: "📅 Full Detailed Schedule",
           excerpt: "Daily detailed schedule for the Conversational Program covering all topics.",
           date: "Dec 2025 - Mar 2026",
-          link: "/legacy/reports/conversational-program/full-schedule.html",
+          link: "/English-Portal/legacy/reports/conversational-program/full-schedule.html",
           color: "#F4D03F",
           isInternal: false
         },
@@ -124,7 +124,7 @@ export default function Home() {
           title: "📊 Teachers Performance Report - Week 2",
           excerpt: "Comprehensive evaluation of 9 teachers, including goals and quality assessment...",
           date: "Dec 21 - 25, 2025",
-          link: "/legacy/reports/teachers-weekly-02/index.html",
+          link: "/English-Portal/legacy/reports/teachers-weekly-02/index.html",
           isInternal: false
         },
         {
@@ -133,7 +133,7 @@ export default function Home() {
           title: "📊 Teachers Performance Report",
           excerpt: "Comprehensive evaluation of 8 teachers, including goals and quality assessment...",
           date: "Dec 7 - 11, 2025",
-          link: "/legacy/reports/teachers-weekly-01/index.html",
+          link: "/English-Portal/legacy/reports/teachers-weekly-01/index.html",
           isInternal: false
         },
         {
@@ -142,7 +142,7 @@ export default function Home() {
           title: "Instructor Shortages",
           excerpt: "Table showing shortages in instructor classroom supplies.",
           date: "Dec 8, 2025",
-          link: "/legacy/reports/shortages-01/index.html",
+          link: "/English-Portal/legacy/reports/shortages-01/index.html",
           isInternal: false
         }
       ]
