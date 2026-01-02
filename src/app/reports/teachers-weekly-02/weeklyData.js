@@ -1,0 +1,212 @@
+// Teachers Weekly 02 Data - Week 2 (Dec 21-25, 2025)
+// 9 Teachers Evaluated
+
+export const weeklyData = {
+    weekNumber: 2,
+    dateRange: {
+        en: "December 21-25, 2025",
+        ar: "21 - 25 ديسمبر 2025"
+    },
+    stats: {
+        teachersReviewed: 9,
+        completeReports: 3,
+        partialReports: 6,
+        totalFiles: "+15"
+    },
+    driveLink: "https://drive.google.com/drive/folders/1MIcG7P2TQrUIWQ6ww6n7P-T8X6DWR82S?usp=sharing",
+    teachers: [
+        {
+            id: 1,
+            name: { en: "Dr. Sharaf El-Deen", ar: "د. شرف الدين (شرف الدين عثمان)" },
+            course: { en: "Everyday English | Saipem, Group 8", ar: "اللغة الإنجليزية اليومية | سايبم، المجموعة 8" },
+            status: "complete",
+            objectives: {
+                en: [
+                    'Daily Life Skills: Time, Hobbies, and Food',
+                    'Using polite request phrases ("I would like...", "Can I have...?")',
+                    'Practice describing daily routine (morning/evening)'
+                ],
+                ar: [
+                    "مهارات الحياة اليومية: الوقت، الهوايات، والطعام",
+                    'استخدام عبارات مهذبة للطلب ("أود الحصول على..."، "هل يمكنني الحصول على...؟")',
+                    "ممارسة وصف الروتين اليومي (صباح/مساء)"
+                ]
+            },
+            topics: {
+                en: ["Time & Routine: time, half, morning/night routine", "Hobbies: 'like' and 'enjoy' verbs with sports & arts", "Food ordering: polite phrases and customer/waiter scenario"],
+                ar: ["الوقت والروتين: الوقت، نصف، الروتين الصباحي/الليلي", "الهوايات: أفعال 'يحب' و 'يستمتع' مع الرياضة والفنون", "طلب الطعام: عبارات مهذبة وسيناريو الزبون/النادل"]
+            },
+            materials: {
+                en: "Presentation (Time & Hobbies), Worksheets (matching, personal form), YouTube video for pronunciation",
+                ar: "عرض تقديمي (الوقت والهوايات)، أوراق عمل (مطابقة، استمارة شخصية)، فيديو يوتيوب للنطق"
+            },
+            qualityNote: {
+                title: { en: "Quality Analysis", ar: "تحليل الجودة" },
+                description: { en: "The lesson plan follows a very logical sequence (Time → Routine → Food). Worksheets are excellent and support the learning objective.", ar: "الخطة الدراسية تتبع تسلسلاً منطقياً جداً (الوقت ← الروتين ← الطعام). أوراق العمل ممتازة وتدعم الهدف التعليمي." }
+            },
+            encouragement: {
+                title: { en: "💡 Encouragement Note", ar: "💡 ملاحظة تشجيعية" },
+                description: { en: "The submitted work is excellent and well-organized! We encourage the teacher to document classroom activities with video or photos in the future to highlight live student interaction.", ar: "العمل المقدم ممتاز ومنظم بشكل رائع! نشجع المعلم على توثيق أنشطة الفصل بالفيديو أو الصور في المستقبل لإبراز التفاعل الحي للطلاب." },
+                suggestion: { en: "Recording short clips of role-plays (like restaurant dialogue) would be a great addition to show student progress.", ar: "تسجيل مقاطع قصيرة من لعب الأدوار (مثل حوار المطعم) سيكون إضافة رائعة لإظهار تقدم الطلاب." }
+            }
+        },
+        {
+            id: 2,
+            name: { en: "Mr. Ahmed El-Marhoom", ar: "أ. أحمد المرحوم" },
+            course: { en: "Everyday English for Beginners", ar: "اللغة الإنجليزية اليومية للمبتدئين" },
+            status: "complete",
+            objectives: {
+                en: [
+                    "Action Verbs: Using verbs like (run, jump)",
+                    "Auxiliary Verbs: Using (am/is/are)",
+                    "Sentence Structure: Connecting subject with auxiliary verb"
+                ],
+                ar: [
+                    "أفعال الحركة: استخدام أفعال مثل (يجري، يقفز)",
+                    "الأفعال المساعدة: استخدام (am/is/are)",
+                    "تركيب الجمل: ربط الفاعل بالفعل المساعد"
+                ]
+            },
+            topics: {
+                en: ["Action Verbs (Charades game)", "Auxiliary Verbs (am/is/are)", "Simple Sentence Formation"],
+                ar: ["أفعال الحركة (لعبة المحاكاة)", "الأفعال المساعدة (am/is/are)", "تكوين الجمل البسيطة"]
+            },
+            materials: {
+                en: "Presentation, Worksheets (Bingo)",
+                ar: "عرض تقديمي، أوراق عمل (بنغو)"
+            },
+            qualityNote: {
+                title: { en: "Quality Analysis", ar: "تحليل الجودة" },
+                description: { en: "Excellent use of gamification (Bingo) to reinforce grammar.", ar: "استخدام ممتاز للتلعيب (Bingo) لترسيخ القواعد." }
+            },
+            encouragement: {
+                title: { en: "💡 Encouragement Note", ar: "💡 ملاحظة تشجيعية" },
+                description: { en: "Excellent use of interactive games (Charades, Bingo)! These activities are perfect for filming in the future.", ar: "استخدام ممتاز للألعاب التفاعلية (Charades, Bingo)! هذه الأنشطة مثالية للتصوير في المستقبل." },
+                suggestion: { en: "Recording short moments from these games would be a great addition.", ar: "تسجيل لحظات قصيرة من هذه الألعاب سيكون إضافة رائعة." }
+            }
+        },
+        {
+            id: 3,
+            name: { en: "Mr. Ali Abd El-Salam", ar: "أ. علي عبد السلام" },
+            course: { en: "Conversation Scenarios", ar: "سيناريوهات المحادثة" },
+            status: "complete",
+            objectives: {
+                en: [
+                    "Numbers: Learning numbers and writing them",
+                    "Grammar: Verb To Be",
+                    "Situational English: At the clothing store"
+                ],
+                ar: [
+                    "الأرقام: تعلم الأرقام وكتابتها",
+                    "القواعد: فعل الكينونة (To Be)",
+                    "الإنجليزية المواقفية: في متجر الملابس"
+                ]
+            },
+            topics: {
+                en: ["Distinguishing between numbers (13-19)", "Number dictation", "Using (am, is, are)"],
+                ar: ["التمييز بين الأرقام (13-19)", "إملاء الأرقام", "استخدام (am, is, are)"]
+            },
+            materials: {
+                en: "Smartboard, Videos",
+                ar: "السبورة الذكية، فيديوهات"
+            },
+            qualityNote: {
+                title: { en: "Quality Analysis", ar: "تحليل الجودة" },
+                description: { en: "Videos show an active classroom. Board notes are excellent.", ar: "الفيديوهات تظهر فصلاً نشطاً. ملاحظات السبورة ممتازة." }
+            },
+            hasEvidence: true,
+            evidenceType: "video"
+        },
+        {
+            id: 4,
+            name: { en: "Mr. Mohammed Ameen", ar: "أ. محمد أمين" },
+            course: { en: "Basic Phonics", ar: "الصوتيات الأساسية" },
+            status: "complete",
+            objectives: {
+                en: [
+                    "Using articles (a / an)",
+                    'Forming simple sentences: "Where are you from?" and "What do you do?"',
+                    "Interactive Kahoot quiz for content review"
+                ],
+                ar: [
+                    "استخدام أدوات التنكير (a / an)",
+                    'تكوين جمل بسيطة: "من أين أنت؟" و "ماذا تعمل؟"',
+                    "مسابقة Kahoot تفاعلية لمراجعة المحتوى"
+                ]
+            },
+            topics: {
+                en: ['Part 1: Introductions ("My name is...", "Nice to meet you")', 'Part 2: Living and Work ("I live in...", "What\'s your job?")', "Part 3: Asking about age and ending conversation + Role Play"],
+                ar: ['الجزء 1: التقديمات ("اسمي..."، "تشرفت بمعرفتك")', 'الجزء 2: السكن والعمل ("أسكن في..."، "ما عملك؟")', "الجزء 3: السؤال عن العمر وإنهاء المحادثة + لعب الأدوار"]
+            },
+            materials: {
+                en: "Bilingual Presentation (Sharing Personal Information), Weekly PDF Report, Kahoot Quiz Video",
+                ar: "عرض تقديمي ثنائي اللغة (Sharing Personal Information)، تقرير أسبوعي PDF، فيديو مسابقة Kahoot"
+            },
+            qualityNote: {
+                title: { en: "Quality Analysis", ar: "تحليل الجودة" },
+                description: { en: 'Teacher used a clear "Chunks" approach for teaching conversation, supported by bilingual slides. Kahoot gamification was excellently implemented.', ar: 'استخدم المعلم نهجاً واضحاً قائماً على "القطع اللغوية" (Chunks) لتعليم المحادثة، مدعوماً بشرائح ثنائية اللغة. تم تنفيذ التلعيب عبر Kahoot بشكل ممتاز.' }
+            },
+            strength: {
+                title: { en: "💡 Strengths", ar: "💡 نقاط القوة" },
+                description: { en: "Video shows high engagement and energy in the quiz. Slides are clearly organized with specific instructions for role-play exercises.", ar: "الفيديو يُظهر تفاعلاً عالياً وطاقة في المسابقة. الشرائح منظمة بوضوح مع تعليمات محددة لتمارين لعب الأدوار." }
+            },
+            hasEvidence: true,
+            evidenceType: "video"
+        },
+        {
+            id: 5,
+            name: { en: "Mr. Mohamed Abd El-Mo'ty", ar: "أ. محمد عبد المعطي" },
+            course: { en: "Conversational English", ar: "اللغة الإنجليزية المحادثة" },
+            status: "partial",
+            isMissing: true,
+            missingNote: {
+                en: "⚠️ No report submitted for this week. Teacher should submit weekly work documentation.",
+                ar: "⚠️ لم يتم تقديم تقرير لهذا الأسبوع. يجب على المعلم تقديم توثيق العمل الأسبوعي."
+            }
+        },
+        {
+            id: 6,
+            name: { en: "Ms. Asmaa Sabry", ar: "أ. أسماء صبري" },
+            course: { en: "Reading and Comprehension", ar: "القراءة والفهم" },
+            status: "partial",
+            isMissing: true,
+            missingNote: {
+                en: "⚠️ No report submitted for this week. Teacher should submit weekly work documentation.",
+                ar: "⚠️ لم يتم تقديم تقرير لهذا الأسبوع. يجب على المعلم تقديم توثيق العمل الأسبوعي."
+            }
+        },
+        {
+            id: 7,
+            name: { en: "Mr. Hatem Rashwan", ar: "أ. حاتم رشوان" },
+            course: { en: "Grammar Foundations", ar: "أساسيات القواعد" },
+            status: "partial",
+            isMissing: true,
+            missingNote: {
+                en: "⚠️ No report submitted for this week. Teacher should submit weekly work documentation.",
+                ar: "⚠️ لم يتم تقديم تقرير لهذا الأسبوع. يجب على المعلم تقديم توثيق العمل الأسبوعي."
+            }
+        },
+        {
+            id: 8,
+            name: { en: "Mr. Tawfeek Ibrahim", ar: "أ. توفيق إبراهيم" },
+            course: { en: "Practical English Skills", ar: "المهارات الإنجليزية العملية" },
+            status: "partial",
+            isMissing: true,
+            missingNote: {
+                en: "⚠️ No report submitted for this week. Teacher should submit weekly work documentation.",
+                ar: "⚠️ لم يتم تقديم تقرير لهذا الأسبوع. يجب على المعلم تقديم توثيق العمل الأسبوعي."
+            }
+        },
+        {
+            id: 9,
+            name: { en: "Ms. Balsam", ar: "أ. بلسم" },
+            course: { en: "New Instructor", ar: "مدربة جديدة" },
+            status: "awaiting",
+            isAwaiting: true,
+            awaitingNote: {
+                en: "📋 Awaiting Delivery - First week report pending. Looking forward to seeing great work!",
+                ar: "📋 في انتظار التسليم - التقرير الأول قيد الانتظار. نتطلع لرؤية عمل رائع!"
+            }
+        }
+    ]
+};
