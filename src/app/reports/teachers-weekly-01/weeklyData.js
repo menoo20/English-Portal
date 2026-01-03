@@ -145,78 +145,136 @@ export const weeklyData = {
         },
         {
             id: 5,
-            name: { en: "Mr. Mohamed Abd El-Mo'ty", ar: "أ. محمد عبد المعطي" },
-            course: { en: "Conversational English", ar: "اللغة الإنجليزية المحادثة" },
+            name: { en: "Mr. Mostafa", ar: "أ. مصطفى" },
+            course: { en: "Self-Introduction & Public Speaking | Samsung Cohort", ar: "تقديم النفس والتحدث أمام الجمهور | مجموعة سامسونج" },
             status: "complete",
             objectives: {
                 en: [
-                    "Practice everyday dialogues",
-                    "Learn common expressions",
-                    "Build speaking fluency",
-                    "Work on pronunciation clarity"
+                    "Help students overcome fear of public speaking",
+                    "Self-introduction: 'Hi, my name is...', 'I come from...'",
+                    "Vocational context: Identifying majors (Welding, IT, Electrician)",
+                    "Building confidence through scaffolded sentence starters"
                 ],
                 ar: [
-                    "ممارسة الحوارات اليومية",
-                    "تعلم التعبيرات الشائعة",
-                    "بناء طلاقة التحدث",
-                    "العمل على وضوح النطق"
+                    "مساعدة الطلاب على التغلب على الخوف من التحدث أمام الجمهور",
+                    "تقديم النفس: 'مرحباً، اسمي...'، 'أنا من...'",
+                    "السياق المهني: تحديد التخصصات (لحام، تقنية معلومات، كهربائي)",
+                    "بناء الثقة من خلال بدايات جمل مدعومة"
                 ]
             },
             topics: {
-                en: ["Daily conversations", "Common expressions", "Pronunciation practice", "Q&A sessions"],
-                ar: ["المحادثات اليومية", "التعبيرات الشائعة", "ممارسة النطق", "جلسات الأسئلة والأجوبة"]
+                en: ["Self-introduction with sentence starters", "Vocational identity (Welder, IT, Electrician)", "Peer-to-peer conversation simulation", "Overcoming public speaking fear"],
+                ar: ["تقديم النفس مع بدايات الجمل", "الهوية المهنية (لحام، تقنية معلومات، كهربائي)", "محاكاة المحادثة بين الأقران", "التغلب على الخوف من التحدث"]
             },
-            imagePath: "/English-Portal/legacy/reports/teachers-weekly-01/week-01_7-11-Dec-2025/05-Mr-Mohamed-Abd-El-Moty/Screenshot 2025-12-11 135247.png"
+            materials: {
+                en: "Weekly Report (PDF with classroom photo), 5 Video Files (student presentations), Smart board slides visible in videos",
+                ar: "التقرير الأسبوعي (PDF مع صورة الفصل)، 5 ملفات فيديو (عروض الطلاب)، شرائح السبورة الذكية مرئية في الفيديوهات"
+            },
+            qualityNote: {
+                title: { en: "Confidence Building Success", ar: "نجاح بناء الثقة" },
+                description: { en: "Goal was to help students 'overcome their fear' of public speaking. Videos show success—while some students are naturally nervous, all successfully completed the task in front of peers. Scaffolding template on screen allows focus on pronunciation.", ar: "الهدف كان مساعدة الطلاب على 'التغلب على خوفهم' من التحدث أمام الجمهور. الفيديوهات تظهر نجاحاً—رغم توتر بعض الطلاب طبيعياً، الجميع أكمل المهمة بنجاح أمام أقرانهم. قالب السقالة على الشاشة يسمح بالتركيز على النطق." }
+            },
+            strength: {
+                title: { en: "💡 Differentiated Performance", ar: "💡 أداء متمايز" },
+                description: { en: "Allows students to perform at their own comfort level while maintaining baseline standard. Some rely heavily on screen, others add variations ('My city is Al Qatif', hobbies like 'video games'). Peer-to-peer simulation adds realistic interaction.", ar: "يسمح للطلاب بالأداء حسب مستوى راحتهم مع الحفاظ على المعيار الأساسي. البعض يعتمد بشكل كبير على الشاشة، والبعض يضيف تنويعات. المحاكاة بين الأقران تضيف تفاعلاً واقعياً." }
+            },
+            encouragement: {
+                title: { en: "🚀 Administrative Organization", ar: "🚀 التنظيم الإداري" },
+                description: { en: "Teaching delivery is effective and clear. For next week, please: (1) Use descriptive file names instead of raw IMG numbers, (2) Add reflection on student struggles/successes in the report, not just bullet points.", ar: "تقديم التدريس فعال وواضح. للأسبوع القادم: (1) استخدم أسماء ملفات وصفية بدلاً من أرقام IMG، (2) أضف تأملات عن صعوبات/نجاحات الطلاب في التقرير، وليس مجرد نقاط." }
+            },
+            imagePath: "/English-Portal/legacy/reports/teachers-weekly-01/week-01_7-11-Dec-2025/05-Mr-Mostafa/Screenshot.png"
         },
         {
             id: 6,
-            name: { en: "Ms. Asmaa Sabry", ar: "أ. أسماء صبري" },
-            course: { en: "Reading and Comprehension", ar: "القراءة والفهم" },
-            status: "complete",
+            name: { en: "Ms. Balsam Benaoun", ar: "أ. بلسم بن عون" },
+            course: { en: "Spoken English | Unit 1: Introductions, Greetings & Farewells", ar: "اللغة الإنجليزية المحكية | الوحدة 1: التعريف والتحيات والوداع" },
+            status: "exemplary",
+            isExemplary: true,
+            exemplaryNote: {
+                title: { en: "⭐ Complete Portfolio Submission", ar: "⭐ تقديم محفظة كاملة" },
+                description: { en: "Comprehensive package: curriculum planning documents, instructional slides, student performance videos, and reflective weekly report. Excellent alignment between lesson plan and classroom outcomes.", ar: "حزمة شاملة: مستندات تخطيط المنهج، شرائح تعليمية، فيديوهات أداء الطلاب، وتقرير أسبوعي تأملي. توافق ممتاز بين خطة الدرس ونتائج الفصل." }
+            },
             objectives: {
                 en: [
-                    "Develop reading fluency",
-                    "Practice comprehension questions",
-                    "Expand vocabulary through reading",
-                    "Build reading confidence"
+                    "Introducing yourself: 'Hello, my name is...'",
+                    "Greetings: 'Hello', 'Good morning', 'How are you?'",
+                    "Farewells: 'Goodbye', 'See you later', 'Take care'",
+                    "Building speaking confidence through scaffolded practice"
                 ],
                 ar: [
-                    "تطوير طلاقة القراءة",
-                    "ممارسة أسئلة الفهم",
-                    "توسيع المفردات من خلال القراءة",
-                    "بناء الثقة في القراءة"
+                    "تقديم النفس: 'مرحباً، اسمي...'",
+                    "التحيات: 'مرحباً'، 'صباح الخير'، 'كيف حالك؟'",
+                    "الوداع: 'مع السلامة'، 'أراك لاحقاً'، 'اعتني بنفسك'",
+                    "بناء ثقة التحدث من خلال التدريب المدعوم"
                 ]
             },
             topics: {
-                en: ["Short reading passages", "Comprehension questions", "Vocabulary building", "Silent reading practice"],
-                ar: ["مقاطع قراءة قصيرة", "أسئلة الفهم", "بناء المفردات", "ممارسة القراءة الصامتة"]
+                en: ["Self-introduction dialogues", "Greeting expressions", "Farewell expressions", "Whiteboard group activities"],
+                ar: ["حوارات تقديم النفس", "عبارات التحية", "عبارات الوداع", "أنشطة جماعية على السبورة"]
             },
-            imagePath: "/English-Portal/legacy/reports/teachers-weekly-01/week-01_7-11-Dec-2025/06-Ms-Asmaa-Sabry/Screenshot 2025-12-11 135335.png"
+            materials: {
+                en: "Spoken English 1s Unit.pptx, Topics.pdf, Farewell.pdf, 5 Student Videos, Weekly Report (Dec 10)",
+                ar: "عرض تقديمي الوحدة 1، ملف المواضيع، ملف الوداع، 5 فيديوهات طلاب، تقرير أسبوعي (10 ديسمبر)"
+            },
+            qualityNote: {
+                title: { en: "Instructional Alignment Excellence", ar: "تميز التوافق التعليمي" },
+                description: { en: "Direct correlation between planning and performance. Topics.pdf lists 'Introducing yourself' as priority → PPT provides script → Student videos show exact structure with personal substitutions ('Hello, my name is Fayan... I am from Saudi Arabia').", ar: "ارتباط مباشر بين التخطيط والأداء. ملف المواضيع يضع 'تقديم النفس' كأولوية ← العرض يوفر النص ← فيديوهات الطلاب تظهر البنية بالضبط مع استبدالات شخصية." }
+            },
+            strength: {
+                title: { en: "💡 Active Learning & Privacy Ethics", ar: "💡 التعلم النشط وأخلاقيات الخصوصية" },
+                description: { en: "Students actively writing on whiteboard, not passive listening. Competitive group games for recall. Privacy ethics: smiley face stickers used to obscure student faces in videos—demonstrates strong professional standards.", ar: "الطلاب يكتبون بنشاط على السبورة، وليس الاستماع السلبي. ألعاب جماعية تنافسية للتذكر. أخلاقيات الخصوصية: استخدام ملصقات الوجوه المبتسمة لإخفاء وجوه الطلاب—يظهر معايير مهنية قوية." }
+            },
+            encouragement: {
+                title: { en: "🚀 Shyness Support", ar: "🚀 دعم الخجل" },
+                description: { en: "Great observation that 'students are still a bit shy.' Videos show pair support (Fayan & Reem) and gentle prompting—fostering a supportive environment. Continue this approach.", ar: "ملاحظة رائعة أن 'الطلاب لا يزالون خجولين قليلاً.' الفيديوهات تظهر دعم الأزواج وتوجيه لطيف—تعزيز بيئة داعمة. استمري في هذا النهج." }
+            },
+            imagePath: "/English-Portal/legacy/reports/teachers-weekly-01/week-01_7-11-Dec-2025/06-Ms-Balsam/Screenshot.png"
         },
         {
             id: 7,
-            name: { en: "Mr. Hatem Rashwan", ar: "أ. حاتم رشوان" },
-            course: { en: "Grammar Foundations", ar: "أساسيات القواعد" },
-            status: "complete",
+            name: { en: "Mrs. Khadija Tahir", ar: "أ. خديجة طاهر" },
+            course: { en: "Situational English | Hybrid (1 F2F + 6 Online Groups)", ar: "الإنجليزية المواقفية | هجين (1 حضوري + 6 مجموعات أونلاين)" },
+            status: "exemplary",
+            isExemplary: true,
+            exemplaryNote: {
+                title: { en: "⭐ Outstanding Documentation & CEFR Alignment", ar: "⭐ توثيق متميز وتوافق مع CEFR" },
+                description: { en: "The only teacher to explicitly label vocabulary as 'A1 (Foundation)' vs 'A2 (Expansion)'. Provides best practice curriculum planning with detailed breakdown of student progress by mode (F2F vs Online).", ar: "المعلمة الوحيدة التي صنفت المفردات صراحةً كـ 'A1 (تأسيس)' مقابل 'A2 (توسع)'. تقدم أفضل ممارسات تخطيط المنهج مع تفصيل تقدم الطلاب حسب الوضع." }
+            },
             objectives: {
                 en: [
-                    "Introduce basic sentence structure",
-                    "Teach subject-verb agreement",
-                    "Practice simple present tense",
-                    "Build grammar awareness"
+                    "Self-introduction with CEFR A1-A2 alignment",
+                    "Formal scenario: Job Interview dialogues",
+                    "Informal scenario: Friend's Wedding introductions",
+                    "Managing hybrid instruction (1 Face-to-Face + 6 Zoom groups)"
                 ],
                 ar: [
-                    "تقديم بنية الجملة الأساسية",
-                    "تعليم اتفاق الفاعل والفعل",
-                    "ممارسة المضارع البسيط",
-                    "بناء الوعي القواعدي"
+                    "تقديم النفس مع توافق CEFR A1-A2",
+                    "سيناريو رسمي: حوارات مقابلة العمل",
+                    "سيناريو غير رسمي: تعريفات حفل زفاف صديق",
+                    "إدارة التدريس الهجين (1 حضوري + 6 مجموعات زووم)"
                 ]
             },
             topics: {
-                en: ["Sentence structure (S+V+O)", "Subject-verb agreement", "Simple present tense", "Grammar exercises"],
-                ar: ["بنية الجملة (فاعل+فعل+مفعول)", "اتفاق الفاعل والفعل", "المضارع البسيط", "تمارين القواعد"]
+                en: ["Self-introduction (A1 vs A2 levels)", "Job Interview dialogues (Formal)", "Wedding scenario (Informal)", "Zoom breakout pair work"],
+                ar: ["تقديم النفس (مستويات A1 مقابل A2)", "حوارات مقابلة العمل (رسمي)", "سيناريو الزفاف (غير رسمي)", "عمل ثنائي في غرف زووم"]
             },
-            imagePath: "/English-Portal/legacy/reports/teachers-weekly-01/week-01_7-11-Dec-2025/07-Mr-Hatem-Rashwan/Screenshot 2025-12-11 135408.png"
+            materials: {
+                en: "Self Introduction.pptx, Basic Greetings Handout (with Dammam Dialect Arabic), CEFR Vocabulary PDF, Examples of Dialogues PDF, 2 Zoom Recording Videos, Detailed Weekly Report",
+                ar: "عرض تقديم النفس، نشرة التحيات الأساسية (مع اللهجة الدمامية)، ملف مفردات CEFR، ملف أمثلة الحوارات، 2 فيديو تسجيل زووم، تقرير أسبوعي مفصل"
+            },
+            qualityNote: {
+                title: { en: "Localization Excellence", ar: "تميز التوطين" },
+                description: { en: "Handout includes 'Arabic (Dammam Dialect)' column—translating 'How are you?' to both 'كيف حالك؟' and 'كيفك؟'. Tailoring materials specifically to local demographic. Cultural relevance: Wedding scenario engagement.", ar: "النشرة تتضمن عمود 'العربية (اللهجة الدمامية)'—ترجمة 'كيف حالك؟' إلى الفصحى واللهجة. تخصيص المواد للديموغرافية المحلية. الصلة الثقافية: تفاعل سيناريو الزفاف." }
+            },
+            strength: {
+                title: { en: "💡 CEFR-Aligned Scaffolding", ar: "💡 سقالات متوافقة مع CEFR" },
+                description: { en: "Contrasts 'Simplified A1' interview with more complex 'A2' interview, allowing students of different abilities to succeed. Separates progress by mode: F2F had 'strong participation', Online showed 'gradual confidence building'.", ar: "تقارن مقابلة 'A1 مبسطة' بمقابلة 'A2' أكثر تعقيداً، مما يسمح لطلاب بقدرات مختلفة بالنجاح. تفصل التقدم حسب الوضع: الحضوري بـ 'مشاركة قوية'، الأونلاين بـ 'بناء ثقة تدريجي'." }
+            },
+            encouragement: {
+                title: { en: "🚀 Online Focus Challenge", ar: "🚀 تحدي التركيز أونلاين" },
+                description: { en: "Honest reporting: 'Online trainees face distractions at home and find it difficult to focus.' Video shows all cameras off. Continue encouraging camera-on policy where possible.", ar: "تقارير صادقة: 'المتدربون أونلاين يواجهون إلهاءات في المنزل ويجدون صعوبة في التركيز.' الفيديو يظهر جميع الكاميرات مغلقة. استمري في تشجيع سياسة تشغيل الكاميرا حيث أمكن." }
+            },
+            imagePath: "/English-Portal/legacy/reports/teachers-weekly-01/week-01_7-11-Dec-2025/07-Mrs-Khadija-Tahir/Screenshot.png"
         },
         {
             id: 8,
