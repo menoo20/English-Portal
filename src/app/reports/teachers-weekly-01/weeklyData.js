@@ -141,7 +141,9 @@ export const weeklyData = {
                 en: ["Letter sounds A-Z", "Short vowel sounds", "CVC words (cat, dog, pen)", "Spelling games"],
                 ar: ["أصوات الحروف A-Z", "أصوات الحروف المتحركة القصيرة", "كلمات CVC (cat, dog, pen)", "ألعاب الإملاء"]
             },
-            imagePath: "/English-Portal/legacy/reports/teachers-weekly-01/week-01_7-11-Dec-2025/04-Mr-Mohammed-Ameen/Screenshot 2025-12-11 135159.png"
+            imagePath: null,  // No image available
+            evidenceIcon: "🔤",  // Phonics & Spelling
+            evidenceLabel: { en: "Phonics & Spelling Report", ar: "تقرير الصوتيات والإملاء" }
         },
         {
             id: 5,
@@ -182,7 +184,9 @@ export const weeklyData = {
                 title: { en: "🚀 Administrative Organization", ar: "🚀 التنظيم الإداري" },
                 description: { en: "Teaching delivery is effective and clear. For next week, please: (1) Use descriptive file names instead of raw IMG numbers, (2) Add reflection on student struggles/successes in the report, not just bullet points.", ar: "تقديم التدريس فعال وواضح. للأسبوع القادم: (1) استخدم أسماء ملفات وصفية بدلاً من أرقام IMG، (2) أضف تأملات عن صعوبات/نجاحات الطلاب في التقرير، وليس مجرد نقاط." }
             },
-            imagePath: "/English-Portal/legacy/reports/teachers-weekly-01/week-01_7-11-Dec-2025/05-Mr-Mostafa/Screenshot.png"
+            imagePath: null,  // No image available
+            evidenceIcon: "🎤",  // Public Speaking
+            evidenceLabel: { en: "Student Presentation Videos", ar: "فيديوهات عروض الطلاب" }
         },
         {
             id: 6,
@@ -228,7 +232,9 @@ export const weeklyData = {
                 title: { en: "🚀 Shyness Support", ar: "🚀 دعم الخجل" },
                 description: { en: "Great observation that 'students are still a bit shy.' Videos show pair support (Fayan & Reem) and gentle prompting—fostering a supportive environment. Continue this approach.", ar: "ملاحظة رائعة أن 'الطلاب لا يزالون خجولين قليلاً.' الفيديوهات تظهر دعم الأزواج وتوجيه لطيف—تعزيز بيئة داعمة. استمري في هذا النهج." }
             },
-            imagePath: "/English-Portal/legacy/reports/teachers-weekly-01/week-01_7-11-Dec-2025/06-Ms-Balsam/Screenshot.png"
+            imagePath: null,  // No image available
+            evidenceIcon: "👋",  // Greetings & Farewells
+            evidenceLabel: { en: "Student Videos & PPT", ar: "فيديوهات الطلاب والعروض" }
         },
         {
             id: 7,
@@ -274,7 +280,9 @@ export const weeklyData = {
                 title: { en: "🚀 Online Focus Challenge", ar: "🚀 تحدي التركيز أونلاين" },
                 description: { en: "Honest reporting: 'Online trainees face distractions at home and find it difficult to focus.' Video shows all cameras off. Continue encouraging camera-on policy where possible.", ar: "تقارير صادقة: 'المتدربون أونلاين يواجهون إلهاءات في المنزل ويجدون صعوبة في التركيز.' الفيديو يظهر جميع الكاميرات مغلقة. استمري في تشجيع سياسة تشغيل الكاميرا حيث أمكن." }
             },
-            imagePath: "/English-Portal/legacy/reports/teachers-weekly-01/week-01_7-11-Dec-2025/07-Mrs-Khadija-Tahir/Screenshot.png"
+            imagePath: null,  // No image available
+            evidenceIcon: "💻",  // Hybrid/Online Teaching
+            evidenceLabel: { en: "Zoom Recordings & CEFR Docs", ar: "تسجيلات زووم ومستندات CEFR" }
         },
         {
             id: 8,
@@ -299,7 +307,9 @@ export const weeklyData = {
                 en: ["Workplace vocabulary", "Real-world scenarios", "Communication skills", "Practical exercises"],
                 ar: ["مفردات مكان العمل", "سيناريوهات الحياة الواقعية", "مهارات التواصل", "تمارين عملية"]
             },
-            imagePath: "/English-Portal/legacy/reports/teachers-weekly-01/week-01_7-11-Dec-2025/08-Mr-Tawfeek-Ibrahim/Screenshot 2025-12-11 135444.png"
+            imagePath: null,  // No image available
+            evidenceIcon: "🛠️",  // Practical Skills
+            evidenceLabel: { en: "Workplace English Report", ar: "تقرير إنجليزية مكان العمل" }
         }
     ]
 };

@@ -216,10 +216,15 @@ export default function TeachersWeekly01English() {
                                         <div className="screenshot-caption">Weekly Report {idx + 1}</div>
                                     </div>
                                 ))
-                            ) : teacher.imagePath && (
+                            ) : teacher.imagePath ? (
                                 <div className="screenshot-item">
                                     <img src={teacher.imagePath} alt={`${teacher.name.en} Weekly Report`} />
                                     <div className="screenshot-caption">Weekly Report</div>
+                                </div>
+                            ) : (
+                                <div className="screenshot-item no-image">
+                                    <div className="no-image-placeholder">{teacher.evidenceIcon || "📄"}</div>
+                                    <div className="screenshot-caption">{teacher.evidenceLabel?.en || "Weekly Report"}</div>
                                 </div>
                             )}
                         </div>
