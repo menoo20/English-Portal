@@ -9,9 +9,9 @@ export const weeklyData = {
     },
     stats: {
         teachersReviewed: 9,
-        completeReports: 3,
-        partialReports: 6,
-        totalFiles: "+15"
+        completeReports: 8,
+        partialReports: 1,
+        totalFiles: "+20"
     },
     driveLink: "https://drive.google.com/drive/folders/1MIcG7P2TQrUIWQ6ww6n7P-T8X6DWR82S?usp=sharing",
     teachers: [
@@ -19,35 +19,55 @@ export const weeklyData = {
             id: 1,
             name: { en: "Dr. Sharaf El-Deen", ar: "د. شرف الدين (شرف الدين عثمان)" },
             course: { en: "Everyday English | Saipem, Group 8", ar: "اللغة الإنجليزية اليومية | سايبم، المجموعة 8" },
-            status: "complete",
+            status: "exemplary",
+            isExemplary: true,
+            exemplaryNote: {
+                title: { en: "⭐ Excellent Planning & Resource Integration", ar: "⭐ تخطيط وتكامل موارد ممتاز" },
+                description: { en: "Demonstrates high pedagogical sophistication. While student output evidence is missing, the input materials are the strongest in the cohort regarding multimedia integration (Oxford Online English & specific pronunciation guides).", ar: "يظهر نضجاً تربوياً عالياً. على الرغم من عدم وجود أدلة على مخرجات الطلاب، إلا أن مواد الإدخال هي الأقوى في المجموعة فيما يتعلق بدمج الوسائط المتعددة (أكسفورد للغة الإنجليزية عبر الإنترنت وأدلة النطق المحددة)." }
+            },
             objectives: {
                 en: [
-                    'Daily Life Skills: Time, Hobbies, and Food',
-                    'Using polite request phrases ("I would like...", "Can I have...?")',
-                    'Practice describing daily routine (morning/evening)'
+                    "Daily Life Skills: Time (Charts), Hobbies, and Food",
+                    "Contextual Learning: Teaching 'chunks' (e.g., 'The server is very friendly')",
+                    "Differentiation: Visual (PPT/Charts) & Kinesthetic (Role-play scripts)",
+                    "Listening Endurance: Exposure to natural pacing and ambient noise"
                 ],
                 ar: [
-                    "مهارات الحياة اليومية: الوقت، الهوايات، والطعام",
-                    'استخدام عبارات مهذبة للطلب ("أود الحصول على..."، "هل يمكنني الحصول على...؟")',
-                    "ممارسة وصف الروتين اليومي (صباح/مساء)"
+                    "مهارات الحياة اليومية: الوقت (الرسوم البيانية)، الهوايات، والطعام",
+                    "التعلم السياقي: تعليم 'القطع اللغوية' (مثل: 'النادلة ودودة جداً')",
+                    "التمايز: بصري (عرض تقديمي/رسوم بيانية) وحركي (نصوص لعب الأدوار)",
+                    "القدرة على الاستماع: التعرض لسرعة التحدث الطبيعية والضوضاء المحيطة"
                 ]
             },
             topics: {
-                en: ["Time & Routine: time, half, morning/night routine", "Hobbies: 'like' and 'enjoy' verbs with sports & arts", "Food ordering: polite phrases and customer/waiter scenario"],
-                ar: ["الوقت والروتين: الوقت، نصف، الروتين الصباحي/الليلي", "الهوايات: أفعال 'يحب' و 'يستمتع' مع الرياضة والفنون", "طلب الطعام: عبارات مهذبة وسيناريو الزبون/النادل"]
+                en: [
+                    "Time & Hobbies: Structured progression (Wake up -> Hobbies)",
+                    "Ordering Food: Oxford Online English dialogue (Requesting table, ordering, bill)",
+                    "Pronunciation: Specific focus on high-frequency errors (e.g., 'MENU')",
+                    "Role Play: Customer/Waiter scenarios"
+                ],
+                ar: [
+                    "الوقت والهوايات: تسلسل منظم (الاستيقاظ ← الهوايات)",
+                    "طلب الطعام: حوار أكسفورد أونلاين (طلب طاولة، الطلب، الفاتورة)",
+                    "النطق: تركيز خاص على الأخطاء الشائعة (مثل 'MENU')",
+                    "لعب الأدوار: سيناريوهات الزبون/النادل"
+                ]
             },
             materials: {
-                en: "Presentation (Time & Hobbies), Worksheets (matching, personal form), YouTube video for pronunciation",
-                ar: "عرض تقديمي (الوقت والهوايات)، أوراق عمل (مطابقة، استمارة شخصية)، فيديو يوتيوب للنطق"
+                en: "Weekly Report, PPT (Telling Time & Hobbies), Worksheets (Time Charts, Matching), Pronunciation & Audio Guide (Self-study linked resources)",
+                ar: "التقرير الأسبوعي، عرض تقديمي (الوقت والهوايات)، أوراق عمل (مخططات الوقت، المطابقة)، دليل النطق والصوتيات (موارد للدراسة الذاتية)"
             },
             qualityNote: {
                 title: { en: "Quality Analysis", ar: "تحليل الجودة" },
-                description: { en: "The lesson plan follows a very logical sequence (Time → Routine → Food). Worksheets are excellent and support the learning objective.", ar: "الخطة الدراسية تتبع تسلسلاً منطقياً جداً (الوقت ← الروتين ← الطعام). أوراق العمل ممتازة وتدعم الهدف التعليمي." }
+                description: { en: "The lesson logic is sound, progressing from simple inputs to complex outputs. The 'Pronunciation & Sentences' document is a standout resource, serving as a self-study guide with direct links to audio models.", ar: "منطق الدرس سليم، حيث يتدرج من المدخلات البسيطة إلى المخرجات المعقدة. وثيقة 'النطق والجمل' تعد مورداً متميزاً، حيث تعمل كدليل للدراسة الذاتية مع روابط مباشرة لنماذج صوتية." }
+            },
+            strength: {
+                title: { en: "💡 High-Value Practice", ar: "💡 ممارسة عالية القيمة" },
+                description: { en: "Embedding direct audio links into vocabulary sheets encourages learner autonomy. This method ensures students hear native accents and realistic soundscapes.", ar: "تضمين روابط صوتية مباشرة في أوراق المفردات يشجع استقلالية المتعلم. تضمن هذه الطريقة استماع الطلاب إلى لهجات أصلية وبيئات صوتية واقعية." }
             },
             encouragement: {
-                title: { en: "💡 Encouragement Note", ar: "💡 ملاحظة تشجيعية" },
-                description: { en: "The submitted work is excellent and well-organized! We encourage the teacher to document classroom activities with video or photos in the future to highlight live student interaction.", ar: "العمل المقدم ممتاز ومنظم بشكل رائع! نشجع المعلم على توثيق أنشطة الفصل بالفيديو أو الصور في المستقبل لإبراز التفاعل الحي للطلاب." },
-                suggestion: { en: "Recording short clips of role-plays (like restaurant dialogue) would be a great addition to show student progress.", ar: "تسجيل مقاطع قصيرة من لعب الأدوار (مثل حوار المطعم) سيكون إضافة رائعة لإظهار تقدم الطلاب." }
+                title: { en: "🚀 Recommendation", ar: "🚀 توصية" },
+                description: { en: "Request Student Evidence: For the next report, please capture the 'Role Play' activity in the classroom to confirm the effectiveness of these digital resources.", ar: "طلب أدلة الطلاب: للتقرير القادم، يرجى توثيق نشاط 'لعب الأدوار' في الفصل لتأكيد فعالية هذه الموارد الرقمية." }
             }
         },
         {
@@ -155,57 +175,186 @@ export const weeklyData = {
         },
         {
             id: 5,
-            name: { en: "Mr. Mohamed Abd El-Mo'ty", ar: "أ. محمد عبد المعطي" },
-            course: { en: "Conversational English", ar: "اللغة الإنجليزية المحادثة" },
-            status: "partial",
-            isMissing: true,
-            missingNote: {
-                en: "⚠️ No report submitted for this week. Teacher should submit weekly work documentation.",
-                ar: "⚠️ لم يتم تقديم تقرير لهذا الأسبوع. يجب على المعلم تقديم توثيق العمل الأسبوعي."
-            }
+            name: { en: "Mrs. Khadija Tahir", ar: "أ. خديجة طاهر" },
+            course: { en: "Situational English (Healthcare)", ar: "الإنجليزية المواقفية (الرعاية الصحية)" },
+            status: "exemplary",
+            isExemplary: true,
+            exemplaryNote: {
+                title: { en: "⭐ Adaptation & Crisis Management", ar: "⭐ التكيف وإدارة الأزمات" },
+                description: { en: "Effectively managed the logistical challenge of merging 13 groups (7 own + 6 from Ms. Balsam) without compromising quality. The hybrid delivery (Face-to-Face & Online) was seamless.", ar: "أدارت بنجاح التحدي اللوجستي المتمثل في دمج 13 مجموعة (7 خاصة بها + 6 من أ. بلسم) دون المساس بالجودة. كان التقديم الهجين (حضورياً وعبر الإنترنت) سلساً." }
+            },
+            objectives: {
+                en: [
+                    "Mastering Medical Vocabulary: Body parts, clinic, polyclinic, consultation",
+                    "Doctor-Patient Interaction: Triage questions ('Do you have allergies?', 'I take medicine for...')",
+                    "Role-Play Confidence: Transitioning from scripts to active speaking",
+                    "Managing mixed-ability groups in a hybrid learning environment"
+                ],
+                ar: [
+                    "إتقان المفردات الطبية: أجزاء الجسم، العيادة، مجمع العيادات، الاستشارة",
+                    "تفاعل الطبيب والمريض: أسئلة الفرز ('هل لديك حساسية؟'، 'أتناول دواء لـ...')",
+                    "ثقة لعب الأدوار: الانتقال من النصوص المكتوبة إلى التحدث النشط",
+                    "إدارة مجموعات مختلطة القدرات في بيئة تعلم هجينة"
+                ]
+            },
+            topics: {
+                en: [
+                    "Receptionist Scenario (Booking Appointments): Focus on clear communication and correction",
+                    "Triage Nurse Scenario (Vitals & History): Using specific sentence frames",
+                    "Medical Vocabulary: Body parts and facility terms",
+                    "Pronunciation Focus: Words like 'Consultation' and 'Fever'"
+                ],
+                ar: [
+                    "سيناريو موظف الاستقبال (حجز المواعيد): التركيز على التواصل الواضح والتصحيح",
+                    "سيناريو ممرضة الفرز (العلامات الحيوية والسجل): استخدام تراكيب جمل محددة",
+                    "المفردات الطبية: أجزاء الجسم ومصطلحات المرافق",
+                    "التركيز على النطق: كلمات مثل 'Consultation' و 'Fever'"
+                ]
+            },
+            materials: {
+                en: "Visual Vocabulary Slides (Body Parts), Medical Conversation Slides (Bilingual for A1-A2), Student Role-Play Videos",
+                ar: "شرائح المفردات المرئية (أجزاء الجسم)، شرائح المحادثة الطبية (ثنائية اللغة للمستوى A1-A2)، فيديوهات لعب الأدوار للطلاب"
+            },
+            qualityNote: {
+                title: { en: "Detailed Video Analysis", ar: "تحليل فيديو مفصل" },
+                description: { en: "Evidence 1 (Receptionist - Amal & Zahra): Teacher provided immediate, gentle correction for 'Consultation', leading to self-correction. Evidence 2 (Triage - Reham & Eman): Students successfully used frames like 'Do you have any allergies?', demonstrating understanding despite minor pronunciation hurdles.", ar: "الدليل 1 (موظف الاستقبال - أمل وزهرة): قدمت المعلمة تصحيحاً فورياً لطيفاً لكلمة 'Consultation'، مما أدى إلى التصحيح الذاتي. الدليل 2 (الفرز - ريهام وإيمان): استخدم الطلاب بنجاح تراكيب مثل 'هل لديك أي حساسية؟'، مما يظهر الفهم رغم بعض تعثرات النطق البسيطة." }
+            },
+            strength: {
+                title: { en: "💡 Pedagogical Scaffolding", ar: "💡 السقالات التربوية" },
+                description: { en: "The transition from visual vocabulary slides to active role-play is clearly executed. Mrs. Khadija is training students to speak, not just lecturing. The materials bridged English and Arabic effectively for the learners' level.", ar: "تم تنفيذ الانتقال من شرائح المفردات المرئية إلى لعب الأدوار النشط بوضوح. أ. خديجة تدرب الطلاب على التحدث وليس فقط تلقي المحاضرات. ربطت المواد بين الإنجليزية والعربية بفعالية لمستوى المتعلمين." }
+            },
+            hasEvidence: true,
+            evidenceType: "video"
         },
         {
             id: 6,
-            name: { en: "Ms. Asmaa Sabry", ar: "أ. أسماء صبري" },
-            course: { en: "Reading and Comprehension", ar: "القراءة والفهم" },
-            status: "partial",
-            isMissing: true,
-            missingNote: {
-                en: "⚠️ No report submitted for this week. Teacher should submit weekly work documentation.",
-                ar: "⚠️ لم يتم تقديم تقرير لهذا الأسبوع. يجب على المعلم تقديم توثيق العمل الأسبوعي."
-            }
+            name: { en: "Mr. Youssef Elfahem", ar: "أ. يوسف الفاهم" },
+            course: { en: "General English (Evening Shift) | Groups IC1 & IC2", ar: "اللغة الإنجليزية العامة (مسائي) | مجموعات IC1 و IC2" },
+            status: "complete",
+            objectives: {
+                en: [
+                    "Basic Conversation: Greetings, origins, and job titles",
+                    "Grammar Focus: Prepositions of place (demonstratives: this/that/these/those)",
+                    "Article Usage: Definite and indefinite articles (a/an/the)",
+                    "Descriptive Language: Comparative and Superlative adjectives"
+                ],
+                ar: [
+                    "المحادثة الأساسية: التحيات، الأصول، والمسميات الوظيفية",
+                    "التركيز القواعدي: حروف الجر المكانية (أسماء الإشارة: هذا/ذاك/هؤلاء/أولئك)",
+                    "استخدام الأدوات: أدوات التعريف والتنكير (a/an/the)",
+                    "اللغة الوصفية: صفات المقارنة والتفضيل"
+                ]
+            },
+            topics: {
+                en: ["Demonstratives (This/That/These/Those)", "Rules of Articles (a/an/the)", "Comparatives & Superlatives (Bigger/Biggest)", "Self-description"],
+                ar: ["أسماء الإشارة (هذا/ذاك/هؤلاء/أولئك)", "قواعد الأدوات (a/an/the)", "المقارنة والتفضيل (أكبر/الأكبر)", "وصف النفس"]
+            },
+            materials: {
+                en: "Weekly Report, Audio Recordings (Comparative-Superlative, This-That, A-AN, Prepositions)",
+                ar: "التقرير الأسبوعي، تسجيلات صوتية (المقارنة والتفضيل، أسماء الإشارة، الأدوات، حروف الجر)"
+            },
+            qualityNote: {
+                title: { en: "Quality Analysis", ar: "تحليل الجودة" },
+                description: { en: "Perfect 1:1 correlation between the written report and submitted evidence. Mr. Youssef demonstrated high adaptability by using audio-only recordings for camera-shy students, ensuring evidence collection without alienating learners.", ar: "تطابق تام (1:1) بين التقرير المكتوب والأدلة المقدمة. أظهر أ. يوسف مرونة عالية باستخدام التسجيلات الصوتية فقط للطلاب الذين يخجلون من الكاميرا، مما ضمن جمع الأدلة دون تنفير المتعلمين." }
+            },
+            strength: {
+                title: { en: "💡 Adaptability & Alignment", ar: "💡 المرونة والتوافق" },
+                description: { en: "Instead of forcing video on shy students, he pivoted to audio recordings to meet requirements. His diagnostic approach allowed him to skip basics and focus on re-introducing concepts in new ways.", ar: "بدلاً من فرض الفيديو على الطلاب الخجولين، تحول إلى التسجيلات الصوتية لتلبية المتطلبات. سمح له نهجه التشخيصي بتجاوز الأساسيات والتركيز على إعادة تقديم المفاهيم بطرق جديدة." }
+            },
+            hasEvidence: true,
+            evidenceType: "audio"
         },
         {
             id: 7,
-            name: { en: "Mr. Hatem Rashwan", ar: "أ. حاتم رشوان" },
-            course: { en: "Grammar Foundations", ar: "أساسيات القواعد" },
-            status: "partial",
-            isMissing: true,
-            missingNote: {
-                en: "⚠️ No report submitted for this week. Teacher should submit weekly work documentation.",
-                ar: "⚠️ لم يتم تقديم تقرير لهذا الأسبوع. يجب على المعلم تقديم توثيق العمل الأسبوعي."
+            name: { en: "Mr. Mostafa", ar: "أ. مصطفى" },
+            course: { en: "General English | Samsung Cohort", ar: "اللغة الإنجليزية العامة | مجموعة سامسونج" },
+            status: "complete",
+            objectives: {
+                en: [
+                    "Prepositions of Place: in, on, under, next to, behind",
+                    "Spatial Awareness: Describing object locations in full sentences",
+                    "Gamification: Kahoot quiz for content review",
+                    "Listening Skills: Short video for authentic listening practice"
+                ],
+                ar: [
+                    "حروف الجر المكانية: في، على، تحت، بجانب، خلف",
+                    "الوعي المكاني: وصف مواقع الأشياء في جمل كاملة",
+                    "التلعيب: مسابقة Kahoot لمراجعة المحتوى",
+                    "مهارات الاستماع: فيديو قصير للاستماع الحقيقي"
+                ]
+            },
+            topics: {
+                en: ["Prepositions of Place (in/on/under/next to/behind)", "Describing Locations", "Kahoot Quiz Game", "Listening Practice (Short Video)"],
+                ar: ["حروف الجر المكانية", "وصف المواقع", "مسابقة Kahoot", "ممارسة الاستماع (فيديو قصير)"]
+            },
+            materials: {
+                en: "Weekly Report, Kahoot Quiz (in-class), Short Video (Listening)",
+                ar: "التقرير الأسبوعي، مسابقة Kahoot (داخل الفصل)، فيديو قصير (استماع)"
+            },
+            qualityNote: {
+                title: { en: "Quality Analysis", ar: "تحليل الجودة" },
+                description: { en: "Strong Methodological Planning. The use of Kahoot and video content demonstrates excellent student engagement strategies. Smooth classroom management with 'Zero Friction' reported.", ar: "تخطيط منهجي قوي. يُظهر استخدام Kahoot والفيديو استراتيجيات ممتازة لتفاعل الطلاب. إدارة صفية سلسة مع 'عدم وجود تحديات' تم الإبلاغ عنها." }
+            },
+            strength: {
+                title: { en: "💡 Gamification Strategy", ar: "💡 استراتيجية التلعيب" },
+                description: { en: "Integrating Kahoot adds a competitive, high-energy element that boosts participation rates among adult learners. Moving beyond textbook exercises to dynamic listening practice.", ar: "يضيف دمج Kahoot عنصراً تنافسياً عالي الطاقة يعزز معدلات المشاركة بين المتعلمين البالغين. الانتقال إلى ممارسة استماع ديناميكية تتجاوز التمارين الكتابية." }
+            },
+            encouragement: {
+                title: { en: "🚀 Recommendation", ar: "🚀 توصية" },
+                description: { en: "Please upload evidence (Kahoot screenshots/podium results or video file) to the Drive next week. This will elevate the evaluation from 'Reported Success' to 'Verified Excellence'.", ar: "يرجى رفع الأدلة (لقطات شاشة Kahoot/نتائج المنصة أو ملف الفيديو) إلى Drive الأسبوع القادم. سيرفع هذا التقييم من 'نجاح مُبلغ عنه' إلى 'تميز مُتحقق منه'." }
             }
         },
         {
             id: 8,
             name: { en: "Mr. Tawfeek Ibrahim", ar: "أ. توفيق إبراهيم" },
             course: { en: "Practical English Skills", ar: "المهارات الإنجليزية العملية" },
-            status: "partial",
-            isMissing: true,
-            missingNote: {
-                en: "⚠️ No report submitted for this week. Teacher should submit weekly work documentation.",
-                ar: "⚠️ لم يتم تقديم تقرير لهذا الأسبوع. يجب على المعلم تقديم توثيق العمل الأسبوعي."
-            }
+            status: "complete",
+            objectives: {
+                en: [
+                    "Expressing Personal Preferences (Likes/Dislikes)",
+                    "Using target grammar range (I like..., I don't like..., He enjoys...)",
+                    "Applying gerunds correctly (e.g., 'I like swimming')",
+                    "Transitioning from theoretical worksheets to active speaking"
+                ],
+                ar: [
+                    "التعبير عن التفضيلات الشخصية (يعجبني/لا يعجبني)",
+                    "استخدام القواعد المستهدفة (أنا أحب...، لا أحب...، هو يستمتع...)",
+                    "استخدام فعل الاسم (Gerunds) بشكل صحيح (مثل 'أحب السباحة')",
+                    "الانتقال من أوراق العمل النظرية إلى التحدث النشط"
+                ]
+            },
+            topics: {
+                en: ["Likes and Dislikes", "Gerunds usage", "Conversation Practice", "Self-expression"],
+                ar: ["ما نحب وما نكره", "استخدام اسم الفعل", "ممارسة المحادثة", "التعبير عن النفس"]
+            },
+            materials: {
+                en: "Digital Presentation, PDF Tests (Test 2, 3), Conversation Practice PDF (75+ questions), Student Videos",
+                ar: "عرض رقمي، اختبارات PDF، ملف ممارسة المحادثة (أكثر من 75 سؤال)، فيديوهات الطلاب"
+            },
+            qualityNote: {
+                title: { en: "Quality Analysis", ar: "تحليل الجودة" },
+                description: { en: "Comprehensive approach balancing theory and practice. The 'Thread of Learning' is clear: from the Conversation Practice PDF script to successful memorization and application in student videos.", ar: "نهج شامل يوازن بين النظرية والتطبيق. 'خيط التعلم' واضح: من سيناريو ملف المحادثة PDF إلى الحفظ والتطبيق الناجح في فيديوهات الطلاب." }
+            },
+            strength: {
+                title: { en: "💡 Strengths", ar: "💡 نقاط القوة" },
+                description: { en: "Prioritizing Speaking Output is excellent. The transition from 'fill-in-the-blank' to authentic self-expression addresses auditory and kinesthetic learning styles.", ar: "إعطاء الأولوية لمخرجات التحدث أمر ممتاز. الانتقال من 'ملء الفراغات' إلى التعبير الذاتي الحقيقي يخاطب أنماط التعلم السمعية والحسية." }
+            },
+            encouragement: {
+                title: { en: "🚀 Recommendation", ar: "🚀 توصية" },
+                description: { en: "Continue using video for student self-reflection. Consider showing students their own videos to help them identify pronunciation improvements.", ar: "استمر في استخدام الفيديو للتأمل الذاتي للطلاب. فكر في عرض الفيديوهات على الطلاب لمساعدتهم في تحديد تحسينات النطق." }
+            },
+            hasEvidence: true,
+            evidenceType: "video"
         },
         {
             id: 9,
             name: { en: "Ms. Balsam", ar: "أ. بلسم" },
-            course: { en: "New Instructor", ar: "مدربة جديدة" },
-            status: "awaiting",
+            course: { en: "English Instructor", ar: "مدربة لغة إنجليزية" },
+            status: "excused",
             isAwaiting: true,
             awaitingNote: {
-                en: "📋 Awaiting Delivery - First week report pending. Looking forward to seeing great work!",
-                ar: "📋 في انتظار التسليم - التقرير الأول قيد الانتظار. نتطلع لرؤية عمل رائع!"
+                en: "🏥 Sick Leave - Teacher is on certified sick leave this week.",
+                ar: "🏥 إجازة مرضية - المعلمة في إجازة مرضية هذا الأسبوع."
             }
         }
     ]

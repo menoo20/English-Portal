@@ -46,6 +46,15 @@ export default function ReportsPage() {
                     isInternal: true
                 },
                 {
+                    id: 'weekly-03',
+                    category: "تقرير المعلمين الأسبوعي",
+                    title: "📊 تقرير أداء المعلمين - الأسبوع 3",
+                    excerpt: "تقييم أسبوعي شامل لـ 9 معلمين، يشمل الأهداف والأدلة وتقييم الجودة (نجمان متميزان)...",
+                    date: "28 ديسمبر 2025 - 1 يناير 2026",
+                    link: "/reports/teachers-weekly-03",
+                    isInternal: true
+                },
+                {
                     id: 'weekly-02',
                     category: "تقرير المعلمين الأسبوعي",
                     title: "📊 تقرير أداء المعلمين - الأسبوع 2",
@@ -118,6 +127,15 @@ export default function ReportsPage() {
                     date: "Dec 2025 - Mar 2026",
                     link: "/reports/full-schedule",
                     color: "#F4D03F",
+                    isInternal: true
+                },
+                {
+                    id: 'weekly-03',
+                    category: "Teachers Weekly",
+                    title: "📊 Teachers Performance Report - Week 3",
+                    excerpt: "Comprehensive evaluation of 9 teachers (2 Exemplary), including goals and quality assessment...",
+                    date: "Dec 28, 2025 - Jan 1, 2026",
+                    link: "/reports/teachers-weekly-03",
                     isInternal: true
                 },
                 {
