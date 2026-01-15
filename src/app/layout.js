@@ -2,6 +2,9 @@ import { Outfit, Cairo } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 import ClientProviders from "@/components/ClientProviders";
+import MaintenanceMessage from "@/components/MaintenanceMessage";
+
+const MAINTENANCE_MODE = true;
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -36,14 +39,18 @@ export default function RootLayout({ children }) {
   return (
     <html lang={lang} dir={dir} suppressHydrationWarning={true}>
       <body className={`${outfit.variable} ${cairo.variable}`}>
-        <ClientProviders initialLanguage={lang}>
-          <div className="app-container">
-            <Sidebar />
-            <main className="main-content">
-              {children}
-            </main>
-          </div>
-        </ClientProviders>
+        {MAINTENANCE_MODE ? (
+          <MaintenanceMessage />
+        ) : (
+          <ClientProviders initialLanguage={lang}>
+            <div className="app-container">
+              <Sidebar />
+              <main className="main-content">
+                {children}
+              </main>
+            </div>
+          </ClientProviders>
+        )}
       </body>
     </html>
   );
